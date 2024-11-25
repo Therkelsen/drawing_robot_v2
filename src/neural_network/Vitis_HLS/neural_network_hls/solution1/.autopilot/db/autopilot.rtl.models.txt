@@ -1,0 +1,11 @@
+nn_inference_fadd_32ns_32ns_32_5_full_dsp_1
+nn_inference_fmul_32ns_32ns_32_4_max_dsp_1
+nn_inference_fcmp_32ns_32ns_1_2_no_dsp_1
+nn_inference_temp_output_0
+nn_inference_temp_output2_0
+nn_inference_AXI_CPU_s_axi
+hwmm_layer1
+hw_act_layer1
+hwmm_layer2
+hwmm_layer3
+nn_inference
