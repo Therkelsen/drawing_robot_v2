@@ -18,11 +18,11 @@
 // To test this example, please follow the commands below.
 //
 // Open terminal #1
-// $ ros2 run dynamixel_sdk_examples read_write_node
+// $ ros2 launch dynamixel_sdk_examples motor_controller.launch.py
 //
 // Open terminal #2 (run one of below commands at a time)
-// $ ros2 topic pub -1 /set_position dynamixel_sdk_custom_interfaces/SetPosition "{id: 1, position: 1000}"
-// $ ros2 service call /get_position dynamixel_sdk_custom_interfaces/srv/GetPosition "id: 1"
+// $ ros2 topic pub -1 motor_<id>/set_position dynamixel_sdk_custom_interfaces/SetPosition "{id: <id>, position: <position>}"
+// $ ros2 service call /get_position dynamixel_sdk_custom_interfaces/srv/GetPosition "id: <id>"
 //
 // Author: Will Son
 *******************************************************************************/
@@ -63,8 +63,12 @@ ReadWriteNode::ReadWriteNode()
 : Node("read_write_node")
 {
   RCLCPP_INFO(this->get_logger(), "Run read write node");
+  this->declare_parameter<std::string>("topic_name", "set_position");
+  std::string topic_name;
+  this->get_parameter("topic_name", topic_name);
 
-  this->declare_parameter("qos_depth", 10);
+  RCLCPP_INFO(this->get_logger(), "Subscribing to topic: %s", topic_name.c_str());
+
   int8_t qos_depth = 0;
   this->get_parameter("qos_depth", qos_depth);
 
@@ -73,7 +77,7 @@ ReadWriteNode::ReadWriteNode()
 
   set_position_subscriber_ =
     this->create_subscription<SetPosition>(
-    "set_position",
+    topic_name,
     QOS_RKL10V,
     [this](const SetPosition::SharedPtr msg) -> void
     {
