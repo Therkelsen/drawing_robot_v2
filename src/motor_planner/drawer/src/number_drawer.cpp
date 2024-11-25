@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "drawer/srv/number.hpp"
-#include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
+#include "dynamixel_sdk_custom_interfaces/msg/set_position_multiple.hpp"
 #include <map>
 #include <vector>
 #include <memory>
@@ -34,8 +34,7 @@ public:
         initialize_map();
 
         // Create the publisher
-        publisher_1 = this->create_publisher<dynamixel_sdk_custom_interfaces::msg::SetPosition>("motor_" + std::to_string(motor_1) + "/set_position", motor_1);
-        publisher_10 = this->create_publisher<dynamixel_sdk_custom_interfaces::msg::SetPosition>("motor_" + std::to_string(motor_10) + "/set_position", motor_10);
+        publisher = this->create_publisher<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>("/set_position", 1);
 
         // Create the service
         service_ = this->create_service<drawer::srv::Number>(
@@ -60,33 +59,23 @@ private:
             return;
         }
 
-        // Publish motor positions for the number
-        // 10 works
-        // 5 works
-        // 2.5 works
-        // 1.25 works
-        // 1.0938 works
-        // 1.0157 works
-        // 0.9375 doesn't work
-        // 0.625 doesn't work
+        // Publish motor positions
         for (size_t i = 0; i < mp[num].size(); i++)
         {
-            auto message = dynamixel_sdk_custom_interfaces::msg::SetPosition();
-            message.id = motor_1; // motor ID for first motor
-            message.position = mp[num][i].first;
+            auto message = dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple();
+            message.id_1 = motor_1; // motor ID for first motor
+            message.position_1 = mp[num][i].first;
+
+            message.id_2 = motor_10; // motor ID for second motor
+            message.position_2 = mp[num][i].second;
 
             // Publish the message
-            RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id, message.position);
-            publisher_1->publish(message);
-            sleep(1.0157);
-
-            message.id = motor_10; // motor ID for second motor
-            message.position = mp[num][i].second;
-
-            // Publish the message
-            RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id, message.position);
-            publisher_10->publish(message);
-            sleep(1.25);
+            RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id_1, message.position_1);
+            RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id_2, message.position_2);
+            publisher->publish(message);
+            
+            // This is the shortest possible sleep. I assume the package transmission takes one second.
+            sleep(1);
         }
 
         // Set the response
@@ -94,8 +83,7 @@ private:
         RCLCPP_INFO(this->get_logger(), "Number %d drawn successfully.", num);
     }
 
-    rclcpp::Publisher<dynamixel_sdk_custom_interfaces::msg::SetPosition>::SharedPtr publisher_1;
-    rclcpp::Publisher<dynamixel_sdk_custom_interfaces::msg::SetPosition>::SharedPtr publisher_10;
+    rclcpp::Publisher<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>::SharedPtr publisher;
     rclcpp::Service<drawer::srv::Number>::SharedPtr service_;
 };
 

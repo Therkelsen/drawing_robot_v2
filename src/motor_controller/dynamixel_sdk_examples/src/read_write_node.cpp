@@ -63,6 +63,8 @@ uint8_t dxl_error = 0;
 uint32_t goal_position = 0;
 int dxl_comm_result = COMM_TX_FAIL;
 
+rclcpp::Subscription<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>::SharedPtr set_position_multiple_subscriber_;
+
 ReadWriteNode::ReadWriteNode()
 : Node("read_write_node")
 {
@@ -85,47 +87,48 @@ ReadWriteNode::ReadWriteNode()
     rclcpp::QoS(rclcpp::KeepLast(qos_depth)).reliable().durability_volatile();
 
   // Updated subscriber implementation
-  set_position_subscriber_ = this->create_subscription<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>(
+  set_position_multiple_subscriber_ = this->create_subscription<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>(
     topic_name,
     QOS_RKL10V,
     [this](const dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple::SharedPtr msg) -> void {
       // Prepare SYNC WRITE parameters
       std::vector<uint8_t> param_data;
 
-      // Motor 1
-      param_data.push_back(msg->id1);
-      param_data.push_back(DXL_LOBYTE(DXL_LOWORD(msg->position1)));
-      param_data.push_back(DXL_HIBYTE(DXL_LOWORD(msg->position1)));
-      param_data.push_back(DXL_LOBYTE(DXL_HIWORD(msg->position1)));
-      param_data.push_back(DXL_HIBYTE(DXL_HIWORD(msg->position1)));
+      // Motor 1: Add ID and position to param_data
+      param_data.push_back(msg->id_1);
+      param_data.push_back(DXL_LOBYTE(DXL_LOWORD(msg->position_1)));
+      param_data.push_back(DXL_HIBYTE(DXL_LOWORD(msg->position_1)));
+      param_data.push_back(DXL_LOBYTE(DXL_HIWORD(msg->position_1)));
+      param_data.push_back(DXL_HIBYTE(DXL_HIWORD(msg->position_1)));
 
-      // Motor 2
-      param_data.push_back(msg->id2);
-      param_data.push_back(DXL_LOBYTE(DXL_LOWORD(msg->position2)));
-      param_data.push_back(DXL_HIBYTE(DXL_LOWORD(msg->position2)));
-      param_data.push_back(DXL_LOBYTE(DXL_HIWORD(msg->position2)));
-      param_data.push_back(DXL_HIBYTE(DXL_HIWORD(msg->position2)));
+      // Motor 2: Add ID and position to param_data
+      param_data.push_back(msg->id_2);
+      param_data.push_back(DXL_LOBYTE(DXL_LOWORD(msg->position_2)));
+      param_data.push_back(DXL_HIBYTE(DXL_LOWORD(msg->position_2)));
+      param_data.push_back(DXL_LOBYTE(DXL_HIWORD(msg->position_2)));
+      param_data.push_back(DXL_HIBYTE(DXL_HIWORD(msg->position_2)));
 
-      // Send SYNC WRITE command
+      // Execute SYNC WRITE
       dxl_comm_result = packetHandler->syncWriteTxOnly(
-        portHandler,
-        ADDR_GOAL_POSITION,  // Starting address of Goal Position
-        4,                   // Length of Goal Position data per motor
-        param_data.data(),   // SYNC WRITE data
-        param_data.size()    // Size of the data
+          portHandler,
+          ADDR_GOAL_POSITION,  // Starting address of Goal Position
+          4,                   // Length of Goal Position data per motor
+          param_data.data(),   // SYNC WRITE data
+          param_data.size()    // Size of the data
       );
 
+      // Handle communication result
       if (dxl_comm_result != COMM_SUCCESS) {
         RCLCPP_ERROR(this->get_logger(), "SYNC WRITE failed: %s", packetHandler->getTxRxResult(dxl_comm_result));
       } else {
         RCLCPP_INFO(
-          this->get_logger(),
-          "SYNC WRITE successful: [ID1: %d, Position1: %d] [ID2: %d, Position2: %d]",
-          msg->id1, msg->position1, msg->id2, msg->position2
+            this->get_logger(),
+            "SYNC WRITE successful: [ID 1: %d, Position 1: %d] [ID 2: %d, Position 2: %d]",
+            msg->id_1, msg->position_1, msg->id_2, msg->position_2
         );
       }
     }
-  );
+);
 
   auto get_present_position =
     [this](
