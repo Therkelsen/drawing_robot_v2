@@ -61,6 +61,14 @@ private:
         }
 
         // Publish motor positions for the number
+        // 10 works
+        // 5 works
+        // 2.5 works
+        // 1.25 works
+        // 1.0938 works
+        // 1.0157 works
+        // 0.9375 doesn't work
+        // 0.625 doesn't work
         for (size_t i = 0; i < mp[num].size(); i++)
         {
             auto message = dynamixel_sdk_custom_interfaces::msg::SetPosition();
@@ -70,6 +78,7 @@ private:
             // Publish the message
             RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id, message.position);
             publisher_1->publish(message);
+            sleep(1.0157);
 
             message.id = motor_10; // motor ID for second motor
             message.position = mp[num][i].second;
@@ -77,7 +86,7 @@ private:
             // Publish the message
             RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id, message.position);
             publisher_10->publish(message);
-            sleep(10);
+            sleep(1.25);
         }
 
         // Set the response
