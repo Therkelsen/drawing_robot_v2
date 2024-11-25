@@ -1,3 +1,16 @@
 *build/*
-*install/*
 *log/*
+
+*msg*
+*srv*
+*lib*
+*ament_index*
+*colcon*
+*COLCON*
+*setup*
+*cmake*
+*environment*
+*hook*
+*package.*
+*cache*
+*include*
