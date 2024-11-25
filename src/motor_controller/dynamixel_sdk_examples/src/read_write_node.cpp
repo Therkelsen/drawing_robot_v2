@@ -27,11 +27,15 @@
 // Author: Will Son
 *******************************************************************************/
 
+// https://github.com/ROBOTIS-GIT/DynamixelSDK/blob/master/c%2B%2B/example/protocol2.0/sync_read_write/sync_read_write.cpp
+// https://www.generationrobots.com/media/Dynamixel-AX-12-user-manual.pdf page 24
+
 #include <cstdio>
 #include <memory>
 #include <string>
 
 #include "dynamixel_sdk/dynamixel_sdk.h"
+#include "dynamixel_sdk_custom_interfaces/msg/set_position_multiple.hpp"
 #include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
 #include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
 #include "rclcpp/rclcpp.hpp"
@@ -63,11 +67,16 @@ ReadWriteNode::ReadWriteNode()
 : Node("read_write_node")
 {
   RCLCPP_INFO(this->get_logger(), "Run read write node");
+
   this->declare_parameter<std::string>("topic_name", "set_position");
   std::string topic_name;
   this->get_parameter("topic_name", topic_name);
 
-  RCLCPP_INFO(this->get_logger(), "Subscribing to topic: %s", topic_name.c_str());
+  this->declare_parameter<std::string>("multi_driver", "set_position");
+  std::string multi_driver;
+  this->get_parameter("multi_driver", multi_driver);
+
+  RCLCPP_INFO(this->get_logger(), "Subscribing to topic: %s", multi_driver.c_str());
 
   int8_t qos_depth = 0;
   this->get_parameter("qos_depth", qos_depth);
@@ -75,38 +84,48 @@ ReadWriteNode::ReadWriteNode()
   const auto QOS_RKL10V =
     rclcpp::QoS(rclcpp::KeepLast(qos_depth)).reliable().durability_volatile();
 
-  set_position_subscriber_ =
-    this->create_subscription<SetPosition>(
+  // Updated subscriber implementation
+  set_position_subscriber_ = this->create_subscription<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>(
     topic_name,
     QOS_RKL10V,
-    [this](const SetPosition::SharedPtr msg) -> void
-    {
-      uint8_t dxl_error = 0;
+    [this](const dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple::SharedPtr msg) -> void {
+      // Prepare SYNC WRITE parameters
+      std::vector<uint8_t> param_data;
 
-      // Position Value of X series is 4 byte data.
-      // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-      uint32_t goal_position = (unsigned int)msg->position;  // Convert int32 -> uint32
+      // Motor 1
+      param_data.push_back(msg->id1);
+      param_data.push_back(DXL_LOBYTE(DXL_LOWORD(msg->position1)));
+      param_data.push_back(DXL_HIBYTE(DXL_LOWORD(msg->position1)));
+      param_data.push_back(DXL_LOBYTE(DXL_HIWORD(msg->position1)));
+      param_data.push_back(DXL_HIBYTE(DXL_HIWORD(msg->position1)));
 
-      // Write Goal Position (length : 4 bytes)
-      // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
-      dxl_comm_result =
-      packetHandler->write4ByteTxRx(
+      // Motor 2
+      param_data.push_back(msg->id2);
+      param_data.push_back(DXL_LOBYTE(DXL_LOWORD(msg->position2)));
+      param_data.push_back(DXL_HIBYTE(DXL_LOWORD(msg->position2)));
+      param_data.push_back(DXL_LOBYTE(DXL_HIWORD(msg->position2)));
+      param_data.push_back(DXL_HIBYTE(DXL_HIWORD(msg->position2)));
+
+      // Send SYNC WRITE command
+      dxl_comm_result = packetHandler->syncWriteTxOnly(
         portHandler,
-        (uint8_t) msg->id,
-        ADDR_GOAL_POSITION,
-        goal_position,
-        &dxl_error
+        ADDR_GOAL_POSITION,  // Starting address of Goal Position
+        4,                   // Length of Goal Position data per motor
+        param_data.data(),   // SYNC WRITE data
+        param_data.size()    // Size of the data
       );
 
       if (dxl_comm_result != COMM_SUCCESS) {
-        RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getTxRxResult(dxl_comm_result));
-      } else if (dxl_error != 0) {
-        RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getRxPacketError(dxl_error));
+        RCLCPP_ERROR(this->get_logger(), "SYNC WRITE failed: %s", packetHandler->getTxRxResult(dxl_comm_result));
       } else {
-        RCLCPP_INFO(this->get_logger(), "Set [ID: %d] [Goal Position: %d]", msg->id, msg->position);
+        RCLCPP_INFO(
+          this->get_logger(),
+          "SYNC WRITE successful: [ID1: %d, Position1: %d] [ID2: %d, Position2: %d]",
+          msg->id1, msg->position1, msg->id2, msg->position2
+        );
       }
     }
-    );
+  );
 
   auto get_present_position =
     [this](
