@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'nn_inference'" level="0">
+<item name = "Date">Mon Nov 25 10:27:18 2024
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
+<item name = "Project">neural_network_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.195 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1198, 1198, 11.980 us, 11.980 us, 1199, 1199, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_hwmm_layer1_fu_339">hwmm_layer1, 817, 817, 8.170 us, 8.170 us, 817, 817, none</column>
+<column name="grp_hwmm_layer2_fu_346">hwmm_layer2, 171, 171, 1.710 us, 1.710 us, 171, 171, none</column>
+<column name="grp_hwmm_layer3_fu_352">hwmm_layer3, 84, 84, 0.840 us, 0.840 us, 84, 84, none</column>
+<column name="grp_hw_act_layer1_fu_357">hw_act_layer1, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">32, 32, 1, 1, 1, 32, yes</column>
+<column name="- Loop 2">16, 16, 1, 1, 1, 16, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
