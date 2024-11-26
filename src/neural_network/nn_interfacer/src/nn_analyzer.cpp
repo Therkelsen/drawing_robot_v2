@@ -16,8 +16,10 @@ public:
     NNAnalyzer() : Node("neural_network_analyzer")
     {
         data_size_bytes = 100 * sizeof(int);
-        XNn_inference_Initialize(&nn, "nn_instance");
-
+        int res = (int)XNn_inference_Initialize(&nn, "nn_inference");
+        RCLCPP_INFO(this->get_logger(), "IP Ready? %s", res == 0 ? "true" : "false");
+        if(res)
+            exit(1);
 
         // Create the publisher
         camera_subscription_ = this->create_subscription<sensor_msgs::msg::Image>("/image_raw", 10, 
