@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(dynamixel_sdk_examples)
+project(dynamixel_controller)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)

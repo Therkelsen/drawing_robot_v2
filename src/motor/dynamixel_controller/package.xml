@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>dynamixel_sdk_examples</name>
+  <name>dynamixel_controller</name>
   <version>3.7.40</version>
   <description>ROS2 examples using ROBOTIS DYNAMIXEL SDK</description>
   <license>Apache 2.0</license>

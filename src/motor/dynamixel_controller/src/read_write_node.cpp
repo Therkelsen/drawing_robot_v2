@@ -18,7 +18,7 @@
 // To test this example, please follow the commands below.
 //
 // Open terminal #1
-// $ ros2 launch dynamixel_sdk_examples motor_controller.launch.py
+// $ ros2 launch dynamixel_controller motor_controller.launch.py
 //
 // Open terminal #2 (run one of below commands at a time)
 // $ ros2 topic pub -1 motor_<id>/set_position dynamixel_sdk_custom_interfaces/SetPosition "{id: <id>, position: <position>}"

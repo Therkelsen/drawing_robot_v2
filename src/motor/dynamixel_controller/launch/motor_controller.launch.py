@@ -4,7 +4,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='dynamixel_sdk_examples',
+            package='dynamixel_controller',
             executable='read_write_node',
             name='motor_controller',
             parameters=[
@@ -12,7 +12,7 @@ def generate_launch_description():
             ]
         ),
         # Node(
-        #     package='dynamixel_sdk_examples',
+        #     package='dynamixel_controller',
         #     executable='read_write_node',
         #     name='motor_controller_10',
         #     parameters=[

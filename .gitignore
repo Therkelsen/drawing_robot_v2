@@ -1,3 +1,73 @@
 **/build/
 **/install/
 **/log/
+
+*/scripts/vivado*
+*/scripts/vitis_*_Makefile
+*.png
+*.xdbg
+*.dbg
+*.cache
+
+# Ignore build, temp, and output files
+**/bin/
+**/obj/
+**/out/
+**/*.o
+**/*.a
+**/*.so
+**/*.exe
+**/*.out
+
+# Ignore Vivado and Vitis specific files
+*.runs/
+*.ip_user_files/
+*.vscode/
+*.wdb
+*.log
+*.jou
+*.htm
+*.xml
+*.tcl
+*.wcfg
+*.cfg
+*.db
+*.xsa
+
+# Ignore Vitis HLS specific files
+*.hls/
+*.tcl
+*.dsa
+*.tbd
+*.xpr_hls
+*.hls_project/
+
+# Ignore cache files
+*.swp
+*~
+*.bak
+*.backup
+*.tmp
+*.log
+*.pid
+
+# Ignore platform specific generated files
+*.platform/
+
+# Ignore VS Code and IDE files
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore C/C++ specific files
+*.d
+*.gcno
+*.gcda
+*.gch
+*.pdb
+*.idb
+*.ipch
+*.suo
+*.user
+*.userosscache
+*.sln
