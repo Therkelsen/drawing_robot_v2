@@ -1,4 +1,3 @@
-git submodule status --recursive
 # Copyright 2018 Lucas Walter
 # All rights reserved.
 #

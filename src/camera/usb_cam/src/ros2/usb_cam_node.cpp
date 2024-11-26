@@ -26,13 +26,15 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
+#include "usb_cam/usb_cam_node.hpp"
+#include "usb_cam/utils.hpp"
+#include <cv_bridge/cv_bridge.h>
+#include <filesystem>
 #include <memory>
+#include <opencv2/opencv.hpp>
 #include <sstream>
 #include <string>
 #include <vector>
-#include <filesystem>
-#include "usb_cam/usb_cam_node.hpp"
-#include "usb_cam/utils.hpp"
 
 const char BASE_TOPIC_NAME[] = "image_raw";
 
@@ -214,6 +216,7 @@ void UsbCamNode::init()
     std::chrono::milliseconds(static_cast<int64_t>(period_ms)),
     std::bind(&UsbCamNode::update, this));
   RCLCPP_INFO_STREAM(this->get_logger(), "Timer triggering every " << period_ms << " ms");
+  RCLCPP_INFO(this->get_logger(), "camera node successfully started");
 }
 
 void UsbCamNode::get_params()
@@ -360,6 +363,7 @@ bool UsbCamNode::take_and_send_image()
     m_image_msg->height = m_camera->get_image_height();
     m_image_msg->encoding = m_camera->get_pixel_format()->ros();
     m_image_msg->step = m_camera->get_image_step();
+
     if (m_image_msg->step == 0) {
       // Some formats don't have a linesize specified by v4l2
       // Fall back to manually calculating it step = size / height
@@ -368,16 +372,66 @@ bool UsbCamNode::take_and_send_image()
     m_image_msg->data.resize(m_camera->get_image_size_in_bytes());
   }
 
-  // grab the image, pass image msg buffer to fill
+  // Grab the image, pass image msg buffer to fill
   m_camera->get_image(reinterpret_cast<char *>(&m_image_msg->data[0]));
 
   auto stamp = m_camera->get_image_timestamp();
   m_image_msg->header.stamp.sec = stamp.tv_sec;
   m_image_msg->header.stamp.nanosec = stamp.tv_nsec;
 
+  auto image_copy = std::make_shared<sensor_msgs::msg::Image>(*m_image_msg);
+
+  if (image_copy) {
+    std::string encoding = image_copy->encoding;
+  } else {
+    RCLCPP_ERROR(this->get_logger(), "Failed getting image encoding.");
+    return false;
+  }
+
+  auto header = image_copy->header;
+
+  // Convert the image message to a cv::Mat using cv_bridge
+  cv_bridge::CvImagePtr cv_ptr;
+  try {
+      // Convert from yuv422_yuy2 to the same YUV format (we'll preserve the format)
+      cv_ptr = cv_bridge::toCvCopy(std::move(image_copy), sensor_msgs::image_encodings::YUV422_YUY2);
+  } catch (cv_bridge::Exception& e) {
+      RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+      return false;
+  }
+
+  // Downsample the image to 10x10
+  cv::Mat resized_image;
+  cv::resize(cv_ptr->image, resized_image, cv::Size(10, 10));
+
+  // Convert the downsampled image back to a sensor_msgs::Image message
+  cv_bridge::CvImage resized_cv_image;
+
+  // Check if the resized image is empty or not
+  if (resized_image.empty()) {
+      RCLCPP_ERROR(this->get_logger(), "Resized image is empty. Cannot convert to sensor_msgs::Image.");
+      return false; // Early exit if the image is invalid
+  }
+
+  resized_cv_image.header = header;
+  resized_cv_image.encoding = sensor_msgs::image_encodings::YUV422_YUY2; // Keep the original encoding
+  resized_cv_image.image = resized_image;
+
+  sensor_msgs::msg::Image::SharedPtr resized_image_msg = nullptr;
+  try {
+      // Attempt to convert to sensor_msgs::Image
+      resized_image_msg = resized_cv_image.toImageMsg();
+  } catch (const std::exception& e) {
+      // Catching general exceptions and logging the error
+      RCLCPP_ERROR(this->get_logger(), "Exception while converting to Image message: %s", e.what());
+      return false; // Early exit on conversion failure
+  }
+
+  // Publish the downsampled image
   *m_camera_info_msg = m_camera_info->getCameraInfo();
-  m_camera_info_msg->header = m_image_msg->header;
-  m_image_publisher->publish(*m_image_msg, *m_camera_info_msg);
+  m_camera_info_msg->header = resized_image_msg->header;
+  m_image_publisher->publish(*resized_image_msg, *m_camera_info_msg);
+
   return true;
 }
 

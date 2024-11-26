@@ -28,6 +28,7 @@ else()
 endif()
 
 find_package(OpenCV REQUIRED)
+find_package(cv_bridge REQUIRED)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(avcodec REQUIRED libavcodec)
@@ -55,13 +56,16 @@ add_library(${PROJECT_NAME} SHARED
 target_include_directories(${PROJECT_NAME} PUBLIC
   "include"
   ${OpenCV_INCLUDE_DIRS}
+  ${cv_bridge_INCLUDE_DIRS}
 )
 
 target_link_libraries(${PROJECT_NAME}
   ${avcodec_LIBRARIES}
   ${avutil_LIBRARIES}
   ${swscale_LIBRARIES}
-  ${OpenCV_LIBRARIES})
+  ${OpenCV_LIBRARIES}
+  ${cv_bridge_LIBRARIES}
+)
 
 # Remove once ROS 1 Noetic is deprecated
 if($ENV{ROS_VERSION} EQUAL 1)
