@@ -1,0 +1,2 @@
+sudo apt install ros-<distro>-cv-bridge
+sudo apt install ros-<distro>-sensor-msgs

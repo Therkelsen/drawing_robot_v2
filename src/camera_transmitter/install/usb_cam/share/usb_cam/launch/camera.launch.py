@@ -1,1 +1,0 @@
-/home/mp4d/drawing_robot_v2/src/camera_transmitter/usb_cam/launch/camera.launch.py
