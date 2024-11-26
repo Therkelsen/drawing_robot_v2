@@ -8,66 +8,64 @@
 *.xdbg
 *.dbg
 *.cache
+*.swp
+*.so
+*.o
+*.log
 
-# Ignore build, temp, and output files
-**/bin/
-**/obj/
-**/out/
-**/*.o
-**/*.a
-**/*.so
-**/*.exe
-**/*.out
+# Ignore build and temporary directories
+/solution*/impl/
+/solution*/sim/
+/solution*/.autopilot_db/
+/solution*/.Xil/
+/solution*/run/
 
-# Ignore Vivado and Vitis specific files
-*.runs/
-*.ip_user_files/
-*.vscode/
-*.wdb
+# Ignore logs and report files
+/solution*/log/
+/solution*/output.log
+/solution*/.metadata/
+/solution*/report/
+
+# Ignore specific generated files
+/solution*/syn/
+/solution*/ip/
+/solution*/component.xml
+/solution*/vivado*
+
+# Ignore any generated constraints and scripts
+/solution*/scripts/
+/solution*/constraints/
+
+# Ignore backup or IDE files
 *.log
 *.jou
-*.htm
-*.xml
-*.tcl
-*.wcfg
-*.cfg
-*.db
-*.xsa
-
-# Ignore Vitis HLS specific files
-*.hls/
-*.tcl
-*.dsa
-*.tbd
-*.xpr_hls
-*.hls_project/
-
-# Ignore cache files
-*.swp
-*~
-*.bak
+*.str
+*.dmp
 *.backup
 *.tmp
-*.log
-*.pid
+*.bak
 
-# Ignore platform specific generated files
-*.platform/
+# Ignore build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.out
 
-# Ignore VS Code and IDE files
-.vscode/
-.idea/
-.DS_Store
+# Ignore other generated files
+/solution*/.Xil/
+*.bit
+*.bin
+*.elf
+*.json
+*.tcl
+*.xci
+*.xpr
+*.wcfg
+*.pb
 
-# Ignore C/C++ specific files
-*.d
-*.gcno
-*.gcda
-*.gch
-*.pdb
-*.idb
-*.ipch
-*.suo
-*.user
-*.userosscache
-*.sln
+# Optional: Exclude simulation files if not needed
+/solution*/tb/
+/solution*/csim/
+/solution*/rtl/
