@@ -847,7 +847,7 @@ memset.loop12.split:3 %br_ln0 = br void %memset.loop12
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output_0
+split11:2 %call_ln119 = call void @l1_mm, i32 %input_img, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln119"/></StgValue>
@@ -865,7 +865,7 @@ split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output_0
+split11:2 %call_ln119 = call void @l1_mm, i32 %input_img, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln119"/></StgValue>
@@ -883,7 +883,7 @@ split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output
 
 <Node id="46" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-split11:3 %call_ln120 = call void @hw_act_layer1, i32 %temp_output_0
+split11:3 %call_ln120 = call void @l1_relu, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln120"/></StgValue>
@@ -931,7 +931,7 @@ split11:1 %store_ln115 = store i32 1, i4 %temp_output2_0_addr
 
 <Node id="46" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-split11:3 %call_ln120 = call void @hw_act_layer1, i32 %temp_output_0
+split11:3 %call_ln120 = call void @l1_relu, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln120"/></StgValue>
@@ -949,7 +949,7 @@ split11:3 %call_ln120 = call void @hw_act_layer1, i32 %temp_output_0
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-split11:4 %call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_output2_0
+split11:4 %call_ln121 = call void @l2_mm, i32 %temp_output_0, i32 %temp_output2_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln121"/></StgValue>
@@ -967,7 +967,7 @@ split11:4 %call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_ou
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-split11:4 %call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_output2_0
+split11:4 %call_ln121 = call void @l2_mm, i32 %temp_output_0, i32 %temp_output2_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln121"/></StgValue>
@@ -4378,10 +4378,10 @@ split11:195 %store_ln81 = store i32 %select_ln80_15, i4 %temp_output2_0_addr_15
 
 <Node id="239" bw="320" op_0_bw="320" op_1_bw="32" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="0" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="0" op_18_bw="0">
 <![CDATA[
-split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
+split11:196 %l3_mm_ret = call i320 @l3_mm, i32 %temp_output2_0
 
 ]]></Node>
-<StgValue><ssdm name="call_ret"/></StgValue>
+<StgValue><ssdm name="l3_mm_ret"/></StgValue>
 </operation>
 </state>
 
@@ -4396,10 +4396,10 @@ split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
 
 <Node id="239" bw="320" op_0_bw="320" op_1_bw="32" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="0" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="0" op_18_bw="0">
 <![CDATA[
-split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
+split11:196 %l3_mm_ret = call i320 @l3_mm, i32 %temp_output2_0
 
 ]]></Node>
-<StgValue><ssdm name="call_ret"/></StgValue>
+<StgValue><ssdm name="l3_mm_ret"/></StgValue>
 </operation>
 
 <operation id="316" st_id="28" stage="1" lat="1">
@@ -4411,7 +4411,7 @@ split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
 
 <Node id="240" bw="32" op_0_bw="320">
 <![CDATA[
-split11:197 %max_val = extractvalue i320 %call_ret
+split11:197 %max_val = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val"/></StgValue>
@@ -4426,7 +4426,7 @@ split11:197 %max_val = extractvalue i320 %call_ret
 
 <Node id="241" bw="32" op_0_bw="320">
 <![CDATA[
-split11:198 %max_val_2 = extractvalue i320 %call_ret
+split11:198 %max_val_2 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_2"/></StgValue>
@@ -4441,7 +4441,7 @@ split11:198 %max_val_2 = extractvalue i320 %call_ret
 
 <Node id="242" bw="32" op_0_bw="320">
 <![CDATA[
-split11:199 %max_val_4 = extractvalue i320 %call_ret
+split11:199 %max_val_4 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_4"/></StgValue>
@@ -4456,7 +4456,7 @@ split11:199 %max_val_4 = extractvalue i320 %call_ret
 
 <Node id="243" bw="32" op_0_bw="320">
 <![CDATA[
-split11:200 %max_val_6 = extractvalue i320 %call_ret
+split11:200 %max_val_6 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_6"/></StgValue>
@@ -4471,7 +4471,7 @@ split11:200 %max_val_6 = extractvalue i320 %call_ret
 
 <Node id="244" bw="32" op_0_bw="320">
 <![CDATA[
-split11:201 %max_val_8 = extractvalue i320 %call_ret
+split11:201 %max_val_8 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_8"/></StgValue>
@@ -4486,7 +4486,7 @@ split11:201 %max_val_8 = extractvalue i320 %call_ret
 
 <Node id="245" bw="32" op_0_bw="320">
 <![CDATA[
-split11:202 %max_val_13 = extractvalue i320 %call_ret
+split11:202 %max_val_13 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_13"/></StgValue>
@@ -4501,7 +4501,7 @@ split11:202 %max_val_13 = extractvalue i320 %call_ret
 
 <Node id="246" bw="32" op_0_bw="320">
 <![CDATA[
-split11:203 %max_val_10 = extractvalue i320 %call_ret
+split11:203 %max_val_10 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_10"/></StgValue>
@@ -4516,7 +4516,7 @@ split11:203 %max_val_10 = extractvalue i320 %call_ret
 
 <Node id="247" bw="32" op_0_bw="320">
 <![CDATA[
-split11:204 %max_val_11 = extractvalue i320 %call_ret
+split11:204 %max_val_11 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_11"/></StgValue>
@@ -4531,7 +4531,7 @@ split11:204 %max_val_11 = extractvalue i320 %call_ret
 
 <Node id="248" bw="32" op_0_bw="320">
 <![CDATA[
-split11:205 %max_val_12 = extractvalue i320 %call_ret
+split11:205 %max_val_12 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_12"/></StgValue>
@@ -4546,7 +4546,7 @@ split11:205 %max_val_12 = extractvalue i320 %call_ret
 
 <Node id="249" bw="32" op_0_bw="320">
 <![CDATA[
-split11:206 %temp_output3_0_9_ret = extractvalue i320 %call_ret
+split11:206 %temp_output3_0_9_ret = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="temp_output3_0_9_ret"/></StgValue>

@@ -31,7 +31,7 @@
               <opType/>
               <implIndex/>
               <coreName>RAM_1P</coreName>
-              <coreId>3061693944</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -64,7 +64,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>52</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -423,7 +423,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>145</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -462,7 +462,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>11</coreId>
+              <coreId>161</coreId>
             </Obj>
             <bitwidth>5</bitwidth>
           </Value>
@@ -596,7 +596,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>225</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>5</bitwidth>
           </Value>
@@ -705,7 +705,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -744,7 +744,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>5</bitwidth>
           </Value>
@@ -826,7 +826,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>353</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -866,7 +866,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>353</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -907,7 +907,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>353</coreId>
+              <coreId>11</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -946,7 +946,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -1027,7 +1027,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1080,7 +1080,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>481</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -1189,7 +1189,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>481</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1244,7 +1244,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>865</coreId>
+              <coreId>3618566280</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1295,12 +1295,12 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_hwmm_layer2_fu_346</rtlName>
+              <rtlName>grp_l2_mm_fu_346</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061675376</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1332,8 +1332,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1345,7 +1345,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1393,8 +1393,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1406,7 +1406,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1453,8 +1453,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1466,7 +1466,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1486,7 +1486,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>239</coreId>
+              <coreId>2147483647</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -1516,8 +1516,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1529,7 +1529,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1549,7 +1549,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>145</coreId>
+              <coreId>105</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -1576,8 +1576,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1589,7 +1589,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1609,7 +1609,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>2147483647</coreId>
+              <coreId>67</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1637,8 +1637,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1650,7 +1650,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1670,7 +1670,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>249</coreId>
+              <coreId>3618552528</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1698,8 +1698,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1711,7 +1711,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1731,7 +1731,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1759,8 +1759,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1772,7 +1772,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1820,8 +1820,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1833,7 +1833,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1853,7 +1853,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1370</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1881,8 +1881,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1894,7 +1894,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -1943,8 +1943,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -1956,7 +1956,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -2005,8 +2005,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2018,7 +2018,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2038,7 +2038,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>825307437</coreId>
+              <coreId>3618573456</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -2067,8 +2067,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2080,7 +2080,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2128,8 +2128,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2141,7 +2141,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2161,7 +2161,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>450</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2188,8 +2188,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2201,7 +2201,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2221,7 +2221,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061928520</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -2251,8 +2251,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2264,7 +2264,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2284,7 +2284,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -2311,8 +2311,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2324,7 +2324,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2372,8 +2372,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2385,7 +2385,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2405,7 +2405,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1045</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2433,8 +2433,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2446,7 +2446,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2466,7 +2466,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>707</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2494,8 +2494,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2507,7 +2507,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2527,7 +2527,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061936824</coreId>
+              <coreId>28271</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2555,8 +2555,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2568,7 +2568,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2588,7 +2588,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>158</coreId>
+              <coreId>3618584304</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2616,8 +2616,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2629,7 +2629,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2678,8 +2678,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2691,7 +2691,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -2740,8 +2740,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2753,7 +2753,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2773,7 +2773,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>134217856</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -2802,8 +2802,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2815,7 +2815,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2863,8 +2863,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2876,7 +2876,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2896,7 +2896,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062078128</coreId>
+              <coreId>134217856</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -2923,8 +2923,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2936,7 +2936,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -2956,7 +2956,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618591504</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -2986,8 +2986,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -2999,7 +2999,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3019,7 +3019,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062067792</coreId>
+              <coreId>1734439968</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -3046,8 +3046,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3059,7 +3059,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3079,7 +3079,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1563439405</coreId>
+              <coreId>1734439968</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3107,8 +3107,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3120,7 +3120,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3140,7 +3140,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1563439405</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3168,8 +3168,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3181,7 +3181,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3201,7 +3201,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062086633</coreId>
+              <coreId>572669294</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3229,8 +3229,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3242,7 +3242,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3262,7 +3262,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>543516513</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3290,8 +3290,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3303,7 +3303,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3323,7 +3323,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062088784</coreId>
+              <coreId>572669294</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3351,8 +3351,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3364,7 +3364,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3413,8 +3413,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3426,7 +3426,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -3475,8 +3475,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3488,7 +3488,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3508,7 +3508,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062091840</coreId>
+              <coreId>1869357159</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -3537,8 +3537,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3550,7 +3550,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3598,8 +3598,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3611,7 +3611,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3631,7 +3631,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062094592</coreId>
+              <coreId>1701978146</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -3658,8 +3658,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3671,7 +3671,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3691,7 +3691,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062096016</coreId>
+              <coreId>1952541992</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3721,8 +3721,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3734,7 +3734,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3754,7 +3754,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>858864185</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -3781,8 +3781,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3794,7 +3794,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3814,7 +3814,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062098024</coreId>
+              <coreId>1886413614</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3842,8 +3842,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3855,7 +3855,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3875,7 +3875,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1869182069</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3903,8 +3903,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3916,7 +3916,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3936,7 +3936,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1330205769</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3964,8 +3964,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -3977,7 +3977,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -3997,7 +3997,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062101872</coreId>
+              <coreId>758132786</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4025,8 +4025,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4038,7 +4038,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4058,7 +4058,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1563572020</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4086,8 +4086,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4099,7 +4099,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4148,8 +4148,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4161,7 +4161,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -4210,8 +4210,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4223,7 +4223,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4243,7 +4243,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>1953394531</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -4272,8 +4272,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4285,7 +4285,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4333,8 +4333,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4346,7 +4346,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4366,7 +4366,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>8</coreId>
+              <coreId>1918989395</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -4393,8 +4393,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4406,7 +4406,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4426,7 +4426,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618619448</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -4456,8 +4456,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4469,7 +4469,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4489,7 +4489,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062110848</coreId>
+              <coreId>825241951</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -4516,8 +4516,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4529,7 +4529,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4549,7 +4549,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3224671</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4577,8 +4577,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4590,7 +4590,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4610,7 +4610,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062113432</coreId>
+              <coreId>36</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4638,8 +4638,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4651,7 +4651,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4671,7 +4671,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618385840</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4699,8 +4699,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4712,7 +4712,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4732,7 +4732,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062120600</coreId>
+              <coreId>3618591824</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4760,8 +4760,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4773,7 +4773,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4793,7 +4793,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>22</coreId>
+              <coreId>3618626392</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4821,8 +4821,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4834,7 +4834,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4883,8 +4883,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4896,7 +4896,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -4945,8 +4945,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -4958,7 +4958,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -4978,7 +4978,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062118576</coreId>
+              <coreId>27425</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -5007,8 +5007,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5020,7 +5020,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5068,8 +5068,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5081,7 +5081,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5101,7 +5101,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5128,8 +5128,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5141,7 +5141,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5161,7 +5161,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062123888</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -5191,8 +5191,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5204,7 +5204,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5224,7 +5224,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>89553</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -5251,8 +5251,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5264,7 +5264,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5284,7 +5284,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061696424</coreId>
+              <coreId>3618635456</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5312,8 +5312,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5325,7 +5325,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5345,7 +5345,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061696120</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5373,8 +5373,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5386,7 +5386,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5434,8 +5434,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5447,7 +5447,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5467,7 +5467,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618548089</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5495,8 +5495,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5508,7 +5508,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5528,7 +5528,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061700352</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5556,8 +5556,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5569,7 +5569,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5618,8 +5618,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5631,7 +5631,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -5680,8 +5680,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5693,7 +5693,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5713,7 +5713,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3959423104</coreId>
+              <coreId>661482847</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -5742,8 +5742,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5755,7 +5755,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5803,8 +5803,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5816,7 +5816,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5836,7 +5836,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3959423104</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5863,8 +5863,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5876,7 +5876,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5896,7 +5896,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1663986805</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -5926,8 +5926,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5939,7 +5939,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -5959,7 +5959,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>997420912</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -5986,8 +5986,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -5999,7 +5999,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6019,7 +6019,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>335610371</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -6047,8 +6047,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6060,7 +6060,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6080,7 +6080,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>8</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -6108,8 +6108,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6121,7 +6121,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6141,7 +6141,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061711960</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -6169,8 +6169,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6182,7 +6182,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6230,8 +6230,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6243,7 +6243,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6291,8 +6291,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6304,7 +6304,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6353,8 +6353,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6366,7 +6366,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -6415,8 +6415,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6428,7 +6428,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6448,7 +6448,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1936018748</coreId>
+              <coreId>4294967295</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -6477,8 +6477,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6490,7 +6490,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6538,8 +6538,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6551,7 +6551,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6571,7 +6571,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>539113017</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -6598,8 +6598,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6611,7 +6611,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6631,7 +6631,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1667592992</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -6661,8 +6661,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6674,7 +6674,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6694,7 +6694,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1768711536</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -6721,8 +6721,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6734,7 +6734,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6754,7 +6754,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>539119430</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -6782,8 +6782,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6795,7 +6795,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6815,7 +6815,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>874527353</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -6843,8 +6843,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6856,7 +6856,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6876,7 +6876,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1226965113</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -6904,8 +6904,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6917,7 +6917,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6937,7 +6937,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1699560457</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -6965,8 +6965,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -6978,7 +6978,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -6998,7 +6998,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1936028192</coreId>
+              <coreId>231</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7026,8 +7026,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7039,7 +7039,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7088,8 +7088,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7101,7 +7101,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -7150,8 +7150,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7163,7 +7163,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7183,7 +7183,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1919906915</coreId>
+              <coreId>1105</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -7212,8 +7212,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7225,7 +7225,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7273,8 +7273,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7286,7 +7286,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7306,7 +7306,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>981038185</coreId>
+              <coreId>593</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -7333,8 +7333,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7346,7 +7346,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7366,7 +7366,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>656439649</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -7396,8 +7396,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7409,7 +7409,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7429,7 +7429,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1914699822</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -7456,8 +7456,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7469,7 +7469,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7489,7 +7489,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>542329928</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7517,8 +7517,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7530,7 +7530,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7550,7 +7550,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>570456421</coreId>
+              <coreId>5</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7578,8 +7578,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7591,7 +7591,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7611,7 +7611,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1667593321</coreId>
+              <coreId>628</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7639,8 +7639,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7652,7 +7652,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7672,7 +7672,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1126182515</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7700,8 +7700,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7713,7 +7713,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7733,7 +7733,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>757935405</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -7761,8 +7761,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7774,7 +7774,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7823,8 +7823,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7836,7 +7836,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -7885,8 +7885,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7898,7 +7898,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -7918,7 +7918,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061749816</coreId>
+              <coreId>191</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -7947,8 +7947,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -7960,7 +7960,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8008,8 +8008,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8021,7 +8021,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8041,7 +8041,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>61</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -8068,8 +8068,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8081,7 +8081,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8101,7 +8101,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>345</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -8131,8 +8131,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8144,7 +8144,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8164,7 +8164,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>29425</coreId>
+              <coreId>637</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -8191,8 +8191,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8204,7 +8204,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8224,7 +8224,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>921</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -8252,8 +8252,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8265,7 +8265,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8285,7 +8285,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061756425</coreId>
+              <coreId>103</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -8313,8 +8313,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8326,7 +8326,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8346,7 +8346,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>395</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -8374,8 +8374,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8387,7 +8387,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8407,7 +8407,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>687</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -8435,8 +8435,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8448,7 +8448,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8468,7 +8468,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061760784</coreId>
+              <coreId>979</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -8496,8 +8496,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8509,7 +8509,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8558,8 +8558,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8571,7 +8571,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -8620,8 +8620,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8633,7 +8633,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8653,7 +8653,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>9</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -8682,8 +8682,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8695,7 +8695,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8743,8 +8743,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8756,7 +8756,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8776,7 +8776,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3959423104</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -8803,8 +8803,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8816,7 +8816,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8836,7 +8836,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061767728</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -8866,8 +8866,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8879,7 +8879,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8926,8 +8926,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -8939,7 +8939,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -8959,7 +8959,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>947</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -8987,8 +8987,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9000,7 +9000,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9020,7 +9020,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>10</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -9048,8 +9048,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9061,7 +9061,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9081,7 +9081,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061772088</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -9109,8 +9109,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9122,7 +9122,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9142,7 +9142,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>629</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -9170,8 +9170,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9183,7 +9183,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9203,7 +9203,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3435973837</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -9231,8 +9231,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9244,7 +9244,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9293,8 +9293,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9306,7 +9306,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -9355,8 +9355,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9368,7 +9368,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9388,7 +9388,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>578925794</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -9417,8 +9417,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9430,7 +9430,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9478,8 +9478,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9491,7 +9491,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9538,8 +9538,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9551,7 +9551,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9601,8 +9601,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9614,7 +9614,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9634,7 +9634,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1265</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -9661,8 +9661,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9674,7 +9674,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9694,7 +9694,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>2061006016</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -9722,8 +9722,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9735,7 +9735,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9783,8 +9783,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9796,7 +9796,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9844,8 +9844,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9857,7 +9857,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9877,7 +9877,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618731264</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -9905,8 +9905,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9918,7 +9918,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -9938,7 +9938,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>63201</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -9966,8 +9966,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -9979,7 +9979,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10028,8 +10028,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10041,7 +10041,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -10090,8 +10090,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10103,7 +10103,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10152,8 +10152,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10165,7 +10165,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10213,8 +10213,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10226,7 +10226,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10273,8 +10273,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10286,7 +10286,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10336,8 +10336,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10349,7 +10349,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10369,7 +10369,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>13</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -10396,8 +10396,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10409,7 +10409,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10429,7 +10429,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>28271</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -10457,8 +10457,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10470,7 +10470,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10490,7 +10490,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>2619602987</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -10518,8 +10518,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10531,7 +10531,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10551,7 +10551,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>858572286</coreId>
+              <coreId>3618741992</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -10579,8 +10579,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10592,7 +10592,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10612,7 +10612,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1260785103</coreId>
+              <coreId>3618743424</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -10640,8 +10640,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10653,7 +10653,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10673,7 +10673,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3258600050</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -10701,8 +10701,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10714,7 +10714,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10763,8 +10763,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10776,7 +10776,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -10825,8 +10825,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10838,7 +10838,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10858,7 +10858,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>339219928</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -10887,8 +10887,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10900,7 +10900,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10948,8 +10948,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -10961,7 +10961,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -10981,7 +10981,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3929200944</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -11008,8 +11008,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11021,7 +11021,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11041,7 +11041,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>266</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -11071,8 +11071,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11084,7 +11084,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11104,7 +11104,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>558</coreId>
+              <coreId>544106784</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -11131,8 +11131,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11144,7 +11144,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11164,7 +11164,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>842</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -11192,8 +11192,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11205,7 +11205,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11225,7 +11225,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1049</coreId>
+              <coreId>3618753512</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -11253,8 +11253,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11266,7 +11266,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11286,7 +11286,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1105</coreId>
+              <coreId>3618756072</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -11314,8 +11314,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11327,7 +11327,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11347,7 +11347,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>605</coreId>
+              <coreId>3618757248</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -11375,8 +11375,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11388,7 +11388,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11408,7 +11408,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -11436,8 +11436,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11449,7 +11449,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11498,8 +11498,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11511,7 +11511,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -11560,8 +11560,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11573,7 +11573,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11622,8 +11622,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11635,7 +11635,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11683,8 +11683,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11696,7 +11696,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11716,7 +11716,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>4</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -11743,8 +11743,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11756,7 +11756,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11806,8 +11806,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11819,7 +11819,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11839,7 +11839,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>130</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -11866,8 +11866,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11879,7 +11879,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11899,7 +11899,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>87</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -11927,8 +11927,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -11940,7 +11940,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -11960,7 +11960,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>388</coreId>
+              <coreId>3618769896</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -11988,8 +11988,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12001,7 +12001,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12021,7 +12021,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>698</coreId>
+              <coreId>110</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -12049,8 +12049,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12062,7 +12062,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12082,7 +12082,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>999</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -12110,8 +12110,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12123,7 +12123,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12143,7 +12143,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -12171,8 +12171,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12184,7 +12184,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12233,8 +12233,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12246,7 +12246,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -12295,8 +12295,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12308,7 +12308,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12328,7 +12328,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>733</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -12357,8 +12357,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12370,7 +12370,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12418,8 +12418,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12431,7 +12431,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12451,7 +12451,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>223</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -12478,8 +12478,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12491,7 +12491,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12511,7 +12511,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>507</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -12541,8 +12541,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12554,7 +12554,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12574,7 +12574,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>799</coreId>
+              <coreId>1769414777</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -12601,8 +12601,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12614,7 +12614,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12634,7 +12634,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -12662,8 +12662,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12675,7 +12675,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12723,8 +12723,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12736,7 +12736,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12756,7 +12756,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618784368</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -12784,8 +12784,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12797,7 +12797,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12817,7 +12817,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1547</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -12845,8 +12845,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12858,7 +12858,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12878,7 +12878,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1414</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -12906,8 +12906,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>80</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12919,7 +12919,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>80</second>
                     </item>
@@ -12968,8 +12968,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>81</lineNumber>
-              <contextFuncName>hw_act_layer2</contextFuncName>
-              <contextNormFuncName>hw_act_layer2</contextNormFuncName>
+              <contextFuncName>l2_relu</contextFuncName>
+              <contextNormFuncName>l2_relu</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -12981,7 +12981,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer2</second>
+                        <second>l2_relu</second>
                       </first>
                       <second>81</second>
                     </item>
@@ -13026,7 +13026,7 @@
             <Obj>
               <type>0</type>
               <id>239</id>
-              <name>call_ret</name>
+              <name>l3_mm_ret</name>
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>123</lineNumber>
@@ -13127,7 +13127,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>10</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13180,7 +13180,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618792200</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13233,7 +13233,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618792632</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13286,7 +13286,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>65985</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13392,7 +13392,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>359</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13445,7 +13445,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061857144</coreId>
+              <coreId>3618797144</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13498,7 +13498,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>242</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13551,7 +13551,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1399</coreId>
+              <coreId>3618799881</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13631,8 +13631,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -13644,7 +13644,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -13657,7 +13657,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>6</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -13684,8 +13684,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -13697,7 +13697,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -13710,7 +13710,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3059838736</coreId>
+              <coreId>3618802792</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -13740,8 +13740,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -13753,7 +13753,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -13766,7 +13766,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061863288</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -13793,8 +13793,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -13806,7 +13806,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -13819,7 +13819,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>544370548</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -13847,8 +13847,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -13860,7 +13860,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -13901,8 +13901,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -13914,7 +13914,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -13927,7 +13927,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1818193261</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -13955,8 +13955,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -13968,7 +13968,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -13981,7 +13981,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061867768</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14009,8 +14009,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14022,7 +14022,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14035,7 +14035,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>51137</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14063,8 +14063,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14076,7 +14076,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14118,8 +14118,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14131,7 +14131,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14144,7 +14144,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618813856</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -14171,8 +14171,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14184,7 +14184,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14197,7 +14197,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061872760</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -14227,8 +14227,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14240,7 +14240,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14253,7 +14253,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -14280,8 +14280,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14293,7 +14293,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14306,7 +14306,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -14333,8 +14333,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14346,7 +14346,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14389,8 +14389,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14402,7 +14402,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14415,7 +14415,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061877112</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -14442,8 +14442,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14455,7 +14455,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14468,7 +14468,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061877240</coreId>
+              <coreId>3618818056</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14496,8 +14496,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14509,7 +14509,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14522,7 +14522,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>3618821008</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14550,8 +14550,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14563,7 +14563,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14576,7 +14576,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618820208</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14604,8 +14604,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14617,7 +14617,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14630,7 +14630,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618860472</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14658,8 +14658,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14671,7 +14671,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14684,7 +14684,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14712,8 +14712,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14725,7 +14725,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14738,7 +14738,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>62</coreId>
+              <coreId>134217856</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14766,8 +14766,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14779,7 +14779,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14792,7 +14792,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14820,8 +14820,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14833,7 +14833,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14846,7 +14846,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061884792</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14874,8 +14874,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14887,7 +14887,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14900,7 +14900,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>34241</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -14928,8 +14928,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14941,7 +14941,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -14954,7 +14954,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>2</bitwidth>
           </Value>
@@ -14981,8 +14981,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -14994,7 +14994,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15007,7 +15007,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>547</coreId>
+              <coreId>110161</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15035,8 +15035,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15048,7 +15048,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15090,8 +15090,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15103,7 +15103,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15116,7 +15116,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>3618830760</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -15143,8 +15143,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15156,7 +15156,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15198,8 +15198,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15211,7 +15211,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15224,7 +15224,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061815360</coreId>
+              <coreId>3618755664</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -15251,8 +15251,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15264,7 +15264,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15277,7 +15277,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>10</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -15307,8 +15307,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15320,7 +15320,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15333,7 +15333,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>13</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -15360,8 +15360,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15373,7 +15373,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15386,7 +15386,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>544106784</coreId>
+              <coreId>3618837664</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -15413,8 +15413,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15426,7 +15426,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15439,7 +15439,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061898256</coreId>
+              <coreId>8</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -15469,8 +15469,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15482,7 +15482,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15495,7 +15495,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -15522,8 +15522,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15535,7 +15535,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15548,7 +15548,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061900208</coreId>
+              <coreId>3618841272</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15576,8 +15576,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15589,7 +15589,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15602,7 +15602,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061901424</coreId>
+              <coreId>3618841920</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15630,8 +15630,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15643,7 +15643,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15656,7 +15656,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>17489</coreId>
+              <coreId>3618843296</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15684,8 +15684,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15697,7 +15697,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15710,7 +15710,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061903216</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15738,8 +15738,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15751,7 +15751,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15764,7 +15764,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061904592</coreId>
+              <coreId>3618845400</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15792,8 +15792,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15805,7 +15805,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15818,7 +15818,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>3618846768</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15846,8 +15846,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15859,7 +15859,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15872,7 +15872,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061906384</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15900,8 +15900,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15913,7 +15913,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15926,7 +15926,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>1</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -15954,8 +15954,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -15967,7 +15967,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -15980,7 +15980,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>11153</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16008,8 +16008,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16021,7 +16021,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16063,8 +16063,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16076,7 +16076,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16116,8 +16116,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16129,7 +16129,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16142,7 +16142,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>7985</coreId>
+              <coreId>121</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -16172,8 +16172,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16185,7 +16185,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16198,7 +16198,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>9</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -16225,8 +16225,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16238,7 +16238,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16251,7 +16251,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>134217856</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -16278,8 +16278,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16291,7 +16291,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16304,7 +16304,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -16334,8 +16334,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16347,7 +16347,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16387,8 +16387,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16400,7 +16400,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16413,7 +16413,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>478</coreId>
+              <coreId>28271</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16441,8 +16441,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16454,7 +16454,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16467,7 +16467,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16495,8 +16495,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16508,7 +16508,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16521,7 +16521,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061941432</coreId>
+              <coreId>31</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16549,8 +16549,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16562,7 +16562,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16575,7 +16575,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3572489263</coreId>
+              <coreId>3618865120</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16603,8 +16603,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16616,7 +16616,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16629,7 +16629,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618864368</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16657,8 +16657,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16670,7 +16670,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16683,7 +16683,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>120689</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16711,8 +16711,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16724,7 +16724,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16737,7 +16737,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061947520</coreId>
+              <coreId>3618866472</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16765,8 +16765,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16778,7 +16778,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16791,7 +16791,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061946720</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16819,8 +16819,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16832,7 +16832,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16845,7 +16845,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061986984</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16873,8 +16873,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16886,7 +16886,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16928,8 +16928,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16941,7 +16941,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -16954,7 +16954,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3959423104</coreId>
+              <coreId>3618870576</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -16982,8 +16982,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -16995,7 +16995,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17037,8 +17037,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17050,7 +17050,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17090,8 +17090,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17103,7 +17103,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17145,8 +17145,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17158,7 +17158,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17171,7 +17171,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618873416</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -17198,8 +17198,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17211,7 +17211,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17254,8 +17254,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17267,7 +17267,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17280,7 +17280,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -17307,8 +17307,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17320,7 +17320,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17333,7 +17333,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -17360,8 +17360,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17373,7 +17373,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17386,7 +17386,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061958640</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -17416,8 +17416,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17429,7 +17429,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17469,8 +17469,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17482,7 +17482,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17495,7 +17495,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>9</coreId>
+              <coreId>57553</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17523,8 +17523,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17536,7 +17536,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17549,7 +17549,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17577,8 +17577,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17590,7 +17590,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17603,7 +17603,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618883368</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17631,8 +17631,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17644,7 +17644,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17657,7 +17657,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>3618884784</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17685,8 +17685,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17698,7 +17698,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17711,7 +17711,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3959423104</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17739,8 +17739,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17752,7 +17752,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17793,8 +17793,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17806,7 +17806,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17819,7 +17819,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>98513</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17847,8 +17847,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17860,7 +17860,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17873,7 +17873,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061969648</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17901,8 +17901,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17914,7 +17914,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -17927,7 +17927,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061968896</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -17955,8 +17955,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -17968,7 +17968,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18010,8 +18010,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18023,7 +18023,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18036,7 +18036,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061971000</coreId>
+              <coreId>3618892128</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -18063,8 +18063,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18076,7 +18076,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18089,7 +18089,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061970416</coreId>
+              <coreId>3618893320</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -18119,8 +18119,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18132,7 +18132,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18172,8 +18172,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18185,7 +18185,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18198,7 +18198,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -18225,8 +18225,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18238,7 +18238,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18251,7 +18251,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>42737</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -18281,8 +18281,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18294,7 +18294,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18307,7 +18307,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061975384</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -18334,8 +18334,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18347,7 +18347,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18360,7 +18360,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>2296604913</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18388,8 +18388,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18401,7 +18401,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18414,7 +18414,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3290932</coreId>
+              <coreId>3618898616</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18442,8 +18442,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18455,7 +18455,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18468,7 +18468,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618902080</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18496,8 +18496,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18509,7 +18509,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18522,7 +18522,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>13</coreId>
+              <coreId>3618901328</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18550,8 +18550,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18563,7 +18563,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18576,7 +18576,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18604,8 +18604,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18617,7 +18617,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18630,7 +18630,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618903432</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18658,8 +18658,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18671,7 +18671,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18684,7 +18684,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>3618902848</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18712,8 +18712,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18725,7 +18725,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18738,7 +18738,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>9</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18766,8 +18766,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18779,7 +18779,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18820,8 +18820,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18833,7 +18833,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18875,8 +18875,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18888,7 +18888,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18901,7 +18901,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061987592</coreId>
+              <coreId>3618907816</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -18929,8 +18929,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18942,7 +18942,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -18984,8 +18984,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -18997,7 +18997,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19039,8 +19039,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19052,7 +19052,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19065,7 +19065,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -19092,8 +19092,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19105,7 +19105,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19118,7 +19118,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>9</coreId>
+              <coreId>25841</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -19148,8 +19148,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19161,7 +19161,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19174,7 +19174,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618913680</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -19201,8 +19201,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19214,7 +19214,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19227,7 +19227,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3617747648</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -19254,8 +19254,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19267,7 +19267,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19280,7 +19280,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061994984</coreId>
+              <coreId>3618915208</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -19310,8 +19310,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19323,7 +19323,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19363,8 +19363,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19376,7 +19376,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19389,7 +19389,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061998408</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19417,8 +19417,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19430,7 +19430,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19443,7 +19443,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061998144</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19471,8 +19471,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19484,7 +19484,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19497,7 +19497,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3061999648</coreId>
+              <coreId>18449</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19525,8 +19525,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19538,7 +19538,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19551,7 +19551,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>3618921072</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19579,8 +19579,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19592,7 +19592,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19605,7 +19605,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062001624</coreId>
+              <coreId>3618922576</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19633,8 +19633,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19646,7 +19646,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19659,7 +19659,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062002992</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19687,8 +19687,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19700,7 +19700,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19741,8 +19741,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19754,7 +19754,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19767,7 +19767,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062005704</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19795,8 +19795,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19808,7 +19808,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19821,7 +19821,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -19849,8 +19849,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19862,7 +19862,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19904,8 +19904,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19917,7 +19917,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19930,7 +19930,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618929168</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -19957,8 +19957,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -19970,7 +19970,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -19983,7 +19983,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062006528</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -20013,8 +20013,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20026,7 +20026,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20039,7 +20039,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>134217856</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -20066,8 +20066,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20079,7 +20079,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20092,7 +20092,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062011096</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -20119,8 +20119,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20132,7 +20132,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20145,7 +20145,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062013096</coreId>
+              <coreId>5777</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -20175,8 +20175,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20188,7 +20188,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20201,7 +20201,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618933744</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -20228,8 +20228,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20241,7 +20241,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20282,8 +20282,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20295,7 +20295,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20308,7 +20308,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20336,8 +20336,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20349,7 +20349,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20362,7 +20362,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062013920</coreId>
+              <coreId>3618938264</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20390,8 +20390,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20403,7 +20403,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20416,7 +20416,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618938592</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20444,8 +20444,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20457,7 +20457,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20470,7 +20470,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>46769</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20498,8 +20498,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20511,7 +20511,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20524,7 +20524,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062016528</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20552,8 +20552,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20565,7 +20565,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20578,7 +20578,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062020640</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20606,8 +20606,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20619,7 +20619,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20632,7 +20632,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618942504</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20660,8 +20660,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20673,7 +20673,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20686,7 +20686,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618943920</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20714,8 +20714,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20727,7 +20727,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20769,8 +20769,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20782,7 +20782,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20795,7 +20795,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -20823,8 +20823,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20836,7 +20836,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20878,8 +20878,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20891,7 +20891,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20931,8 +20931,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20944,7 +20944,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -20986,8 +20986,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -20999,7 +20999,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21012,7 +21012,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>9</coreId>
+              <coreId>3618949896</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -21039,8 +21039,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21052,7 +21052,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21065,7 +21065,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618951424</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -21095,8 +21095,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21108,7 +21108,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21121,7 +21121,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>34097</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -21148,8 +21148,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21161,7 +21161,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21174,7 +21174,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062032528</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -21201,8 +21201,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21214,7 +21214,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21227,7 +21227,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062033312</coreId>
+              <coreId>14577</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -21257,8 +21257,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21270,7 +21270,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21283,7 +21283,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>3618954864</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -21310,8 +21310,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21323,7 +21323,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21364,8 +21364,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21377,7 +21377,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21390,7 +21390,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062036352</coreId>
+              <coreId>3618957609</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -21418,8 +21418,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21431,7 +21431,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21472,8 +21472,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21485,7 +21485,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21526,8 +21526,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21539,7 +21539,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21580,8 +21580,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21593,7 +21593,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21634,8 +21634,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21647,7 +21647,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21660,7 +21660,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062044152</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -21688,8 +21688,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21701,7 +21701,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21714,7 +21714,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>3618967272</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -21742,8 +21742,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21755,7 +21755,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21768,7 +21768,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062047720</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -21796,8 +21796,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21809,7 +21809,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21851,8 +21851,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21864,7 +21864,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21904,8 +21904,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21917,7 +21917,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -21930,7 +21930,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062048368</coreId>
+              <coreId>3618971944</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -21960,8 +21960,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -21973,7 +21973,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22013,8 +22013,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22026,7 +22026,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22039,7 +22039,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062052968</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -22066,8 +22066,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22079,7 +22079,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22092,7 +22092,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062054968</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -22122,8 +22122,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22135,7 +22135,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22148,7 +22148,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -22175,8 +22175,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22188,7 +22188,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22201,7 +22201,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062056264</coreId>
+              <coreId>3618977184</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22229,8 +22229,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22242,7 +22242,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22255,7 +22255,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062056912</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22283,8 +22283,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22296,7 +22296,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22309,7 +22309,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062058288</coreId>
+              <coreId>3618979336</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22337,8 +22337,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22350,7 +22350,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22363,7 +22363,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22391,8 +22391,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22404,7 +22404,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22417,7 +22417,7 @@
               <opType>icmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062060392</coreId>
+              <coreId>3618979640</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22445,8 +22445,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22458,7 +22458,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22471,7 +22471,7 @@
               <opType>or</opType>
               <implIndex/>
               <coreName/>
-              <coreId>3062061760</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22499,8 +22499,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22512,7 +22512,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22553,8 +22553,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22566,7 +22566,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22579,7 +22579,7 @@
               <opType>fcmp</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22607,8 +22607,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22620,7 +22620,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22633,7 +22633,7 @@
               <opType>and</opType>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618985528</coreId>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -22661,8 +22661,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22674,7 +22674,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22716,8 +22716,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22729,7 +22729,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22770,8 +22770,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>97</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22783,7 +22783,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>97</second>
                     </item>
@@ -22825,8 +22825,8 @@
               <fileName>matmul.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>93</lineNumber>
-              <contextFuncName>hw_act_layer3</contextFuncName>
-              <contextNormFuncName>hw_act_layer3</contextNormFuncName>
+              <contextFuncName>l3_softmax</contextFuncName>
+              <contextNormFuncName>l3_softmax</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -22838,7 +22838,7 @@
                     <item>
                       <first>
                         <first>matmul.cpp</first>
-                        <second>hw_act_layer3</second>
+                        <second>l3_softmax</second>
                       </first>
                       <second>93</second>
                     </item>
@@ -22851,7 +22851,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062069752</coreId>
+              <coreId>3618990064</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -22959,7 +22959,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>6</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -23001,7 +23001,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>3618992952</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -23029,7 +23029,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>5521</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>6</bitwidth>
           </Value>
@@ -23057,7 +23057,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>6</bitwidth>
           </Value>
@@ -23085,7 +23085,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>3618995001</coreId>
             </Obj>
             <bitwidth>6</bitwidth>
           </Value>
@@ -23113,7 +23113,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3697</coreId>
+              <coreId>3618995040</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -23169,7 +23169,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>2481</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -23253,7 +23253,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>49</coreId>
             </Obj>
             <bitwidth>5</bitwidth>
           </Value>
@@ -23265,7 +23265,7 @@
             <Obj>
               <type>2</type>
               <id>484</id>
-              <name>hwmm_layer1</name>
+              <name>l1_mm</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -23281,19 +23281,19 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>4294967295</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:hwmm_layer1&gt;</content>
+          <content>&lt;constant:l1_mm&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_416">
           <Value>
             <Obj>
               <type>2</type>
               <id>488</id>
-              <name>hw_act_layer1</name>
+              <name>l1_relu</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -23314,14 +23314,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:hw_act_layer1&gt;</content>
+          <content>&lt;constant:l1_relu&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_417">
           <Value>
             <Obj>
               <type>2</type>
               <id>491</id>
-              <name>hwmm_layer2</name>
+              <name>l2_mm</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -23337,12 +23337,12 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>0</coreId>
+              <coreId>1265</coreId>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:hwmm_layer2&gt;</content>
+          <content>&lt;constant:l2_mm&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_418">
           <Value>
@@ -23365,7 +23365,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>49</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -23393,7 +23393,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>1265</coreId>
+              <coreId>132</coreId>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -23421,7 +23421,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>3618999704</coreId>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -23449,7 +23449,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>132</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>23</bitwidth>
           </Value>
@@ -23477,7 +23477,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3062126216</coreId>
+              <coreId>0</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -23673,7 +23673,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061510336</coreId>
+              <coreId>3617811632</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -23701,7 +23701,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061057952</coreId>
+              <coreId>3617371776</coreId>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -23853,7 +23853,7 @@
             <Obj>
               <type>2</type>
               <id>911</id>
-              <name>hwmm_layer3</name>
+              <name>l3_mm</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -23874,7 +23874,7 @@
             <bitwidth>320</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:hwmm_layer3&gt;</content>
+          <content>&lt;constant:l3_mm&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_437">
           <Value>
@@ -23953,7 +23953,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3061510336</coreId>
+              <coreId>3617811632</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -23981,7 +23981,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3060560992</coreId>
+              <coreId>3617848048</coreId>
             </Obj>
             <bitwidth>3</bitwidth>
           </Value>
@@ -24009,7 +24009,7 @@
               <opType/>
               <implIndex/>
               <coreName/>
-              <coreId>3060974416</coreId>
+              <coreId>3617866624</coreId>
             </Obj>
             <bitwidth>4</bitwidth>
           </Value>
@@ -24241,7 +24241,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>68</coreId>
+            <coreId>33</coreId>
           </Obj>
           <node_objs>
             <count>4</count>
@@ -24302,7 +24302,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>959919136</coreId>
+            <coreId>68</coreId>
           </Obj>
           <node_objs>
             <count>4</count>
@@ -24333,7 +24333,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>97</coreId>
+            <coreId>1735289202</coreId>
           </Obj>
           <node_objs>
             <count>4</count>
@@ -24364,7 +24364,7 @@
             <opType/>
             <implIndex/>
             <coreName/>
-            <coreId>33</coreId>
+            <coreId>81</coreId>
           </Obj>
           <node_objs>
             <count>380</count>
@@ -34917,22 +34917,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hw_act_layer1_fu_357 (hw_act_layer1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>992</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>2764</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>grp_hwmm_layer1_fu_339 (hwmm_layer1)</first>
+          <first>grp_l1_mm_fu_339 (l1_mm)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -34947,7 +34932,22 @@
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer2_fu_346 (hwmm_layer2)</first>
+          <first>grp_l1_relu_fu_357 (l1_relu)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>992</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>2764</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>grp_l2_mm_fu_346 (l2_mm)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -34962,7 +34962,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer3_fu_352 (hwmm_layer3)</first>
+          <first>grp_l3_mm_fu_352 (l3_mm)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -41906,7 +41906,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hw_act_layer1_fu_357_ap_start_reg</first>
+          <first>grp_l1_mm_fu_339_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -41925,7 +41925,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer1_fu_339_ap_start_reg</first>
+          <first>grp_l1_relu_fu_357_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -41944,7 +41944,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer2_fu_346_ap_start_reg</first>
+          <first>grp_l2_mm_fu_346_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -41963,7 +41963,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer3_fu_352_ap_start_reg</first>
+          <first>grp_l3_mm_fu_352_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -42991,28 +42991,28 @@
           </second>
         </item>
         <item>
-          <first>grp_hw_act_layer1_fu_357</first>
+          <first>grp_l1_mm_fu_339</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer1_fu_339</first>
+          <first>grp_l1_relu_fu_357</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer2_fu_346</first>
+          <first>grp_l2_mm_fu_346</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer3_fu_352</first>
+          <first>grp_l3_mm_fu_352</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -51045,15 +51045,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hw_act_layer1_fu_357 (hw_act_layer1)</first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>46</item>
-          </second>
-        </item>
-        <item>
-          <first>grp_hwmm_layer1_fu_339 (hwmm_layer1)</first>
+          <first>grp_l1_mm_fu_339 (l1_mm)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -51061,7 +51053,15 @@
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer2_fu_346 (hwmm_layer2)</first>
+          <first>grp_l1_relu_fu_357 (l1_relu)</first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>46</item>
+          </second>
+        </item>
+        <item>
+          <first>grp_l2_mm_fu_346 (l2_mm)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -51069,7 +51069,7 @@
           </second>
         </item>
         <item>
-          <first>grp_hwmm_layer3_fu_352 (hwmm_layer3)</first>
+          <first>grp_l3_mm_fu_352 (l3_mm)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -60981,16 +60981,7 @@
         </second>
       </item>
       <item>
-        <first>grp_hw_act_layer1_fu_357</first>
-        <second>
-          <count>2</count>
-          <item_version>0</item_version>
-          <item>46</item>
-          <item>46</item>
-        </second>
-      </item>
-      <item>
-        <first>grp_hwmm_layer1_fu_339</first>
+        <first>grp_l1_mm_fu_339</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -60999,7 +60990,16 @@
         </second>
       </item>
       <item>
-        <first>grp_hwmm_layer2_fu_346</first>
+        <first>grp_l1_relu_fu_357</first>
+        <second>
+          <count>2</count>
+          <item_version>0</item_version>
+          <item>46</item>
+          <item>46</item>
+        </second>
+      </item>
+      <item>
+        <first>grp_l2_mm_fu_346</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -61008,7 +61008,7 @@
         </second>
       </item>
       <item>
-        <first>grp_hwmm_layer3_fu_352</first>
+        <first>grp_l3_mm_fu_352</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

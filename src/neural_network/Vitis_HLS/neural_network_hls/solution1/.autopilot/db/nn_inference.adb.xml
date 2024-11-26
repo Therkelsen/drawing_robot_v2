@@ -849,7 +849,7 @@ memset.loop12.split:3 %br_ln0 = br void %memset.loop12
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output_0
+split11:2 %call_ln119 = call void @l1_mm, i32 %input_img, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln119"/></StgValue>
@@ -867,7 +867,7 @@ split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output_0
+split11:2 %call_ln119 = call void @l1_mm, i32 %input_img, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln119"/></StgValue>
@@ -885,7 +885,7 @@ split11:2 %call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output
 
 <Node id="46" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-split11:3 %call_ln120 = call void @hw_act_layer1, i32 %temp_output_0
+split11:3 %call_ln120 = call void @l1_relu, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln120"/></StgValue>
@@ -933,7 +933,7 @@ split11:1 %store_ln115 = store i32 1, i4 %temp_output2_0_addr
 
 <Node id="46" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-split11:3 %call_ln120 = call void @hw_act_layer1, i32 %temp_output_0
+split11:3 %call_ln120 = call void @l1_relu, i32 %temp_output_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln120"/></StgValue>
@@ -951,7 +951,7 @@ split11:3 %call_ln120 = call void @hw_act_layer1, i32 %temp_output_0
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-split11:4 %call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_output2_0
+split11:4 %call_ln121 = call void @l2_mm, i32 %temp_output_0, i32 %temp_output2_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln121"/></StgValue>
@@ -969,7 +969,7 @@ split11:4 %call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_ou
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-split11:4 %call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_output2_0
+split11:4 %call_ln121 = call void @l2_mm, i32 %temp_output_0, i32 %temp_output2_0
 
 ]]></Node>
 <StgValue><ssdm name="call_ln121"/></StgValue>
@@ -4380,10 +4380,10 @@ split11:195 %store_ln81 = store i32 %select_ln80_15, i4 %temp_output2_0_addr_15
 
 <Node id="239" bw="320" op_0_bw="320" op_1_bw="32" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="0" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="0" op_18_bw="0">
 <![CDATA[
-split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
+split11:196 %l3_mm_ret = call i320 @l3_mm, i32 %temp_output2_0
 
 ]]></Node>
-<StgValue><ssdm name="call_ret"/></StgValue>
+<StgValue><ssdm name="l3_mm_ret"/></StgValue>
 </operation>
 </state>
 
@@ -4398,10 +4398,10 @@ split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
 
 <Node id="239" bw="320" op_0_bw="320" op_1_bw="32" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="0" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="0" op_12_bw="0" op_13_bw="0" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="0" op_18_bw="0">
 <![CDATA[
-split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
+split11:196 %l3_mm_ret = call i320 @l3_mm, i32 %temp_output2_0
 
 ]]></Node>
-<StgValue><ssdm name="call_ret"/></StgValue>
+<StgValue><ssdm name="l3_mm_ret"/></StgValue>
 </operation>
 
 <operation id="316" st_id="28" stage="1" lat="1">
@@ -4413,7 +4413,7 @@ split11:196 %call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0
 
 <Node id="240" bw="32" op_0_bw="320">
 <![CDATA[
-split11:197 %max_val = extractvalue i320 %call_ret
+split11:197 %max_val = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val"/></StgValue>
@@ -4428,7 +4428,7 @@ split11:197 %max_val = extractvalue i320 %call_ret
 
 <Node id="241" bw="32" op_0_bw="320">
 <![CDATA[
-split11:198 %max_val_2 = extractvalue i320 %call_ret
+split11:198 %max_val_2 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_2"/></StgValue>
@@ -4443,7 +4443,7 @@ split11:198 %max_val_2 = extractvalue i320 %call_ret
 
 <Node id="242" bw="32" op_0_bw="320">
 <![CDATA[
-split11:199 %max_val_4 = extractvalue i320 %call_ret
+split11:199 %max_val_4 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_4"/></StgValue>
@@ -4458,7 +4458,7 @@ split11:199 %max_val_4 = extractvalue i320 %call_ret
 
 <Node id="243" bw="32" op_0_bw="320">
 <![CDATA[
-split11:200 %max_val_6 = extractvalue i320 %call_ret
+split11:200 %max_val_6 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_6"/></StgValue>
@@ -4473,7 +4473,7 @@ split11:200 %max_val_6 = extractvalue i320 %call_ret
 
 <Node id="244" bw="32" op_0_bw="320">
 <![CDATA[
-split11:201 %max_val_8 = extractvalue i320 %call_ret
+split11:201 %max_val_8 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_8"/></StgValue>
@@ -4488,7 +4488,7 @@ split11:201 %max_val_8 = extractvalue i320 %call_ret
 
 <Node id="245" bw="32" op_0_bw="320">
 <![CDATA[
-split11:202 %max_val_13 = extractvalue i320 %call_ret
+split11:202 %max_val_13 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_13"/></StgValue>
@@ -4503,7 +4503,7 @@ split11:202 %max_val_13 = extractvalue i320 %call_ret
 
 <Node id="246" bw="32" op_0_bw="320">
 <![CDATA[
-split11:203 %max_val_10 = extractvalue i320 %call_ret
+split11:203 %max_val_10 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_10"/></StgValue>
@@ -4518,7 +4518,7 @@ split11:203 %max_val_10 = extractvalue i320 %call_ret
 
 <Node id="247" bw="32" op_0_bw="320">
 <![CDATA[
-split11:204 %max_val_11 = extractvalue i320 %call_ret
+split11:204 %max_val_11 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_11"/></StgValue>
@@ -4533,7 +4533,7 @@ split11:204 %max_val_11 = extractvalue i320 %call_ret
 
 <Node id="248" bw="32" op_0_bw="320">
 <![CDATA[
-split11:205 %max_val_12 = extractvalue i320 %call_ret
+split11:205 %max_val_12 = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="max_val_12"/></StgValue>
@@ -4548,7 +4548,7 @@ split11:205 %max_val_12 = extractvalue i320 %call_ret
 
 <Node id="249" bw="32" op_0_bw="320">
 <![CDATA[
-split11:206 %temp_output3_0_9_ret = extractvalue i320 %call_ret
+split11:206 %temp_output3_0_9_ret = extractvalue i320 %l3_mm_ret
 
 ]]></Node>
 <StgValue><ssdm name="temp_output3_0_9_ret"/></StgValue>
@@ -7664,19 +7664,19 @@ split11:379 %ret_ln126 = ret
 </dataflow>
 <dataflow id="732" from="temp_output2_0_addr_16" to="store_ln0" fromId="80" toId="81">
 </dataflow>
-<dataflow id="734" from="hwmm_layer1" to="call_ln119" fromId="733" toId="83">
+<dataflow id="734" from="l1_mm" to="call_ln119" fromId="733" toId="83">
 </dataflow>
 <dataflow id="735" from="input_img" to="call_ln119" fromId="564" toId="83">
 </dataflow>
 <dataflow id="736" from="temp_output_0" to="call_ln119" fromId="57" toId="83">
 </dataflow>
-<dataflow id="737" from="hwmm_layer1" to="call_ln119" fromId="733" toId="84">
+<dataflow id="737" from="l1_mm" to="call_ln119" fromId="733" toId="84">
 </dataflow>
 <dataflow id="738" from="input_img" to="call_ln119" fromId="564" toId="84">
 </dataflow>
 <dataflow id="739" from="temp_output_0" to="call_ln119" fromId="57" toId="84">
 </dataflow>
-<dataflow id="741" from="hw_act_layer1" to="call_ln120" fromId="740" toId="85">
+<dataflow id="741" from="l1_relu" to="call_ln120" fromId="740" toId="85">
 </dataflow>
 <dataflow id="742" from="temp_output_0" to="call_ln120" fromId="57" toId="85">
 </dataflow>
@@ -7690,17 +7690,17 @@ split11:379 %ret_ln126 = ret
 </dataflow>
 <dataflow id="747" from="temp_output2_0_addr" to="store_ln115" fromId="86" toId="87">
 </dataflow>
-<dataflow id="748" from="hw_act_layer1" to="call_ln120" fromId="740" toId="88">
+<dataflow id="748" from="l1_relu" to="call_ln120" fromId="740" toId="88">
 </dataflow>
 <dataflow id="749" from="temp_output_0" to="call_ln120" fromId="57" toId="88">
 </dataflow>
-<dataflow id="751" from="hwmm_layer2" to="call_ln121" fromId="750" toId="89">
+<dataflow id="751" from="l2_mm" to="call_ln121" fromId="750" toId="89">
 </dataflow>
 <dataflow id="752" from="temp_output_0" to="call_ln121" fromId="57" toId="89">
 </dataflow>
 <dataflow id="753" from="temp_output2_0" to="call_ln121" fromId="58" toId="89">
 </dataflow>
-<dataflow id="754" from="hwmm_layer2" to="call_ln121" fromId="750" toId="90">
+<dataflow id="754" from="l2_mm" to="call_ln121" fromId="750" toId="90">
 </dataflow>
 <dataflow id="755" from="temp_output_0" to="call_ln121" fromId="57" toId="90">
 </dataflow>
@@ -8596,33 +8596,33 @@ split11:379 %ret_ln126 = ret
 </dataflow>
 <dataflow id="1220" from="temp_output2_0_addr_15" to="store_ln81" fromId="136" toId="313">
 </dataflow>
-<dataflow id="1222" from="hwmm_layer3" to="call_ret" fromId="1221" toId="314">
+<dataflow id="1222" from="l3_mm" to="l3_mm_ret" fromId="1221" toId="314">
 </dataflow>
-<dataflow id="1223" from="temp_output2_0" to="call_ret" fromId="58" toId="314">
+<dataflow id="1223" from="temp_output2_0" to="l3_mm_ret" fromId="58" toId="314">
 </dataflow>
-<dataflow id="1224" from="hwmm_layer3" to="call_ret" fromId="1221" toId="315">
+<dataflow id="1224" from="l3_mm" to="l3_mm_ret" fromId="1221" toId="315">
 </dataflow>
-<dataflow id="1225" from="temp_output2_0" to="call_ret" fromId="58" toId="315">
+<dataflow id="1225" from="temp_output2_0" to="l3_mm_ret" fromId="58" toId="315">
 </dataflow>
-<dataflow id="1226" from="call_ret" to="max_val" fromId="315" toId="316">
+<dataflow id="1226" from="l3_mm_ret" to="max_val" fromId="315" toId="316">
 </dataflow>
-<dataflow id="1227" from="call_ret" to="max_val_2" fromId="315" toId="317">
+<dataflow id="1227" from="l3_mm_ret" to="max_val_2" fromId="315" toId="317">
 </dataflow>
-<dataflow id="1228" from="call_ret" to="max_val_4" fromId="315" toId="318">
+<dataflow id="1228" from="l3_mm_ret" to="max_val_4" fromId="315" toId="318">
 </dataflow>
-<dataflow id="1229" from="call_ret" to="max_val_6" fromId="315" toId="319">
+<dataflow id="1229" from="l3_mm_ret" to="max_val_6" fromId="315" toId="319">
 </dataflow>
-<dataflow id="1230" from="call_ret" to="max_val_8" fromId="315" toId="320">
+<dataflow id="1230" from="l3_mm_ret" to="max_val_8" fromId="315" toId="320">
 </dataflow>
-<dataflow id="1231" from="call_ret" to="max_val_13" fromId="315" toId="321">
+<dataflow id="1231" from="l3_mm_ret" to="max_val_13" fromId="315" toId="321">
 </dataflow>
-<dataflow id="1232" from="call_ret" to="max_val_10" fromId="315" toId="322">
+<dataflow id="1232" from="l3_mm_ret" to="max_val_10" fromId="315" toId="322">
 </dataflow>
-<dataflow id="1233" from="call_ret" to="max_val_11" fromId="315" toId="323">
+<dataflow id="1233" from="l3_mm_ret" to="max_val_11" fromId="315" toId="323">
 </dataflow>
-<dataflow id="1234" from="call_ret" to="max_val_12" fromId="315" toId="324">
+<dataflow id="1234" from="l3_mm_ret" to="max_val_12" fromId="315" toId="324">
 </dataflow>
-<dataflow id="1235" from="call_ret" to="temp_output3_0_9_ret" fromId="315" toId="325">
+<dataflow id="1235" from="l3_mm_ret" to="temp_output3_0_9_ret" fromId="315" toId="325">
 </dataflow>
 <dataflow id="1236" from="max_val" to="tmp_32" fromId="316" toId="326">
 </dataflow>

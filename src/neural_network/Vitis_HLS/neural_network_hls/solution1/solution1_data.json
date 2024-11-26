@@ -53,7 +53,15 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "DirectiveTcl": ["set_directive_top nn_inference -name nn_inference"],
+    "ConfigTcl": [
+      "config_export -format=ip_catalog",
+      "config_export -output=\/home\/peterparker\/uni\/embeddedsystems\/drawing_robot_v2\/src\/neural_network\/Vitis_HLS\/nn_inference.zip",
+      "config_export -rtl=vhdl"
+    ],
+    "DirectiveTcl": [
+      "set_directive_top nn_inference -name nn_inference",
+      "set_directive_top nn_inference -name nn_inference"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "nn_inference"
@@ -86,10 +94,10 @@
       "impl\/vhdl\/nn_inference_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
       "impl\/vhdl\/nn_inference_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
       "impl\/vhdl\/nn_inference_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
-      "impl\/vhdl\/nn_inference_hw_act_layer1.vhd",
-      "impl\/vhdl\/nn_inference_hwmm_layer1.vhd",
-      "impl\/vhdl\/nn_inference_hwmm_layer2.vhd",
-      "impl\/vhdl\/nn_inference_hwmm_layer3.vhd",
+      "impl\/vhdl\/nn_inference_l1_mm.vhd",
+      "impl\/vhdl\/nn_inference_l1_relu.vhd",
+      "impl\/vhdl\/nn_inference_l2_mm.vhd",
+      "impl\/vhdl\/nn_inference_l3_mm.vhd",
       "impl\/vhdl\/nn_inference_temp_output2_0.vhd",
       "impl\/vhdl\/nn_inference_temp_output_0.vhd",
       "impl\/vhdl\/nn_inference.vhd"
@@ -99,10 +107,10 @@
       "impl\/verilog\/nn_inference_fadd_32ns_32ns_32_5_full_dsp_1.v",
       "impl\/verilog\/nn_inference_fcmp_32ns_32ns_1_2_no_dsp_1.v",
       "impl\/verilog\/nn_inference_fmul_32ns_32ns_32_4_max_dsp_1.v",
-      "impl\/verilog\/nn_inference_hw_act_layer1.v",
-      "impl\/verilog\/nn_inference_hwmm_layer1.v",
-      "impl\/verilog\/nn_inference_hwmm_layer2.v",
-      "impl\/verilog\/nn_inference_hwmm_layer3.v",
+      "impl\/verilog\/nn_inference_l1_mm.v",
+      "impl\/verilog\/nn_inference_l1_relu.v",
+      "impl\/verilog\/nn_inference_l2_mm.v",
+      "impl\/verilog\/nn_inference_l3_mm.v",
       "impl\/verilog\/nn_inference_temp_output2_0.v",
       "impl\/verilog\/nn_inference_temp_output_0.v",
       "impl\/verilog\/nn_inference.v"
@@ -508,46 +516,46 @@
       "ModuleName": "nn_inference",
       "Instances": [
         {
-          "ModuleName": "hwmm_layer1",
-          "InstanceName": "grp_hwmm_layer1_fu_339"
+          "ModuleName": "l1_mm",
+          "InstanceName": "grp_l1_mm_fu_339"
         },
         {
-          "ModuleName": "hwmm_layer2",
-          "InstanceName": "grp_hwmm_layer2_fu_346"
+          "ModuleName": "l2_mm",
+          "InstanceName": "grp_l2_mm_fu_346"
         },
         {
-          "ModuleName": "hwmm_layer3",
-          "InstanceName": "grp_hwmm_layer3_fu_352"
+          "ModuleName": "l3_mm",
+          "InstanceName": "grp_l3_mm_fu_352"
         },
         {
-          "ModuleName": "hw_act_layer1",
-          "InstanceName": "grp_hw_act_layer1_fu_357"
+          "ModuleName": "l1_relu",
+          "InstanceName": "grp_l1_relu_fu_357"
         }
       ]
     },
     "Info": {
-      "hwmm_layer1": {
+      "l1_mm": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "hw_act_layer1": {
+      "l1_relu": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "hwmm_layer2": {
+      "l2_mm": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "hwmm_layer3": {
+      "l3_mm": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
@@ -563,7 +571,7 @@
       }
     },
     "Metrics": {
-      "hwmm_layer1": {
+      "l1_mm": {
         "Latency": {
           "LatencyBest": "817",
           "LatencyAvg": "817",
@@ -595,7 +603,7 @@
           "UTIL_URAM": "0"
         }
       },
-      "hw_act_layer1": {
+      "l1_relu": {
         "Latency": {
           "LatencyBest": "31",
           "LatencyAvg": "31",
@@ -627,7 +635,7 @@
           "UTIL_URAM": "0"
         }
       },
-      "hwmm_layer2": {
+      "l2_mm": {
         "Latency": {
           "LatencyBest": "171",
           "LatencyAvg": "171",
@@ -659,7 +667,7 @@
           "UTIL_URAM": "0"
         }
       },
-      "hwmm_layer3": {
+      "l3_mm": {
         "Latency": {
           "LatencyBest": "84",
           "LatencyAvg": "84",
@@ -744,7 +752,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-11-25 10:27:55 CET",
+    "Time": "2024-11-26 10:06:06 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

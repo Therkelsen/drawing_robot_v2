@@ -1,16 +1,16 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'peterparker' on host 'pc' (Linux_x86_64 version 5.15.0-125-generic) on Mon Nov 25 10:25:04 CET 2024
+INFO: [HLS 200-10] For user 'peterparker' on host 'pc' (Linux_x86_64 version 5.15.0-125-generic) on Fri Nov 26 10:08:02 CET 2021
 INFO: [HLS 200-10] On os Ubuntu 20.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS'
-Sourcing Tcl script '/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/csynth.tcl'
+Sourcing Tcl script '/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/export.tcl'
 INFO: [HLS 200-1510] Running: open_project neural_network_hls 
 INFO: [HLS 200-10] Opening project '/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls'.
 INFO: [HLS 200-1510] Running: set_top nn_inference 
-INFO: [HLS 200-1510] Running: add_files matmul.cpp 
-INFO: [HLS 200-10] Adding design file 'matmul.cpp' to the project
 INFO: [HLS 200-1510] Running: add_files matmul.hpp 
 INFO: [HLS 200-10] Adding design file 'matmul.hpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb matmul_tb.cpp 
+INFO: [HLS 200-1510] Running: add_files matmul.cpp 
+INFO: [HLS 200-10] Adding design file 'matmul.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb matmul_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'matmul_tb.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
 INFO: [HLS 200-10] Opening solution '/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1'.
@@ -18,215 +18,37 @@ INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/nn_inference.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
 INFO: [HLS 200-1510] Running: set_part xczu3eg-sbva484-1-e 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 191.383 MB.
-INFO: [HLS 200-10] Analyzing design file 'matmul.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.33 seconds. CPU system time: 0.24 seconds. Elapsed time: 2.07 seconds; current allocated memory: 192.580 MB.
-INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-186] Unrolling loop 'col' (matmul.cpp:6:10) in function 'hwmm_layer1' completely with a factor of 32 (matmul.cpp:6:10)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:10:13) in function 'hwmm_layer1' completely with a factor of 100 (matmul.cpp:10:13)
-INFO: [HLS 214-186] Unrolling loop 'col' (matmul.cpp:25:10) in function 'hwmm_layer2' completely with a factor of 16 (matmul.cpp:25:10)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:29:13) in function 'hwmm_layer2' completely with a factor of 32 (matmul.cpp:29:13)
-INFO: [HLS 214-186] Unrolling loop 'col' (matmul.cpp:45:10) in function 'hwmm_layer3' completely with a factor of 10 (matmul.cpp:45:10)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'prod' (matmul.cpp:49:13) in function 'hwmm_layer3' completely with a factor of 16 (matmul.cpp:49:13)
-INFO: [HLS 214-186] Unrolling loop 'loop1' (matmul.cpp:63:9) in function 'hw_act_layer1' completely with a factor of 32 (matmul.cpp:63:9)
-INFO: [HLS 214-186] Unrolling loop 'loop1' (matmul.cpp:78:9) in function 'hw_act_layer2' completely with a factor of 16 (matmul.cpp:78:9)
-INFO: [HLS 214-186] Unrolling loop 'loop1' (matmul.cpp:95:9) in function 'hw_act_layer3' completely with a factor of 10 (matmul.cpp:95:9)
-INFO: [HLS 214-178] Inlining function 'hw_act_layer3(float (*) [10], int&)' into 'nn_inference(float*, int&)' (matmul.cpp:109:0)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 17.34 seconds. CPU system time: 0.35 seconds. Elapsed time: 17.9 seconds; current allocated memory: 231.263 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 231.264 MB.
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.9 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.91 seconds; current allocated memory: 252.154 MB.
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.59 seconds. CPU system time: 0 seconds. Elapsed time: 0.59 seconds; current allocated memory: 247.465 MB.
-WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'out_r' (matmul.cpp:109) as it is incompatible with its interface mode 's_axilite'.
-INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'nn_inference' automatically.
-INFO: [XFORM 203-510] Pipelining loop 'Loop-3' in function 'nn_inference' automatically.
-INFO: [XFORM 203-102] Partitioning array 'output.0' automatically.
-INFO: [XFORM 203-102] Partitioning array 'temp_output' (matmul.cpp:114) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'temp_output2' (matmul.cpp:115) in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'temp_output3' in dimension 1 automatically.
-INFO: [XFORM 203-102] Partitioning array 'temp_output3.0' automatically.
-INFO: [XFORM 203-602] Inlining function 'hw_act_layer2' into 'nn_inference' (matmul.cpp:122) automatically.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.87 seconds. CPU system time: 0 seconds. Elapsed time: 2.88 seconds; current allocated memory: 276.992 MB.
-INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0]' 
-INFO: [HLS 200-472] Inferring partial write operation for 'temp_output[0]' (matmul.cpp:114:8)
-INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0]' 
-INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0]' (matmul.cpp:115:8)
-INFO: [HLS 200-472] Inferring partial write operation for 'temp_output2[0]' (matmul.cpp:81:17)
-INFO: [HLS 200-472] Inferring partial write operation for 'output.0' (matmul.cpp:33:20)
-INFO: [HLS 200-472] Inferring partial write operation for 'output.0' (matmul.cpp:14:20)
-INFO: [HLS 200-472] Inferring partial write operation for 'output[0]' (matmul.cpp:66:17)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.57 seconds; current allocated memory: 342.598 MB.
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'nn_inference' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hwmm_layer1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 46.21 seconds. CPU system time: 0.04 seconds. Elapsed time: 46.25 seconds; current allocated memory: 392.331 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 25.35 seconds. CPU system time: 0.03 seconds. Elapsed time: 25.41 seconds; current allocated memory: 460.709 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hw_act_layer1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 16.82 seconds. CPU system time: 0.06 seconds. Elapsed time: 16.94 seconds; current allocated memory: 461.833 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 463.191 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hwmm_layer2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 5.8 seconds. CPU system time: 0 seconds. Elapsed time: 5.8 seconds; current allocated memory: 470.271 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 3.61 seconds. CPU system time: 0 seconds. Elapsed time: 3.63 seconds; current allocated memory: 477.576 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'hwmm_layer3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.54 seconds. CPU system time: 0 seconds. Elapsed time: 4.55 seconds; current allocated memory: 479.839 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1.03 seconds. CPU system time: 0 seconds. Elapsed time: 1.04 seconds; current allocated memory: 482.164 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'nn_inference' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 1'
-INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 2'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.13 seconds. CPU system time: 0 seconds. Elapsed time: 1.13 seconds; current allocated memory: 483.436 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1.07 seconds. CPU system time: 0 seconds. Elapsed time: 1.07 seconds; current allocated memory: 484.930 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hwmm_layer1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 8 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 8 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hwmm_layer1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 10.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.34 seconds; current allocated memory: 553.556 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hw_act_layer1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hw_act_layer1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 17.73 seconds. CPU system time: 0.21 seconds. Elapsed time: 18.07 seconds; current allocated memory: 682.593 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hwmm_layer2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 16 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 16 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hwmm_layer2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.08 seconds; current allocated memory: 693.317 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'hwmm_layer3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 10 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 10 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'hwmm_layer3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.97 seconds. CPU system time: 0.03 seconds. Elapsed time: 3.05 seconds; current allocated memory: 714.766 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'nn_inference' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'nn_inference/input_img' to 's_axilite & ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'nn_inference/out_r' to 's_axilite & ap_vld'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'nn_inference' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'out_r', 'input_img' and 'return' to AXI-Lite port AXI_CPU.
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 16 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 16 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_inference'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.21 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.25 seconds; current allocated memory: 725.621 MB.
-INFO: [RTMG 210-278] Implementing memory 'nn_inference_temp_output_0_ram (RAM)' using auto RAMs.
-INFO: [RTMG 210-278] Implementing memory 'nn_inference_temp_output2_0_ram (RAM)' using auto RAMs.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.36 seconds. CPU system time: 0.05 seconds. Elapsed time: 3.4 seconds; current allocated memory: 737.867 MB.
-INFO: [VHDL 208-304] Generating VHDL RTL for nn_inference.
-INFO: [VLOG 209-307] Generating Verilog RTL for nn_inference.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 138.99 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 168.27 seconds. CPU system time: 1.09 seconds. Elapsed time: 169.37 seconds; current allocated memory: 742.769 MB.
-INFO: [HLS 200-112] Total CPU user time: 170.36 seconds. Total CPU system time: 1.36 seconds. Total elapsed time: 170.93 seconds; peak allocated memory: 737.867 MB.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/nn_inference.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name nn_inference nn_inference 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output /home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/nn_inference.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'nn_inference_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_inference_ap_fadd_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_inference_ap_fadd_3_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'nn_inference_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_inference_ap_fcmp_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_inference_ap_fcmp_0_no_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'nn_inference_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_inference_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_inference_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 10:08:14 2021...
+INFO: [HLS 200-802] Generated output file nn_inference.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 12.44 seconds. CPU system time: 1.21 seconds. Elapsed time: 14.48 seconds; current allocated memory: 200.045 MB.

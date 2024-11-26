@@ -81,13 +81,13 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_img", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "4", "SubInstance" : "grp_hwmm_layer1_fu_339", "Port" : "input_img"}]},
+					{"ID" : "4", "SubInstance" : "grp_l1_mm_fu_339", "Port" : "input_img"}]},
 			{"Name" : "out_r", "Type" : "Vld", "Direction" : "O"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.AXI_CPU_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.temp_output_0_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.temp_output2_0_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hwmm_layer1_fu_339", "Parent" : "0",
-		"CDFG" : "hwmm_layer1",
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_l1_mm_fu_339", "Parent" : "0",
+		"CDFG" : "l1_mm",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -102,8 +102,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_img", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_0", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hwmm_layer2_fu_346", "Parent" : "0",
-		"CDFG" : "hwmm_layer2",
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_l2_mm_fu_346", "Parent" : "0",
+		"CDFG" : "l2_mm",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -118,8 +118,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "input_0", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "output_0", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hwmm_layer3_fu_352", "Parent" : "0",
-		"CDFG" : "hwmm_layer3",
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_l3_mm_fu_352", "Parent" : "0",
+		"CDFG" : "l3_mm",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -133,8 +133,8 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
 			{"Name" : "input_0", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_hw_act_layer1_fu_357", "Parent" : "0",
-		"CDFG" : "hw_act_layer1",
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_l1_relu_fu_357", "Parent" : "0",
+		"CDFG" : "l1_relu",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -188,15 +188,15 @@ set ArgLastReadFirstWriteLatency {
 	nn_inference {
 		input_img {Type I LastRead 799 FirstWrite -1}
 		out_r {Type O LastRead -1 FirstWrite 47}}
-	hwmm_layer1 {
+	l1_mm {
 		input_img {Type I LastRead 799 FirstWrite -1}
 		output_0 {Type O LastRead -1 FirstWrite 802}}
-	hwmm_layer2 {
+	l2_mm {
 		input_0 {Type I LastRead 155 FirstWrite -1}
 		output_0 {Type O LastRead -1 FirstWrite 164}}
-	hwmm_layer3 {
+	l3_mm {
 		input_0 {Type I LastRead 75 FirstWrite -1}}
-	hw_act_layer1 {
+	l1_relu {
 		output_0 {Type IO LastRead 16 FirstWrite 16}}}
 
 set hasDtUnsupportedChannel 0

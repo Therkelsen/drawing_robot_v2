@@ -5,13 +5,14 @@
 #define n_layer2 16
 #define n_layer3 10
 
-void hwmm_layer1(float input[n_inputs], const float weights[n_inputs][n_layer1], float output[1][n_layer1]);
-void hw_act_layer1(float input[1][n_layer1], float output[1][n_layer1]);
-void hwmm_layer2(float input[1][n_layer1], const float weights[n_layer1][n_layer2], float output[1][n_layer2]);
-void hw_act_layer2(float input[1][n_layer2], float output[1][n_layer2]);
-void hwmm_layer3(float input[1][n_layer2], const float weights[n_layer2][n_layer3], float output[1][n_layer3]);
-void hw_act_layer3(float input[1][n_layer3], int &pred);
+void l1_mm(float input[n_inputs], const float weights[n_inputs][n_layer1], float output[1][n_layer1]);
+void l1_relu(float input[1][n_layer1], float output[1][n_layer1]);
+void l2_mm(float input[1][n_layer1], const float weights[n_layer1][n_layer2], float output[1][n_layer2]);
+void l2_relu(float input[1][n_layer2], float output[1][n_layer2]);
+void l3_mm(float input[1][n_layer2], const float weights[n_layer2][n_layer3], float output[1][n_layer3]);
+void l3_softmax(float input[1][n_layer3], int &pred);
 void nn_inference(float input_img[n_inputs], int& out_r);
+
 
 
 namespace weights{

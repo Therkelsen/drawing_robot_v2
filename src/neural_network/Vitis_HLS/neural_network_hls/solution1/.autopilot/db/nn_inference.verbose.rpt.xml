@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'nn_inference'" level="0">
-<item name = "Date">Mon Nov 25 10:27:52 2024
+<item name = "Date">Tue Nov 26 10:06:03 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">neural_network_hls</item>
@@ -31,10 +31,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_hwmm_layer1_fu_339">hwmm_layer1, 817, 817, 8.170 us, 8.170 us, 817, 817, none</column>
-<column name="grp_hwmm_layer2_fu_346">hwmm_layer2, 171, 171, 1.710 us, 1.710 us, 171, 171, none</column>
-<column name="grp_hwmm_layer3_fu_352">hwmm_layer3, 84, 84, 0.840 us, 0.840 us, 84, 84, none</column>
-<column name="grp_hw_act_layer1_fu_357">hw_act_layer1, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
+<column name="grp_l1_mm_fu_339">l1_mm, 817, 817, 8.170 us, 8.170 us, 817, 817, none</column>
+<column name="grp_l2_mm_fu_346">l2_mm, 171, 171, 1.710 us, 1.710 us, 171, 171, none</column>
+<column name="grp_l3_mm_fu_352">l3_mm, 84, 84, 0.840 us, 0.840 us, 84, 84, none</column>
+<column name="grp_l1_relu_fu_357">l1_relu, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -102,10 +102,10 @@
 <column name="fmul_32ns_32ns_32_4_max_dsp_1_U111">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 140, 0</column>
 <column name="fmul_32ns_32ns_32_4_max_dsp_1_U112">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 140, 0</column>
 <column name="fmul_32ns_32ns_32_4_max_dsp_1_U113">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 140, 0</column>
-<column name="grp_hw_act_layer1_fu_357">hw_act_layer1, 0, 0, 992, 2764, 0</column>
-<column name="grp_hwmm_layer1_fu_339">hwmm_layer1, 0, 0, 3698, 26816, 0</column>
-<column name="grp_hwmm_layer2_fu_346">hwmm_layer2, 0, 0, 1196, 4511, 0</column>
-<column name="grp_hwmm_layer3_fu_352">hwmm_layer3, 0, 0, 1045, 1703, 0</column>
+<column name="grp_l1_mm_fu_339">l1_mm, 0, 0, 3698, 26816, 0</column>
+<column name="grp_l1_relu_fu_357">l1_relu, 0, 0, 992, 2764, 0</column>
+<column name="grp_l2_mm_fu_346">l2_mm, 0, 0, 1196, 4511, 0</column>
+<column name="grp_l3_mm_fu_352">l3_mm, 0, 0, 1045, 1703, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -425,10 +425,10 @@
 <column name="ap_CS_fsm">48, 0, 48, 0</column>
 <column name="empty_11_reg_317">6, 0, 6, 0</column>
 <column name="empty_14_reg_328">5, 0, 5, 0</column>
-<column name="grp_hw_act_layer1_fu_357_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_hwmm_layer1_fu_339_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_hwmm_layer2_fu_346_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_hwmm_layer3_fu_352_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_l1_mm_fu_339_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_l1_relu_fu_357_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_l2_mm_fu_346_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_l3_mm_fu_352_ap_start_reg">1, 0, 1, 0</column>
 <column name="icmp_ln97_34_reg_2554">1, 0, 1, 0</column>
 <column name="icmp_ln97_35_reg_2559">1, 0, 1, 0</column>
 <column name="icmp_ln97_36_reg_2564">1, 0, 1, 0</column>

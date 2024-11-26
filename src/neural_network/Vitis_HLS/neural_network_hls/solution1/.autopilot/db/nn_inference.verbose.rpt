@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'nn_inference'
 ================================================================
-* Date:           Mon Nov 25 10:27:52 2024
+* Date:           Tue Nov 26 10:06:03 2024
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
 * Project:        neural_network_hls
@@ -34,15 +34,15 @@
 
     + Detail: 
         * Instance: 
-        +--------------------------+---------------+---------+---------+----------+----------+-----+-----+---------+
-        |                          |               |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-        |         Instance         |     Module    |   min   |   max   |    min   |    max   | min | max |   Type  |
-        +--------------------------+---------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_hwmm_layer1_fu_339    |hwmm_layer1    |      817|      817|  8.170 us|  8.170 us|  817|  817|     none|
-        |grp_hwmm_layer2_fu_346    |hwmm_layer2    |      171|      171|  1.710 us|  1.710 us|  171|  171|     none|
-        |grp_hwmm_layer3_fu_352    |hwmm_layer3    |       84|       84|  0.840 us|  0.840 us|   84|   84|     none|
-        |grp_hw_act_layer1_fu_357  |hw_act_layer1  |       31|       31|  0.310 us|  0.310 us|   31|   31|     none|
-        +--------------------------+---------------+---------+---------+----------+----------+-----+-----+---------+
+        +--------------------+---------+---------+---------+----------+----------+-----+-----+---------+
+        |                    |         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |      Instance      |  Module |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +--------------------+---------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_l1_mm_fu_339    |l1_mm    |      817|      817|  8.170 us|  8.170 us|  817|  817|     none|
+        |grp_l2_mm_fu_346    |l2_mm    |      171|      171|  1.710 us|  1.710 us|  171|  171|     none|
+        |grp_l3_mm_fu_352    |l3_mm    |       84|       84|  0.840 us|  0.840 us|   84|   84|     none|
+        |grp_l1_relu_fu_357  |l1_relu  |       31|       31|  0.310 us|  0.310 us|   31|   31|     none|
+        +--------------------+---------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
         +----------+---------+---------+----------+-----------+-----------+------+----------+
@@ -117,10 +117,10 @@
     |fmul_32ns_32ns_32_4_max_dsp_1_U111   |fmul_32ns_32ns_32_4_max_dsp_1   |        0|   3|   143|    140|    0|
     |fmul_32ns_32ns_32_4_max_dsp_1_U112   |fmul_32ns_32ns_32_4_max_dsp_1   |        0|   3|   143|    140|    0|
     |fmul_32ns_32ns_32_4_max_dsp_1_U113   |fmul_32ns_32ns_32_4_max_dsp_1   |        0|   3|   143|    140|    0|
-    |grp_hw_act_layer1_fu_357             |hw_act_layer1                   |        0|   0|   992|   2764|    0|
-    |grp_hwmm_layer1_fu_339               |hwmm_layer1                     |        0|   0|  3698|  26816|    0|
-    |grp_hwmm_layer2_fu_346               |hwmm_layer2                     |        0|   0|  1196|   4511|    0|
-    |grp_hwmm_layer3_fu_352               |hwmm_layer3                     |        0|   0|  1045|   1703|    0|
+    |grp_l1_mm_fu_339                     |l1_mm                           |        0|   0|  3698|  26816|    0|
+    |grp_l1_relu_fu_357                   |l1_relu                         |        0|   0|   992|   2764|    0|
+    |grp_l2_mm_fu_346                     |l2_mm                           |        0|   0|  1196|   4511|    0|
+    |grp_l3_mm_fu_352                     |l3_mm                           |        0|   0|  1045|   1703|    0|
     +-------------------------------------+--------------------------------+---------+----+------+-------+-----+
     |Total                                |                                |        2|  80| 12653|  41504|    0|
     +-------------------------------------+--------------------------------+---------+----+------+-------+-----+
@@ -442,65 +442,65 @@
     +-------------------------+-----+-----------+-----+-----------+
 
     * Register: 
-    +---------------------------------------+----+----+-----+-----------+
-    |                  Name                 | FF | LUT| Bits| Const Bits|
-    +---------------------------------------+----+----+-----+-----------+
-    |and_ln97_12_reg_2519                   |   1|   0|    1|          0|
-    |and_ln97_16_reg_2543                   |   1|   0|    1|          0|
-    |and_ln97_2_reg_2458                    |   1|   0|    1|          0|
-    |and_ln97_4_reg_2471                    |   1|   0|    1|          0|
-    |and_ln97_8_reg_2495                    |   1|   0|    1|          0|
-    |and_ln97_reg_2445                      |   1|   0|    1|          0|
-    |ap_CS_fsm                              |  48|   0|   48|          0|
-    |empty_11_reg_317                       |   6|   0|    6|          0|
-    |empty_14_reg_328                       |   5|   0|    5|          0|
-    |grp_hw_act_layer1_fu_357_ap_start_reg  |   1|   0|    1|          0|
-    |grp_hwmm_layer1_fu_339_ap_start_reg    |   1|   0|    1|          0|
-    |grp_hwmm_layer2_fu_346_ap_start_reg    |   1|   0|    1|          0|
-    |grp_hwmm_layer3_fu_352_ap_start_reg    |   1|   0|    1|          0|
-    |icmp_ln97_34_reg_2554                  |   1|   0|    1|          0|
-    |icmp_ln97_35_reg_2559                  |   1|   0|    1|          0|
-    |icmp_ln97_36_reg_2564                  |   1|   0|    1|          0|
-    |icmp_ln97_37_reg_2569                  |   1|   0|    1|          0|
-    |max_idx_1_reg_2483                     |   3|   0|    3|          0|
-    |max_idx_2_reg_2507                     |   4|   0|    4|          0|
-    |max_idx_3_reg_2531                     |   4|   0|    4|          0|
-    |max_val_10_reg_2418                    |  32|   0|   32|          0|
-    |max_val_11_reg_2425                    |  32|   0|   32|          0|
-    |max_val_12_reg_2432                    |  32|   0|   32|          0|
-    |max_val_13_reg_2411                    |  32|   0|   32|          0|
-    |max_val_14_reg_2512                    |  32|   0|   32|          0|
-    |max_val_15_reg_2524                    |  32|   0|   32|          0|
-    |max_val_16_reg_2536                    |  32|   0|   32|          0|
-    |max_val_17_reg_2548                    |  32|   0|   32|          0|
-    |max_val_1_reg_2451                     |  32|   0|   32|          0|
-    |max_val_2_reg_2383                     |  32|   0|   32|          0|
-    |max_val_3_reg_2464                     |  32|   0|   32|          0|
-    |max_val_4_reg_2390                     |  32|   0|   32|          0|
-    |max_val_5_reg_2476                     |  32|   0|   32|          0|
-    |max_val_6_reg_2397                     |  32|   0|   32|          0|
-    |max_val_7_reg_2488                     |  32|   0|   32|          0|
-    |max_val_8_reg_2404                     |  32|   0|   32|          0|
-    |max_val_9_reg_2500                     |  32|   0|   32|          0|
-    |max_val_reg_2376                       |  32|   0|   32|          0|
-    |reg_373                                |  32|   0|   32|          0|
-    |reg_379                                |  32|   0|   32|          0|
-    |temp_output2_0_load_10_reg_2328        |  32|   0|   32|          0|
-    |temp_output2_0_load_11_reg_2335        |  32|   0|   32|          0|
-    |temp_output2_0_load_12_reg_2352        |  32|   0|   32|          0|
-    |temp_output2_0_load_13_reg_2359        |  32|   0|   32|          0|
-    |temp_output2_0_load_2_reg_2232         |  32|   0|   32|          0|
-    |temp_output2_0_load_3_reg_2239         |  32|   0|   32|          0|
-    |temp_output2_0_load_4_reg_2256         |  32|   0|   32|          0|
-    |temp_output2_0_load_5_reg_2263         |  32|   0|   32|          0|
-    |temp_output2_0_load_6_reg_2280         |  32|   0|   32|          0|
-    |temp_output2_0_load_7_reg_2287         |  32|   0|   32|          0|
-    |temp_output2_0_load_8_reg_2304         |  32|   0|   32|          0|
-    |temp_output2_0_load_9_reg_2311         |  32|   0|   32|          0|
-    |temp_output3_0_9_ret_reg_2439          |  32|   0|   32|          0|
-    +---------------------------------------+----+----+-----+-----------+
-    |Total                                  |1140|   0| 1140|          0|
-    +---------------------------------------+----+----+-----+-----------+
+    +---------------------------------+----+----+-----+-----------+
+    |               Name              | FF | LUT| Bits| Const Bits|
+    +---------------------------------+----+----+-----+-----------+
+    |and_ln97_12_reg_2519             |   1|   0|    1|          0|
+    |and_ln97_16_reg_2543             |   1|   0|    1|          0|
+    |and_ln97_2_reg_2458              |   1|   0|    1|          0|
+    |and_ln97_4_reg_2471              |   1|   0|    1|          0|
+    |and_ln97_8_reg_2495              |   1|   0|    1|          0|
+    |and_ln97_reg_2445                |   1|   0|    1|          0|
+    |ap_CS_fsm                        |  48|   0|   48|          0|
+    |empty_11_reg_317                 |   6|   0|    6|          0|
+    |empty_14_reg_328                 |   5|   0|    5|          0|
+    |grp_l1_mm_fu_339_ap_start_reg    |   1|   0|    1|          0|
+    |grp_l1_relu_fu_357_ap_start_reg  |   1|   0|    1|          0|
+    |grp_l2_mm_fu_346_ap_start_reg    |   1|   0|    1|          0|
+    |grp_l3_mm_fu_352_ap_start_reg    |   1|   0|    1|          0|
+    |icmp_ln97_34_reg_2554            |   1|   0|    1|          0|
+    |icmp_ln97_35_reg_2559            |   1|   0|    1|          0|
+    |icmp_ln97_36_reg_2564            |   1|   0|    1|          0|
+    |icmp_ln97_37_reg_2569            |   1|   0|    1|          0|
+    |max_idx_1_reg_2483               |   3|   0|    3|          0|
+    |max_idx_2_reg_2507               |   4|   0|    4|          0|
+    |max_idx_3_reg_2531               |   4|   0|    4|          0|
+    |max_val_10_reg_2418              |  32|   0|   32|          0|
+    |max_val_11_reg_2425              |  32|   0|   32|          0|
+    |max_val_12_reg_2432              |  32|   0|   32|          0|
+    |max_val_13_reg_2411              |  32|   0|   32|          0|
+    |max_val_14_reg_2512              |  32|   0|   32|          0|
+    |max_val_15_reg_2524              |  32|   0|   32|          0|
+    |max_val_16_reg_2536              |  32|   0|   32|          0|
+    |max_val_17_reg_2548              |  32|   0|   32|          0|
+    |max_val_1_reg_2451               |  32|   0|   32|          0|
+    |max_val_2_reg_2383               |  32|   0|   32|          0|
+    |max_val_3_reg_2464               |  32|   0|   32|          0|
+    |max_val_4_reg_2390               |  32|   0|   32|          0|
+    |max_val_5_reg_2476               |  32|   0|   32|          0|
+    |max_val_6_reg_2397               |  32|   0|   32|          0|
+    |max_val_7_reg_2488               |  32|   0|   32|          0|
+    |max_val_8_reg_2404               |  32|   0|   32|          0|
+    |max_val_9_reg_2500               |  32|   0|   32|          0|
+    |max_val_reg_2376                 |  32|   0|   32|          0|
+    |reg_373                          |  32|   0|   32|          0|
+    |reg_379                          |  32|   0|   32|          0|
+    |temp_output2_0_load_10_reg_2328  |  32|   0|   32|          0|
+    |temp_output2_0_load_11_reg_2335  |  32|   0|   32|          0|
+    |temp_output2_0_load_12_reg_2352  |  32|   0|   32|          0|
+    |temp_output2_0_load_13_reg_2359  |  32|   0|   32|          0|
+    |temp_output2_0_load_2_reg_2232   |  32|   0|   32|          0|
+    |temp_output2_0_load_3_reg_2239   |  32|   0|   32|          0|
+    |temp_output2_0_load_4_reg_2256   |  32|   0|   32|          0|
+    |temp_output2_0_load_5_reg_2263   |  32|   0|   32|          0|
+    |temp_output2_0_load_6_reg_2280   |  32|   0|   32|          0|
+    |temp_output2_0_load_7_reg_2287   |  32|   0|   32|          0|
+    |temp_output2_0_load_8_reg_2304   |  32|   0|   32|          0|
+    |temp_output2_0_load_9_reg_2311   |  32|   0|   32|          0|
+    |temp_output3_0_9_ret_reg_2439    |  32|   0|   32|          0|
+    +---------------------------------+----+----+-----+-----------+
+    |Total                            |1140|   0| 1140|          0|
+    +---------------------------------+----+----+-----+-----------+
 
 
 
@@ -664,24 +664,24 @@ ST_4 : Operation 81 [1/1] (0.79ns)   --->   "%store_ln0 = store i32 0, i4 %temp_
 ST_4 : Operation 82 [1/1] (0.00ns)   --->   "%br_ln0 = br void %memset.loop12"   --->   Operation 82 'br' 'br_ln0' <Predicate = (!exitcond152)> <Delay = 0.00>
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 83 [2/2] (0.00ns)   --->   "%call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output_0" [matmul.cpp:119]   --->   Operation 83 'call' 'call_ln119' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 83 [2/2] (0.00ns)   --->   "%call_ln119 = call void @l1_mm, i32 %input_img, i32 %temp_output_0" [matmul.cpp:119]   --->   Operation 83 'call' 'call_ln119' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 84 [1/2] (0.00ns)   --->   "%call_ln119 = call void @hwmm_layer1, i32 %input_img, i32 %temp_output_0" [matmul.cpp:119]   --->   Operation 84 'call' 'call_ln119' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 84 [1/2] (0.00ns)   --->   "%call_ln119 = call void @l1_mm, i32 %input_img, i32 %temp_output_0" [matmul.cpp:119]   --->   Operation 84 'call' 'call_ln119' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 85 [2/2] (0.00ns)   --->   "%call_ln120 = call void @hw_act_layer1, i32 %temp_output_0" [matmul.cpp:120]   --->   Operation 85 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 85 [2/2] (0.00ns)   --->   "%call_ln120 = call void @l1_relu, i32 %temp_output_0" [matmul.cpp:120]   --->   Operation 85 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.79>
 ST_8 : Operation 86 [1/1] (0.00ns)   --->   "%temp_output2_0_addr = getelementptr i32 %temp_output2_0, i64 0, i64 0" [matmul.cpp:115]   --->   Operation 86 'getelementptr' 'temp_output2_0_addr' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 87 [1/1] (0.79ns)   --->   "%store_ln115 = store i32 1, i4 %temp_output2_0_addr" [matmul.cpp:115]   --->   Operation 87 'store' 'store_ln115' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
-ST_8 : Operation 88 [1/2] (0.00ns)   --->   "%call_ln120 = call void @hw_act_layer1, i32 %temp_output_0" [matmul.cpp:120]   --->   Operation 88 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 88 [1/2] (0.00ns)   --->   "%call_ln120 = call void @l1_relu, i32 %temp_output_0" [matmul.cpp:120]   --->   Operation 88 'call' 'call_ln120' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 89 [2/2] (0.00ns)   --->   "%call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_output2_0" [matmul.cpp:121]   --->   Operation 89 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 89 [2/2] (0.00ns)   --->   "%call_ln121 = call void @l2_mm, i32 %temp_output_0, i32 %temp_output2_0" [matmul.cpp:121]   --->   Operation 89 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 90 [1/2] (0.00ns)   --->   "%call_ln121 = call void @hwmm_layer2, i32 %temp_output_0, i32 %temp_output2_0" [matmul.cpp:121]   --->   Operation 90 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 90 [1/2] (0.00ns)   --->   "%call_ln121 = call void @l2_mm, i32 %temp_output_0, i32 %temp_output2_0" [matmul.cpp:121]   --->   Operation 90 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 11 <SV = 10> <Delay = 0.79>
 ST_11 : Operation 91 [2/2] (0.79ns)   --->   "%temp_output2_0_load = load i4 %temp_output2_0_addr" [matmul.cpp:80->matmul.cpp:122]   --->   Operation 91 'load' 'temp_output2_0_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
@@ -939,20 +939,20 @@ ST_26 : Operation 312 [1/1] (0.52ns) (out node of the LUT)   --->   "%select_ln8
 ST_26 : Operation 313 [1/1] (0.79ns)   --->   "%store_ln81 = store i32 %select_ln80_15, i4 %temp_output2_0_addr_15" [matmul.cpp:81->matmul.cpp:122]   --->   Operation 313 'store' 'store_ln81' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
 
 State 27 <SV = 26> <Delay = 0.00>
-ST_27 : Operation 314 [2/2] (0.00ns)   --->   "%call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0" [matmul.cpp:123]   --->   Operation 314 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 314 [2/2] (0.00ns)   --->   "%l3_mm_ret = call i320 @l3_mm, i32 %temp_output2_0" [matmul.cpp:123]   --->   Operation 314 'call' 'l3_mm_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 28 <SV = 27> <Delay = 6.01>
-ST_28 : Operation 315 [1/2] (6.01ns)   --->   "%call_ret = call i320 @hwmm_layer3, i32 %temp_output2_0" [matmul.cpp:123]   --->   Operation 315 'call' 'call_ret' <Predicate = true> <Delay = 6.01> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_28 : Operation 316 [1/1] (0.00ns)   --->   "%max_val = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 316 'extractvalue' 'max_val' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 317 [1/1] (0.00ns)   --->   "%max_val_2 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 317 'extractvalue' 'max_val_2' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 318 [1/1] (0.00ns)   --->   "%max_val_4 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 318 'extractvalue' 'max_val_4' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 319 [1/1] (0.00ns)   --->   "%max_val_6 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 319 'extractvalue' 'max_val_6' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 320 [1/1] (0.00ns)   --->   "%max_val_8 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 320 'extractvalue' 'max_val_8' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 321 [1/1] (0.00ns)   --->   "%max_val_13 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 321 'extractvalue' 'max_val_13' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 322 [1/1] (0.00ns)   --->   "%max_val_10 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 322 'extractvalue' 'max_val_10' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 323 [1/1] (0.00ns)   --->   "%max_val_11 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 323 'extractvalue' 'max_val_11' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 324 [1/1] (0.00ns)   --->   "%max_val_12 = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 324 'extractvalue' 'max_val_12' <Predicate = true> <Delay = 0.00>
-ST_28 : Operation 325 [1/1] (0.00ns)   --->   "%temp_output3_0_9_ret = extractvalue i320 %call_ret" [matmul.cpp:123]   --->   Operation 325 'extractvalue' 'temp_output3_0_9_ret' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 315 [1/2] (6.01ns)   --->   "%l3_mm_ret = call i320 @l3_mm, i32 %temp_output2_0" [matmul.cpp:123]   --->   Operation 315 'call' 'l3_mm_ret' <Predicate = true> <Delay = 6.01> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 316 [1/1] (0.00ns)   --->   "%max_val = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 316 'extractvalue' 'max_val' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 317 [1/1] (0.00ns)   --->   "%max_val_2 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 317 'extractvalue' 'max_val_2' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 318 [1/1] (0.00ns)   --->   "%max_val_4 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 318 'extractvalue' 'max_val_4' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 319 [1/1] (0.00ns)   --->   "%max_val_6 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 319 'extractvalue' 'max_val_6' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 320 [1/1] (0.00ns)   --->   "%max_val_8 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 320 'extractvalue' 'max_val_8' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 321 [1/1] (0.00ns)   --->   "%max_val_13 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 321 'extractvalue' 'max_val_13' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 322 [1/1] (0.00ns)   --->   "%max_val_10 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 322 'extractvalue' 'max_val_10' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 323 [1/1] (0.00ns)   --->   "%max_val_11 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 323 'extractvalue' 'max_val_11' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 324 [1/1] (0.00ns)   --->   "%max_val_12 = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 324 'extractvalue' 'max_val_12' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 325 [1/1] (0.00ns)   --->   "%temp_output3_0_9_ret = extractvalue i320 %l3_mm_ret" [matmul.cpp:123]   --->   Operation 325 'extractvalue' 'temp_output3_0_9_ret' <Predicate = true> <Delay = 0.00>
 
 State 29 <SV = 28> <Delay = 3.34>
 ST_29 : Operation 326 [2/2] (3.34ns)   --->   "%tmp_32 = fcmp_ogt  i32 %max_val, i32 -999.9" [matmul.cpp:97]   --->   Operation 326 'fcmp' 'tmp_32' <Predicate = true> <Delay = 3.34> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 3.34> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
@@ -1427,7 +1427,7 @@ tmp_30                 (fcmp             ) [ 00000000000000000000000000000000000
 and_ln80_15            (and              ) [ 0000000000000000000000000000000000000000000000000]
 select_ln80_15         (select           ) [ 0000000000000000000000000000000000000000000000000]
 store_ln81             (store            ) [ 0000000000000000000000000000000000000000000000000]
-call_ret               (call             ) [ 0000000000000000000000000000000000000000000000000]
+l3_mm_ret              (call             ) [ 0000000000000000000000000000000000000000000000000]
 max_val                (extractvalue     ) [ 0000000000000000000000000000011100000000000000000]
 max_val_2              (extractvalue     ) [ 0000000000000000000000000000011110000000000000000]
 max_val_4              (extractvalue     ) [ 0000000000000000000000000000011111100000000000000]
@@ -1919,7 +1919,7 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 <pin id="67" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="hwmm_layer1"/></StgValue>
+<StgValue><ssdm name="l1_mm"/></StgValue>
 </bind>
 </comp>
 
@@ -1928,7 +1928,7 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 <pin id="69" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="hw_act_layer1"/></StgValue>
+<StgValue><ssdm name="l1_relu"/></StgValue>
 </bind>
 </comp>
 
@@ -1937,7 +1937,7 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 <pin id="71" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="hwmm_layer2"/></StgValue>
+<StgValue><ssdm name="l2_mm"/></StgValue>
 </bind>
 </comp>
 
@@ -2117,7 +2117,7 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 <pin id="111" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="hwmm_layer3"/></StgValue>
+<StgValue><ssdm name="l3_mm"/></StgValue>
 </bind>
 </comp>
 
@@ -2580,7 +2580,7 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="339" class="1004" name="grp_hwmm_layer1_fu_339">
+<comp id="339" class="1004" name="grp_l1_mm_fu_339">
 <pin_list>
 <pin id="340" dir="0" index="0" bw="0" slack="0"/>
 <pin id="341" dir="0" index="1" bw="32" slack="0"/>
@@ -2593,7 +2593,7 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="346" class="1004" name="grp_hwmm_layer2_fu_346">
+<comp id="346" class="1004" name="grp_l2_mm_fu_346">
 <pin_list>
 <pin id="347" dir="0" index="0" bw="0" slack="0"/>
 <pin id="348" dir="0" index="1" bw="32" slack="2147483647"/>
@@ -2606,7 +2606,7 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="352" class="1004" name="grp_hwmm_layer3_fu_352">
+<comp id="352" class="1004" name="grp_l3_mm_fu_352">
 <pin_list>
 <pin id="353" dir="0" index="0" bw="320" slack="0"/>
 <pin id="354" dir="0" index="1" bw="32" slack="2147483647"/>
@@ -2614,11 +2614,11 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ret/27 "/>
+<opset="l3_mm_ret/27 "/>
 </bind>
 </comp>
 
-<comp id="357" class="1004" name="grp_hw_act_layer1_fu_357">
+<comp id="357" class="1004" name="grp_l1_relu_fu_357">
 <pin_list>
 <pin id="358" dir="0" index="0" bw="0" slack="0"/>
 <pin id="359" dir="0" index="1" bw="32" slack="2147483647"/>
@@ -9407,10 +9407,10 @@ ret_ln126              (ret              ) [ 00000000000000000000000000000000000
 |----------|------------------------------|---------|---------|---------|---------|
 | Operation|        Functional Unit       |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|------------------------------|---------|---------|---------|---------|
-|          |    grp_hwmm_layer1_fu_339    |    40   | 38.0745 |  31868  |  21568  |
-|   call   |    grp_hwmm_layer2_fu_346    |    80   | 45.2353 |   6816  |   7711  |
-|          |    grp_hwmm_layer3_fu_352    |    50   | 21.3033 |   4216  |   4188  |
-|          |   grp_hw_act_layer1_fu_357   |    0    | 4.30917 |   1120  |   2572  |
+|          |       grp_l1_mm_fu_339       |    40   | 38.0745 |  31868  |  21568  |
+|   call   |       grp_l2_mm_fu_346       |    80   | 45.2353 |   6816  |   7711  |
+|          |       grp_l3_mm_fu_352       |    50   | 21.3033 |   4216  |   4188  |
+|          |      grp_l1_relu_fu_357      |    0    | 4.30917 |   1120  |   2572  |
 |----------|------------------------------|---------|---------|---------|---------|
 |          |          grp_fu_2574         |    2    |    0    |   205   |   206   |
 |          |          grp_fu_2578         |    2    |    0    |   205   |   206   |

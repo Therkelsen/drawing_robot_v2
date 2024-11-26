@@ -5,26 +5,26 @@
 <ModuleName>nn_inference</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_hwmm_layer1_fu_339</InstName>
-<ModuleName>hwmm_layer1</ModuleName>
+<InstName>grp_l1_mm_fu_339</InstName>
+<ModuleName>l1_mm</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>339</ID>
 </Instance>
 <Instance>
-<InstName>grp_hwmm_layer2_fu_346</InstName>
-<ModuleName>hwmm_layer2</ModuleName>
+<InstName>grp_l2_mm_fu_346</InstName>
+<ModuleName>l2_mm</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>346</ID>
 </Instance>
 <Instance>
-<InstName>grp_hwmm_layer3_fu_352</InstName>
-<ModuleName>hwmm_layer3</ModuleName>
+<InstName>grp_l3_mm_fu_352</InstName>
+<ModuleName>l3_mm</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>352</ID>
 </Instance>
 <Instance>
-<InstName>grp_hw_act_layer1_fu_357</InstName>
-<ModuleName>hw_act_layer1</ModuleName>
+<InstName>grp_l1_relu_fu_357</InstName>
+<ModuleName>l1_relu</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>357</ID>
 </Instance>
@@ -34,7 +34,7 @@
 
 <ModuleInformation>
 <Module>
-<Name>hwmm_layer1</Name>
+<Name>l1_mm</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -74,7 +74,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -85,7 +85,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -96,7 +96,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -107,7 +107,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -118,7 +118,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -129,7 +129,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -140,7 +140,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -151,7 +151,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -162,7 +162,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -173,7 +173,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -184,7 +184,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -195,7 +195,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -206,7 +206,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -217,7 +217,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -228,7 +228,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -239,7 +239,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -250,7 +250,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -261,7 +261,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -272,7 +272,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -283,7 +283,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -294,7 +294,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -305,7 +305,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -316,7 +316,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -327,7 +327,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -338,7 +338,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -349,7 +349,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -360,7 +360,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -371,7 +371,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -382,7 +382,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -393,7 +393,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -404,7 +404,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -415,7 +415,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -426,7 +426,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -437,7 +437,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -448,7 +448,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -459,7 +459,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -470,7 +470,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -481,7 +481,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -492,7 +492,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -503,7 +503,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -514,7 +514,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -525,7 +525,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -536,7 +536,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -547,7 +547,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_opcode</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -558,7 +558,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -569,7 +569,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -580,7 +580,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -591,7 +591,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -602,7 +602,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -613,7 +613,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -624,7 +624,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -635,7 +635,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -646,7 +646,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -657,7 +657,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -668,7 +668,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -679,7 +679,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -690,7 +690,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -701,7 +701,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -712,7 +712,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -723,7 +723,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -734,7 +734,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -745,7 +745,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -756,7 +756,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -767,7 +767,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -778,7 +778,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -789,7 +789,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -800,7 +800,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -811,7 +811,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -822,7 +822,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -833,7 +833,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -844,7 +844,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -855,7 +855,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -866,7 +866,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -877,7 +877,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -888,7 +888,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_din0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -899,7 +899,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_din1</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -910,7 +910,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_dout0</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -921,7 +921,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_ce</name>
-<Object>hwmm_layer1</Object>
+<Object>l1_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1054,7 +1054,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>hw_act_layer1</Name>
+<Name>l1_relu</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -1094,7 +1094,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1105,7 +1105,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1116,7 +1116,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1127,7 +1127,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1138,7 +1138,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1149,7 +1149,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1160,7 +1160,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_362_p_din0</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1171,7 +1171,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_362_p_din1</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1182,7 +1182,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_362_p_opcode</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1193,7 +1193,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_362_p_dout0</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1204,7 +1204,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_362_p_ce</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1215,7 +1215,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_367_p_din0</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1226,7 +1226,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_367_p_din1</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1237,7 +1237,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_367_p_opcode</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1248,7 +1248,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_367_p_dout0</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1259,7 +1259,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_367_p_ce</name>
-<Object>hw_act_layer1</Object>
+<Object>l1_relu</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1381,7 +1381,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>hwmm_layer2</Name>
+<Name>l2_mm</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -1421,7 +1421,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1432,7 +1432,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1443,7 +1443,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1454,7 +1454,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1465,7 +1465,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1476,7 +1476,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1487,7 +1487,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1498,7 +1498,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1509,7 +1509,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1520,7 +1520,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1531,7 +1531,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1542,7 +1542,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1553,7 +1553,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1564,7 +1564,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1575,7 +1575,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1586,7 +1586,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1597,7 +1597,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1608,7 +1608,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1619,7 +1619,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1630,7 +1630,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1641,7 +1641,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1652,7 +1652,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1663,7 +1663,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1674,7 +1674,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1685,7 +1685,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1696,7 +1696,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1707,7 +1707,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1718,7 +1718,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1729,7 +1729,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1740,7 +1740,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1751,7 +1751,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1762,7 +1762,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1773,7 +1773,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1784,7 +1784,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1795,7 +1795,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1806,7 +1806,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1817,7 +1817,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1828,7 +1828,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1839,7 +1839,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1850,7 +1850,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1861,7 +1861,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1872,7 +1872,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1883,7 +1883,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1894,7 +1894,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1905,7 +1905,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1916,7 +1916,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1927,7 +1927,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1938,7 +1938,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1949,7 +1949,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1960,7 +1960,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1971,7 +1971,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1982,7 +1982,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1993,7 +1993,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2004,7 +2004,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2015,7 +2015,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2026,7 +2026,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2037,7 +2037,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2646_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2048,7 +2048,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2646_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2059,7 +2059,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2646_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2070,7 +2070,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2646_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2081,7 +2081,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2646_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2092,7 +2092,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2650_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2103,7 +2103,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2650_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2114,7 +2114,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2650_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2125,7 +2125,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2650_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2136,7 +2136,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2650_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2147,7 +2147,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2654_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2158,7 +2158,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2654_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2169,7 +2169,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2654_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2180,7 +2180,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2654_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2191,7 +2191,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2654_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2202,7 +2202,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2658_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2213,7 +2213,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2658_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2224,7 +2224,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2658_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2235,7 +2235,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2658_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2246,7 +2246,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2658_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2257,7 +2257,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2662_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2268,7 +2268,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2662_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2279,7 +2279,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2662_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2290,7 +2290,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2662_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2301,7 +2301,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2662_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2312,7 +2312,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2666_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2323,7 +2323,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2666_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2334,7 +2334,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2666_p_opcode</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2345,7 +2345,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2666_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2356,7 +2356,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2666_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2367,7 +2367,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2378,7 +2378,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2389,7 +2389,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2400,7 +2400,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2411,7 +2411,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2422,7 +2422,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2433,7 +2433,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2444,7 +2444,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2455,7 +2455,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2466,7 +2466,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2477,7 +2477,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2488,7 +2488,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2499,7 +2499,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2510,7 +2510,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2521,7 +2521,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2532,7 +2532,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2543,7 +2543,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2554,7 +2554,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2565,7 +2565,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2576,7 +2576,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2587,7 +2587,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2598,7 +2598,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2609,7 +2609,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2620,7 +2620,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2631,7 +2631,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2642,7 +2642,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2653,7 +2653,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2664,7 +2664,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2675,7 +2675,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2686,7 +2686,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2697,7 +2697,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2708,7 +2708,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2719,7 +2719,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2730,7 +2730,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2741,7 +2741,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2752,7 +2752,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2763,7 +2763,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2774,7 +2774,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2785,7 +2785,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2796,7 +2796,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2807,7 +2807,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2678_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2818,7 +2818,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2678_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2829,7 +2829,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2678_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2840,7 +2840,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2678_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2851,7 +2851,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2682_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2862,7 +2862,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2682_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2873,7 +2873,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2682_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2884,7 +2884,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2682_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2895,7 +2895,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2686_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2906,7 +2906,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2686_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2917,7 +2917,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2686_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2928,7 +2928,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2686_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2939,7 +2939,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2690_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2950,7 +2950,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2690_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2961,7 +2961,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2690_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2972,7 +2972,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2690_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2983,7 +2983,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2694_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2994,7 +2994,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2694_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3005,7 +3005,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2694_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3016,7 +3016,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2694_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3027,7 +3027,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2698_p_din0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3038,7 +3038,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2698_p_din1</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3049,7 +3049,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2698_p_dout0</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3060,7 +3060,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2698_p_ce</name>
-<Object>hwmm_layer2</Object>
+<Object>l2_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3226,7 +3226,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>hwmm_layer3</Name>
+<Name>l3_mm</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -3266,7 +3266,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3277,7 +3277,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3288,7 +3288,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3299,7 +3299,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3310,7 +3310,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3321,7 +3321,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3332,7 +3332,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3343,7 +3343,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3354,7 +3354,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3365,7 +3365,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3376,7 +3376,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3387,7 +3387,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3398,7 +3398,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3409,7 +3409,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3420,7 +3420,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_8</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3431,7 +3431,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_9</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3442,7 +3442,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3453,7 +3453,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3464,7 +3464,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3475,7 +3475,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3486,7 +3486,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2574_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3497,7 +3497,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3508,7 +3508,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3519,7 +3519,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3530,7 +3530,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3541,7 +3541,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2578_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3552,7 +3552,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3563,7 +3563,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3574,7 +3574,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3585,7 +3585,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3596,7 +3596,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2582_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3607,7 +3607,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3618,7 +3618,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3629,7 +3629,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3640,7 +3640,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3651,7 +3651,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2586_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3662,7 +3662,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3673,7 +3673,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3684,7 +3684,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3695,7 +3695,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3706,7 +3706,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2590_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3717,7 +3717,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3728,7 +3728,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3739,7 +3739,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3750,7 +3750,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3761,7 +3761,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2594_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3772,7 +3772,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3783,7 +3783,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3794,7 +3794,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3805,7 +3805,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3816,7 +3816,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2598_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3827,7 +3827,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3838,7 +3838,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3849,7 +3849,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3860,7 +3860,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3871,7 +3871,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2602_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3882,7 +3882,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3893,7 +3893,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3904,7 +3904,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3915,7 +3915,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3926,7 +3926,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2638_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3937,7 +3937,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3948,7 +3948,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3959,7 +3959,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_opcode</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3970,7 +3970,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3981,7 +3981,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2642_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3992,7 +3992,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4003,7 +4003,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4014,7 +4014,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4025,7 +4025,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2606_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4036,7 +4036,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4047,7 +4047,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4058,7 +4058,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4069,7 +4069,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2610_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4080,7 +4080,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4091,7 +4091,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4102,7 +4102,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4113,7 +4113,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2614_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4124,7 +4124,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4135,7 +4135,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4146,7 +4146,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4157,7 +4157,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2618_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4168,7 +4168,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4179,7 +4179,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4190,7 +4190,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4201,7 +4201,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2622_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4212,7 +4212,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4223,7 +4223,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4234,7 +4234,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4245,7 +4245,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2626_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4256,7 +4256,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4267,7 +4267,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4278,7 +4278,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4289,7 +4289,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2630_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4300,7 +4300,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4311,7 +4311,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4322,7 +4322,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4333,7 +4333,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2634_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4344,7 +4344,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4355,7 +4355,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4366,7 +4366,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4377,7 +4377,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2670_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4388,7 +4388,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_din0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4399,7 +4399,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_din1</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4410,7 +4410,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_dout0</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4421,7 +4421,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>grp_fu_2674_p_ce</name>
-<Object>hwmm_layer3</Object>
+<Object>l3_mm</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>

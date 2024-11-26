@@ -5584,13 +5584,14 @@ inline bool operator!=(
 
 
 
-void hwmm_layer1(float input[100], const float weights[100][32], float output[1][32]);
-void hw_act_layer1(float input[1][32], float output[1][32]);
-void hwmm_layer2(float input[1][32], const float weights[32][16], float output[1][16]);
-void hw_act_layer2(float input[1][16], float output[1][16]);
-void hwmm_layer3(float input[1][16], const float weights[16][10], float output[1][10]);
-void hw_act_layer3(float input[1][10], int &pred);
+void l1_mm(float input[100], const float weights[100][32], float output[1][32]);
+void l1_relu(float input[1][32], float output[1][32]);
+void l2_mm(float input[1][32], const float weights[32][16], float output[1][16]);
+void l2_relu(float input[1][16], float output[1][16]);
+void l3_mm(float input[1][16], const float weights[16][10], float output[1][10]);
+void l3_softmax(float input[1][10], int &pred);
 __attribute__((sdx_kernel("nn_inference", 0))) void nn_inference(float input_img[100], int& out_r);
+
 
 
 namespace weights{
@@ -5751,7 +5752,7 @@ namespace weights{
 
 
 
-void hwmm_layer1(float input[100], const float weights[100][32], float output[1][32]) {
+void l1_mm(float input[100], const float weights[100][32], float output[1][32]) {
     col: for (int j = 0; j < 32; ++j) {
 #pragma HLS UNROLL
  float sum = 0;
@@ -5769,7 +5770,7 @@ void hwmm_layer1(float input[100], const float weights[100][32], float output[1]
 
 
 
-void hwmm_layer2(float input[1][32], const float weights[32][16], float output[1][16]) {
+void l2_mm(float input[1][32], const float weights[32][16], float output[1][16]) {
 
     col: for (int j = 0; j < 16; ++j) {
 #pragma HLS UNROLL
@@ -5789,7 +5790,7 @@ void hwmm_layer2(float input[1][32], const float weights[32][16], float output[1
 
 
 
-void hwmm_layer3(float input[1][16], const float weights[16][10], float output[1][10]) {
+void l3_mm(float input[1][16], const float weights[16][10], float output[1][10]) {
 
     col: for (int j = 0; j < 10; ++j) {
 #pragma HLS UNROLL
@@ -5808,7 +5809,7 @@ void hwmm_layer3(float input[1][16], const float weights[16][10], float output[1
 
 
 
-void hw_act_layer1(float input[1][32], float output[1][32]){
+void l1_relu(float input[1][32], float output[1][32]){
  loop1: for (int i = 0; i < 32; i++){
 #pragma HLS UNROLL
  if (input[0][i] < 0.0)
@@ -5823,7 +5824,7 @@ void hw_act_layer1(float input[1][32], float output[1][32]){
 
 
 
-void hw_act_layer2(float input[1][16], float output[1][16]){
+void l2_relu(float input[1][16], float output[1][16]){
  loop1: for (int i = 0; i < 16; i++){
 #pragma HLS UNROLL
  if (input[0][i] < 0.0)
@@ -5838,7 +5839,7 @@ void hw_act_layer2(float input[1][16], float output[1][16]){
 
 
 
-void hw_act_layer3(float input[1][10], int &pred){
+void l3_softmax(float input[1][10], int &pred){
  int max_idx = -1;
  float max_val = -999.9;
  loop1: for (int i = 0; i < 10; i++){
@@ -5868,11 +5869,11 @@ __attribute__((sdx_kernel("nn_inference", 0))) void nn_inference(float input_img
  float temp_output3[1][10] = {1};
  int prediction = -1;
 
- hwmm_layer1(input_img, weights::layer1_weights, temp_output);
- hw_act_layer1(temp_output, temp_output);
- hwmm_layer2(temp_output, weights::layer2_weights, temp_output2);
- hw_act_layer2(temp_output2, temp_output2);
- hwmm_layer3(temp_output2, weights::layer3_weights, temp_output3);
- hw_act_layer3(temp_output3, prediction);
+ l1_mm(input_img, weights::layer1_weights, temp_output);
+ l1_relu(temp_output, temp_output);
+ l2_mm(temp_output, weights::layer2_weights, temp_output2);
+ l2_relu(temp_output2, temp_output2);
+ l3_mm(temp_output2, weights::layer3_weights, temp_output3);
+ l3_softmax(temp_output3, prediction);
  out_r = prediction;
 }

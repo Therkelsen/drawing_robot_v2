@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="matmul.cpp" path="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul.cpp"/>
     <originFiles name="matmul.hpp" path="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul.hpp"/>
+    <originFiles name="matmul.cpp" path="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul.cpp"/>
   </source>
   <testbench>
     <originFiles name="matmul_tb.cpp" path="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul_tb.cpp"/>

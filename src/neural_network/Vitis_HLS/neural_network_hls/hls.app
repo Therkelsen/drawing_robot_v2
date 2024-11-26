@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="nn_inference" name="neural_network_hls">
+<project xmlns="com.autoesl.autopilot.project" name="neural_network_hls" top="nn_inference">
     <includePaths/>
     <libraryPaths/>
     <Simulation>
@@ -6,8 +6,8 @@
     </Simulation>
     <files xmlns="">
         <file name="../../matmul_tb.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="matmul.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
         <file name="matmul.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+        <file name="matmul.hpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
         <solution name="solution1" status="active"/>
