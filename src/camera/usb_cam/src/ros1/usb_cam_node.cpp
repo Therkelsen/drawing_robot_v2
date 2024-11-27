@@ -85,7 +85,7 @@ public:
   {
     // advertise the main image topic
     image_transport::ImageTransport it(m_node);
-    m_image_pub = it.advertiseCamera("image_raw", 1);
+    m_image_pub = it.advertiseCamera("image_ds", 1);
 
     // grab the parameters
     m_node.param("video_device", m_video_device_name, std::string("/dev/video0"));

@@ -36,7 +36,7 @@
 #include <string>
 #include <vector>
 
-const char BASE_TOPIC_NAME[] = "image_raw";
+const char BASE_TOPIC_NAME[] = "image_ds";
 
 namespace usb_cam
 {
