@@ -414,7 +414,7 @@ bool UsbCamNode::take_and_send_image()
 
   // 3. Apply dilation to thicken the lines before binarization
   cv::Mat dilated_image;
-  cv::Mat dilation_kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(20, 20)); // Increase kernel size to thicken lines
+  cv::Mat dilation_kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(40, 40)); // Increase kernel size to thicken lines
   cv::dilate(gray_image, dilated_image, dilation_kernel);
 
   // 4. Binarize the image (use a simple thresholding technique)
@@ -423,12 +423,12 @@ bool UsbCamNode::take_and_send_image()
 
   // 5. Apply morphological closing to ensure lines are thickened further
   cv::Mat thickened_image;
-  cv::Mat closing_kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(20, 20)); // Larger kernel size for closing
+  cv::Mat closing_kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(40, 40)); // Larger kernel size for closing
   cv::morphologyEx(binarized_image, thickened_image, cv::MORPH_CLOSE, closing_kernel);
 
-  // 6. Resize the image to 28x28 (MNIST image size), using nearest neighbor interpolation for binary images
+  // 6. Resize the image to 10x10 (MNIST image size), using nearest neighbor interpolation for binary images
   cv::Mat processed_image;
-  cv::resize(thickened_image, processed_image, cv::Size(28, 28), 0, 0, cv::INTER_NEAREST);
+  cv::resize(thickened_image, processed_image, cv::Size(10, 10), 0, 0, cv::INTER_AREA);
     
   // Convert the downsampled image back to a sensor_msgs::Image message
   cv_bridge::CvImage resized_cv_image;
