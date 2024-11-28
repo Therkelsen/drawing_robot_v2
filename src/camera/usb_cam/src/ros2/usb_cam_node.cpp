@@ -393,34 +393,72 @@ bool UsbCamNode::take_and_send_image()
   // Convert the image message to a cv::Mat using cv_bridge
   cv_bridge::CvImagePtr cv_ptr;
   try {
-      // Convert from yuv422_yuy2 to the same YUV format (we'll preserve the format)
-      cv_ptr = cv_bridge::toCvCopy(std::move(image_copy), sensor_msgs::image_encodings::YUV422_YUY2);
+      // Convert from RGB8 to the same YUV format (we'll preserve the format)
+      cv_ptr = cv_bridge::toCvCopy(std::move(image_copy), sensor_msgs::image_encodings::RGB8);
   } catch (cv_bridge::Exception& e) {
       RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
       return false;
   }
+  cv::Mat original_image = cv_ptr->image.clone();
+  // Preprocess the image
+
+  cv::Mat grayscale_image;
+  cv::cvtColor(original_image, grayscale_image, cv::COLOR_RGB2GRAY);
+
+  int morph_size = 3;
+  cv::Mat element  = getStructuringElement( 
+      cv::MORPH_RECT, 
+      cv::Size(2 * morph_size + 1, 
+            2 * morph_size + 1), 
+      cv::Point(morph_size, morph_size)); 
+  
+  cv::Mat closed_image;
+  cv::morphologyEx(grayscale_image, closed_image, 
+                  cv::MORPH_CLOSE, element, 
+                  cv::Point(-1, -1), 2); 
+
+  cv::Mat thresholded_image;
+  cv::adaptiveThreshold(
+        closed_image,                   // Input image
+        thresholded_image,              // Output image
+        255,                            // Max value to use
+        cv::ADAPTIVE_THRESH_GAUSSIAN_C, // Adaptive method
+        cv::THRESH_BINARY_INV,          // Threshold type
+        11,                             // Block size (size of pixel neighborhood)
+        2                               // Constant to subtract from the mean
+    );
+
 
   // Downsample the image to 10x10
   cv::Mat resized_image;
-  cv::resize(cv_ptr->image, resized_image, cv::Size(10, 10));
+  cv::resize(thresholded_image, resized_image, cv::Size(28, 28), 0, 0, cv::INTER_AREA);
+
+  cv::Mat processed_image;
+  cv::threshold(
+      resized_image,  // Input image
+      processed_image,       // Output image
+      0,                  // Threshold value
+      255,                // Max value
+      cv::THRESH_BINARY   // Threshold type
+  );
 
   // Convert the downsampled image back to a sensor_msgs::Image message
   cv_bridge::CvImage resized_cv_image;
 
   // Check if the resized image is empty or not
-  if (resized_image.empty()) {
+  if (processed_image.empty()) {
       RCLCPP_ERROR(this->get_logger(), "Resized image is empty. Cannot convert to sensor_msgs::Image.");
       return false; // Early exit if the image is invalid
   }
 
   resized_cv_image.header = header;
-  resized_cv_image.encoding = sensor_msgs::image_encodings::YUV422_YUY2; // Keep the original encoding
-  resized_cv_image.image = resized_image;
+  resized_cv_image.encoding = sensor_msgs::image_encodings::MONO8; // Keep the original encoding
+  resized_cv_image.image = processed_image;
 
-  sensor_msgs::msg::Image::SharedPtr resized_image_msg = nullptr;
+  sensor_msgs::msg::Image::SharedPtr processed_image_msg = nullptr;
   try {
       // Attempt to convert to sensor_msgs::Image
-      resized_image_msg = resized_cv_image.toImageMsg();
+      processed_image_msg = resized_cv_image.toImageMsg();
   } catch (const std::exception& e) {
       // Catching general exceptions and logging the error
       RCLCPP_ERROR(this->get_logger(), "Exception while converting to Image message: %s", e.what());
@@ -429,8 +467,8 @@ bool UsbCamNode::take_and_send_image()
 
   // Publish the downsampled image
   *m_camera_info_msg = m_camera_info->getCameraInfo();
-  m_camera_info_msg->header = resized_image_msg->header;
-  m_image_publisher->publish(*resized_image_msg, *m_camera_info_msg);
+  m_camera_info_msg->header = processed_image_msg->header;
+  m_image_publisher->publish(*processed_image_msg, *m_camera_info_msg);
 
   return true;
 }
