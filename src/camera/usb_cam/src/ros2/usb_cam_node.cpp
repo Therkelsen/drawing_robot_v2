@@ -31,6 +31,8 @@
 #include <cv_bridge/cv_bridge.h>
 #include <filesystem>
 #include <memory>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 #include <sstream>
 #include <string>
@@ -399,49 +401,35 @@ bool UsbCamNode::take_and_send_image()
       RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
       return false;
   }
+
   cv::Mat original_image = cv_ptr->image.clone();
-  // Preprocess the image
 
-  cv::Mat grayscale_image;
-  cv::cvtColor(original_image, grayscale_image, cv::COLOR_RGB2GRAY);
+  // 1. Invert the image (black-on-white to white-on-black)
+  cv::Mat inverted_image;
+  cv::bitwise_not(original_image, inverted_image); // Invert colors
 
-  int morph_size = 3;
-  cv::Mat element  = getStructuringElement( 
-      cv::MORPH_RECT, 
-      cv::Size(2 * morph_size + 1, 
-            2 * morph_size + 1), 
-      cv::Point(morph_size, morph_size)); 
-  
-  cv::Mat closed_image;
-  cv::morphologyEx(grayscale_image, closed_image, 
-                  cv::MORPH_CLOSE, element, 
-                  cv::Point(-1, -1), 2); 
+  // 2. Convert the image to grayscale (necessary for thresholding)
+  cv::Mat gray_image;
+  cv::cvtColor(inverted_image, gray_image, cv::COLOR_BGR2GRAY);
 
-  cv::Mat thresholded_image;
-  cv::adaptiveThreshold(
-        closed_image,                   // Input image
-        thresholded_image,              // Output image
-        255,                            // Max value to use
-        cv::ADAPTIVE_THRESH_GAUSSIAN_C, // Adaptive method
-        cv::THRESH_BINARY_INV,          // Threshold type
-        11,                             // Block size (size of pixel neighborhood)
-        2                               // Constant to subtract from the mean
-    );
+  // 3. Apply dilation to thicken the lines before binarization
+  cv::Mat dilated_image;
+  cv::Mat dilation_kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(20, 20)); // Increase kernel size to thicken lines
+  cv::dilate(gray_image, dilated_image, dilation_kernel);
 
+  // 4. Binarize the image (use a simple thresholding technique)
+  cv::Mat binarized_image;
+  cv::threshold(dilated_image, binarized_image, 127, 255, cv::THRESH_BINARY);
 
-  // Downsample the image to 10x10
-  cv::Mat resized_image;
-  cv::resize(thresholded_image, resized_image, cv::Size(28, 28), 0, 0, cv::INTER_AREA);
+  // 5. Apply morphological closing to ensure lines are thickened further
+  cv::Mat thickened_image;
+  cv::Mat closing_kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(20, 20)); // Larger kernel size for closing
+  cv::morphologyEx(binarized_image, thickened_image, cv::MORPH_CLOSE, closing_kernel);
 
+  // 6. Resize the image to 28x28 (MNIST image size), using nearest neighbor interpolation for binary images
   cv::Mat processed_image;
-  cv::threshold(
-      resized_image,  // Input image
-      processed_image,       // Output image
-      0,                  // Threshold value
-      255,                // Max value
-      cv::THRESH_BINARY   // Threshold type
-  );
-
+  cv::resize(thickened_image, processed_image, cv::Size(28, 28), 0, 0, cv::INTER_NEAREST);
+    
   // Convert the downsampled image back to a sensor_msgs::Image message
   cv_bridge::CvImage resized_cv_image;
 
