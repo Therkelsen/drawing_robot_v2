@@ -68,13 +68,12 @@ std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coo
 }
 
 std::vector<JointValue> draw_number(const std::vector<Coordinate>& number, const int& steps = 10) {
-    std::vector<JointValue> trajectory((number.size() - 1) * steps);
+    std::vector<JointValue> trajectory;
     
     for (int i {1}; i < number.size(); i++) {
         std::vector<JointValue> single_trajectory = tcp_to_joint_transform(number.at(i - 1), number.at(i), steps);
         for(int j {0}; j < single_trajectory.size(); j++){
-            // THIS IS THE WRONG PLACE TO ALLOCATE (USE PUSHBACK INSTEAD FOR EXAMPLE)
-            trajectory.at(i-1) = single_trajectory[j];
+            trajectory.emplace_back(single_trajectory[j]);
         }
     }
     
