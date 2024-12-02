@@ -8,25 +8,53 @@
 #include <unistd.h>
 #include <mutex>
 #include <chrono>
+#include <utility>
 
 // For each number, we have an array of motor values [motor1, motor2]
+
 std::map<int, std::vector<std::pair<int, int>>> mp;
 const int motor_1 = 1;
 const int motor_10 = 10;
 std::mutex num_mutex_;
 
-void initialize_map()
+void initialize_map() // This is in our coordinate frame
 {
-    mp[0] = {{0, 0}, {102, 102}, {102, 102}, {102, 102}};
-    mp[1] = {{0, 0}, {205, 205}, {205, 205}, {205, 205}};
-    mp[2] = {{0, 0}, {307, 307}, {307, 307}, {307, 307}};
-    mp[3] = {{0, 0}, {409, 409}, {409, 409}, {409, 409}};
-    mp[4] = {{0, 0}, {512, 512}, {512, 512}, {512, 512}};
-    mp[5] = {{0, 0}, {614, 614}, {614, 614}, {614, 614}};
-    mp[6] = {{0, 0}, {716, 716}, {716, 716}, {716, 716}};
-    mp[7] = {{0, 0}, {818, 818}, {818, 818}, {818, 818}};
-    mp[8] = {{0, 0}, {921, 921}, {921, 921}, {921, 921}};
-    mp[9] = {{0, 0}, {1023, 1023}, {1023, 1023}, {1023, 1023}};
+    mp[0] = {{0, 0}, {5, 0}, {5, 5},  {5, 10}, {0, 10}, {0, 5},  {0, 0}};
+    mp[1] = {{0, 0}, {0, 5}, {0, 10}, {0, 5},  {0, 0}};
+    mp[2] = {{0, 0}, {5, 0}, {5, 5},  {0, 5},  {0, 10}, {5, 10}, {0, 10}, {0, 5},  {5, 5},  {5, 0},  {0, 0}};
+    mp[3] = {{0, 0}, {5, 0}, {0, 0},  {0, 5},  {5, 5},  {0, 5},  {0, 10}, {5, 10}, {0, 10}, {0, 5},  {0, 0}};
+    mp[4] = {{0, 0}, {0, 5}, {0, 10}, {0, 5},  {5, 5},  {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+    mp[5] = {{0, 0}, {5, 0}, {0, 0},  {0, 5},  {5, 5},  {5, 10}, {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+    mp[6] = {{0, 0}, {0, 5}, {0, 0},  {5, 0},  {5, 5},  {0, 5},  {5, 5},  {5, 10}, {0, 10}, {5, 10}, {5, 5}, {5, 0}, {0, 0}};
+    mp[7] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {0, 10}, {0, 5},  {0, 0}};
+    mp[8] = {{0, 0}, {5, 0}, {5, 5},  {0, 5},  {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+    mp[9] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+}
+
+std::vector<std::pair<int, int>> tcp_to_joint_transform(std::pair<int, int> from, std::pair<int, int> to, int steps = 10) {
+    double a {1/steps};
+
+    std::vector<std::pair<int, int>> trajectory(steps);
+
+    for (int i {0}; i < steps - 1; i++) {
+        int x {from.first + a * (to.first - from.first);
+        int y {from.second + a * (to.second - from.second)};
+        
+        trajectory.at(i) = {x, y};
+        a += a;
+    }
+
+    return trajectory;
+}
+
+std::vector<std::vector<std::pair<int, int>>> draw_number(std::vector<std::pair<int, int>> number) {
+    std::vector<std::vector<std::pair<int, int>>> trajectories(number.size());
+    
+    for (int i {1}; i < number.size(); i++) {
+        trajectories.at(i) = tcp_to_joint_transform(number.at(i - 1), number.at(i));
+    }
+    
+    return trajectories;
 }
 
 class NumberDrawerNode : public rclcpp::Node
