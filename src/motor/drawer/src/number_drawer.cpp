@@ -1,15 +1,19 @@
 #include "rclcpp/rclcpp.hpp"
-#include "drawer/srv/number.hpp"
+#include "drawer/srv/draw.hpp"
+#include "drawer/msg/num.hpp"
 #include "dynamixel_sdk_custom_interfaces/msg/set_position_multiple.hpp"
 #include <map>
 #include <vector>
 #include <memory>
 #include <unistd.h>
+#include <mutex>
+#include <chrono>
 
 // For each number, we have an array of motor values [motor1, motor2]
 std::map<int, std::vector<std::pair<int, int>>> mp;
 const int motor_1 = 1;
 const int motor_10 = 10;
+std::mutex num_mutex_;
 
 void initialize_map()
 {
@@ -33,23 +37,32 @@ public:
         // Initialize the map
         initialize_map();
 
-        // Create the publisher
-        publisher = this->create_publisher<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>("/set_position", 1);
+        num_ = - 1;
+
+        publisher_ = this->create_publisher<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>("/set_position", 1);
 
         // Create the service
-        service_ = this->create_service<drawer::srv::Number>(
+        service_ = this->create_service<drawer::srv::Draw>(
             "number", std::bind(&NumberDrawerNode::draw, this, std::placeholders::_1, std::placeholders::_2));
+
+        number_subscription_ = this->create_subscription<drawer::msg::Num>("/number", 10, 
+            std::bind(&NumberDrawerNode::onNumber, this, std::placeholders::_1));
 
         RCLCPP_INFO(this->get_logger(), "Ready to draw a number.");
     }
 
 private:
-    void draw(const std::shared_ptr<drawer::srv::Number::Request> request,
-              std::shared_ptr<drawer::srv::Number::Response> response)
-    {
-        RCLCPP_INFO(this->get_logger(), "Incoming request to draw number: %ld", request->num);
+    void onNumber(const drawer::msg::Num::SharedPtr msg) {
+        std::lock_guard<std::mutex> lock(num_mutex_);
+        num_ = msg->num;
+    }
 
-        int num = request->num;
+    void draw(const std::shared_ptr<drawer::srv::Draw::Request> request,
+              std::shared_ptr<drawer::srv::Draw::Response> response)
+    {
+        std::lock_guard<std::mutex> lock(num_mutex_);
+        int num = num_;
+        RCLCPP_INFO(this->get_logger(), "Incoming request to draw number: %d", num);
 
         // Ensure the number is valid
         if (mp.find(num) == mp.end())
@@ -72,9 +85,8 @@ private:
             // Publish the message
             RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id_1, message.position_1);
             RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id_2, message.position_2);
-            publisher->publish(message);
-            
-            // This is the shortest possible sleep. I assume the package transmission takes one second.
+            publisher_->publish(message);
+
             sleep(1);
         }
 
@@ -83,8 +95,10 @@ private:
         RCLCPP_INFO(this->get_logger(), "Number %d drawn successfully.", num);
     }
 
-    rclcpp::Publisher<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>::SharedPtr publisher;
-    rclcpp::Service<drawer::srv::Number>::SharedPtr service_;
+    rclcpp::Publisher<dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple>::SharedPtr publisher_;
+    rclcpp::Subscription<drawer::msg::Num>::SharedPtr number_subscription_;
+    rclcpp::Service<drawer::srv::Draw>::SharedPtr service_;
+    int num_;
 };
 
 int main(int argc, char **argv)
