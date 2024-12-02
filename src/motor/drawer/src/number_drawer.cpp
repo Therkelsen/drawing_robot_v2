@@ -12,26 +12,27 @@
 
 // For each number, we have an array of motor values [motor1, motor2]
 
-std::map<int, std::vector<std::pair<int, int>>> mp;
+struct Number {
+    std::map<int, std::vector<std::pair<int, int>>> coordinates; // This is in our coordinate frame (in centimeters)
+    Number() {
+        coordinates[0] = {{0, 0}, {5, 0}, {5, 5},  {5, 10}, {0, 10}, {0, 5},  {0, 0}};
+        coordinates[1] = {{0, 0}, {0, 5}, {0, 10}, {0, 5},  {0, 0}};
+        coordinates[2] = {{0, 0}, {5, 0}, {5, 5},  {0, 5},  {0, 10}, {5, 10}, {0, 10}, {0, 5},  {5, 5},  {5, 0},  {0, 0}};
+        coordinates[3] = {{0, 0}, {5, 0}, {0, 0},  {0, 5},  {5, 5},  {0, 5},  {0, 10}, {5, 10}, {0, 10}, {0, 5},  {0, 0}};
+        coordinates[4] = {{0, 0}, {0, 5}, {0, 10}, {0, 5},  {5, 5},  {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+        coordinates[5] = {{0, 0}, {5, 0}, {0, 0},  {0, 5},  {5, 5},  {5, 10}, {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+        coordinates[6] = {{0, 0}, {0, 5}, {0, 0},  {5, 0},  {5, 5},  {0, 5},  {5, 5},  {5, 10}, {0, 10}, {5, 10}, {5, 5}, {5, 0}, {0, 0}};
+        coordinates[7] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {0, 10}, {0, 5},  {0, 0}};
+        coordinates[8] = {{0, 0}, {5, 0}, {5, 5},  {0, 5},  {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+        coordinates[9] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
+    }
+} Numbers;
+
 const int motor_1 = 1;
 const int motor_10 = 10;
 std::mutex num_mutex_;
 
-void initialize_map() // This is in our coordinate frame
-{
-    mp[0] = {{0, 0}, {5, 0}, {5, 5},  {5, 10}, {0, 10}, {0, 5},  {0, 0}};
-    mp[1] = {{0, 0}, {0, 5}, {0, 10}, {0, 5},  {0, 0}};
-    mp[2] = {{0, 0}, {5, 0}, {5, 5},  {0, 5},  {0, 10}, {5, 10}, {0, 10}, {0, 5},  {5, 5},  {5, 0},  {0, 0}};
-    mp[3] = {{0, 0}, {5, 0}, {0, 0},  {0, 5},  {5, 5},  {0, 5},  {0, 10}, {5, 10}, {0, 10}, {0, 5},  {0, 0}};
-    mp[4] = {{0, 0}, {0, 5}, {0, 10}, {0, 5},  {5, 5},  {5, 10}, {5, 5},  {0, 5},  {0, 0}};
-    mp[5] = {{0, 0}, {5, 0}, {0, 0},  {0, 5},  {5, 5},  {5, 10}, {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
-    mp[6] = {{0, 0}, {0, 5}, {0, 0},  {5, 0},  {5, 5},  {0, 5},  {5, 5},  {5, 10}, {0, 10}, {5, 10}, {5, 5}, {5, 0}, {0, 0}};
-    mp[7] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {0, 10}, {0, 5},  {0, 0}};
-    mp[8] = {{0, 0}, {5, 0}, {5, 5},  {0, 5},  {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
-    mp[9] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
-}
-
-std::vector<std::pair<int, int>> tcp_to_joint_transform(std::pair<int, int> from, std::pair<int, int> to, int steps = 10) {
+std::vector<std::pair<int, int>> tcp_to_joint_transform(const std::pair<int, int>& from, const std::pair<int, int>& to, const int& steps = 10) {
     double a {1/steps};
 
     std::vector<std::pair<int, int>> trajectory(steps);
@@ -47,14 +48,14 @@ std::vector<std::pair<int, int>> tcp_to_joint_transform(std::pair<int, int> from
     return trajectory;
 }
 
-std::vector<std::vector<std::pair<int, int>>> draw_number(std::vector<std::pair<int, int>> number) {
-    std::vector<std::vector<std::pair<int, int>>> trajectories(number.size());
+std::vector<std::vector<std::pair<int, int>>> draw_number(const std::vector<std::pair<int, int>>& number, const int& steps = 10) {
+    std::vector<std::pair<int, int>> trajectory(number.size() * steps);
     
-    for (int i {1}; i < number.size(); i++) {
-        trajectories.at(i) = tcp_to_joint_transform(number.at(i - 1), number.at(i));
+    for (int i {1}; i < number.size() * steps; i++) {
+        trajectory.at(i) = tcp_to_joint_transform(number.at(i - 1), number.at(i));
     }
     
-    return trajectories;
+    return trajectory;
 }
 
 class NumberDrawerNode : public rclcpp::Node
@@ -98,6 +99,11 @@ private:
             RCLCPP_ERROR(this->get_logger(), "Invalid number: %d", num);
             response->done = false;
             return;
+        }
+
+        std::vector<std::vector<std::pair<int, int>>> trajectories(Numbers.coord)
+        for (size_t i = 0; i < Numbers.coordinates[num].size(); i++) {
+
         }
 
         // Publish motor positions
