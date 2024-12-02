@@ -12,8 +12,16 @@
 
 // For each number, we have an array of motor values [motor1, motor2]
 
+struct Coordinate {
+    int x;
+    int y;
+
+    Coordinate(int x, int y) : x(x), y(y) {}
+    Coordinate() : x(0), y(0) {}
+};
+
 struct Number {
-    std::map<int, std::vector<std::pair<int, int>>> coordinates; // This is in our coordinate frame (in centimeters)
+    std::map<int, std::vector<Coordinate>> coordinates; // This is in our coordinate frame (in centimeters)
     Number() {
         coordinates[0] = {{0, 0}, {5, 0}, {5, 5},  {5, 10}, {0, 10}, {0, 5},  {0, 0}};
         coordinates[1] = {{0, 0}, {0, 5}, {0, 10}, {0, 5},  {0, 0}};
@@ -25,34 +33,32 @@ struct Number {
         coordinates[7] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {0, 10}, {0, 5},  {0, 0}};
         coordinates[8] = {{0, 0}, {5, 0}, {5, 5},  {0, 5},  {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
         coordinates[9] = {{0, 0}, {0, 5}, {0, 10}, {5, 10}, {5, 5},  {0, 5},  {0, 0}};
-    }
+    };
 } Numbers;
+
 
 const int motor_1 = 1;
 const int motor_10 = 10;
 std::mutex num_mutex_;
 
-std::vector<std::pair<int, int>> tcp_to_joint_transform(const std::pair<int, int>& from, const std::pair<int, int>& to, const int& steps = 10) {
-    double a {1/steps};
-
-    std::vector<std::pair<int, int>> trajectory(steps);
-
-    for (int i {0}; i < steps - 1; i++) {
-        int x {from.first + a * (to.first - from.first);
-        int y {from.second + a * (to.second - from.second)};
-        
-        trajectory.at(i) = {x, y};
-        a += a;
+std::vector<Coordinate> tcp_to_joint_transform(const Coordinate& from, const Coordinate& to, const int& steps = 10) {
+    std::vector<Coordinate> trajectory(steps);
+    
+    for (int i = 0; i < steps; i++) {
+        double a = i / static_cast<double>(steps - 1);
+        int x = static_cast<int>(from.x + a * (to.x - from.x));
+        int y = static_cast<int>(from.y + a * (to.y - from.y));
+        trajectory[i] = {x, y};
     }
-
     return trajectory;
 }
 
-std::vector<std::vector<std::pair<int, int>>> draw_number(const std::vector<std::pair<int, int>>& number, const int& steps = 10) {
-    std::vector<std::pair<int, int>> trajectory(number.size() * steps);
+
+std::vector<std::vector<Coordinate>> draw_number(const std::vector<Coordinate>& number, const int& steps = 10) {
+    std::vector<std::vector<Coordinate>> trajectory(number.size());
     
-    for (int i {1}; i < number.size() * steps; i++) {
-        trajectory.at(i) = tcp_to_joint_transform(number.at(i - 1), number.at(i));
+    for (int i {1}; i < number.size(); i++) {
+        trajectory.at(i) = tcp_to_joint_transform(number.at(i - 1), number.at(i), steps);
     }
     
     return trajectory;
@@ -94,27 +100,27 @@ private:
         RCLCPP_INFO(this->get_logger(), "Incoming request to draw number: %d", num);
 
         // Ensure the number is valid
-        if (mp.find(num) == mp.end())
+        if (Numbers.coordinates.find(num) == Numbers.coordinates.end())
         {
             RCLCPP_ERROR(this->get_logger(), "Invalid number: %d", num);
             response->done = false;
             return;
         }
 
-        std::vector<std::vector<std::pair<int, int>>> trajectories(Numbers.coord)
-        for (size_t i = 0; i < Numbers.coordinates[num].size(); i++) {
+        // std::vector<std::vector<std::pair<int, int>>> trajectories(Numbers.coord)
+        // for (size_t i = 0; i < Numbers.coordinates[num].size(); i++) {
 
-        }
+        // }
 
-        // Publish motor positions
-        for (size_t i = 0; i < mp[num].size(); i++)
-        {
-            auto message = dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple();
-            message.id_1 = motor_1; // motor ID for first motor
-            message.position_1 = mp[num][i].first;
+        // // Publish motor positions
+        // for (size_t i = 0; i < mp[num].size(); i++)
+        // {
+        //     auto message = dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple();
+        //     message.id_1 = motor_1; // motor ID for first motor
+        //     message.position_1 = mp[num][i].first;
 
-            message.id_2 = motor_10; // motor ID for second motor
-            message.position_2 = mp[num][i].second;
+        //     message.id_2 = motor_10; // motor ID for second motor
+        //     message.position_2 = mp[num][i].second;
 
             // Publish the message
             RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id_1, message.position_1);
