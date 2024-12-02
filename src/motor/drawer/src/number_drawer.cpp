@@ -20,6 +20,14 @@ struct Coordinate {
     Coordinate() : x(0), y(0) {}
 };
 
+struct JointValue{
+    float theta1;
+    float theta2;
+
+    JointValue(float theta1, float theta2) : theta1(theta1), theta2(theta2) {}
+    JointValue() : theta1(0.0), theta2(0.0) {}
+};
+
 struct Number {
     std::map<int, std::vector<Coordinate>> coordinates; // This is in our coordinate frame (in centimeters)
     Number() {
@@ -41,24 +49,33 @@ const int motor_1 = 1;
 const int motor_10 = 10;
 std::mutex num_mutex_;
 
-std::vector<Coordinate> tcp_to_joint_transform(const Coordinate& from, const Coordinate& to, const int& steps = 10) {
-    std::vector<Coordinate> trajectory(steps);
+std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coordinate& to, const int& steps = 10) {
+    std::vector<JointValue> trajectory(steps);
     
     for (int i = 0; i < steps; i++) {
-        double a = i / static_cast<double>(steps - 1);
-        int x = static_cast<int>(from.x + a * (to.x - from.x));
-        int y = static_cast<int>(from.y + a * (to.y - from.y));
-        trajectory[i] = {x, y};
+        double a = i / static_cast<double>(steps);
+        float x = from.x + a * (to.x - from.x);
+        float y = from.y + a * (to.y - from.y);
+
+        //Inverse kinematics
+        float theta1 = static_cast<float>(x);
+        float theta2 = static_cast<float>(y);
+
+        trajectory[i] = {theta1, theta2};
     }
+
     return trajectory;
 }
 
-
-std::vector<std::vector<Coordinate>> draw_number(const std::vector<Coordinate>& number, const int& steps = 10) {
-    std::vector<std::vector<Coordinate>> trajectory(number.size());
+std::vector<JointValue> draw_number(const std::vector<Coordinate>& number, const int& steps = 10) {
+    std::vector<JointValue> trajectory((number.size() - 1) * steps);
     
     for (int i {1}; i < number.size(); i++) {
-        trajectory.at(i) = tcp_to_joint_transform(number.at(i - 1), number.at(i), steps);
+        std::vector<JointValue> single_trajectory = tcp_to_joint_transform(number.at(i - 1), number.at(i), steps);
+        for(int j {0}; j < single_trajectory.size(); j++){
+            // THIS IS THE WRONG PLACE TO ALLOCATE (USE PUSHBACK INSTEAD FOR EXAMPLE)
+            trajectory.at(i-1) = single_trajectory[j];
+        }
     }
     
     return trajectory;
@@ -70,7 +87,7 @@ public:
     NumberDrawerNode() : Node("number_drawer")
     {
         // Initialize the map
-        initialize_map();
+        // initialize_map();
 
         num_ = - 1;
 
@@ -107,25 +124,22 @@ private:
             return;
         }
 
-        // std::vector<std::vector<std::pair<int, int>>> trajectories(Numbers.coord)
-        // for (size_t i = 0; i < Numbers.coordinates[num].size(); i++) {
-
-        // }
+        std::vector<JointValue> trajec = draw_number(Numbers.coordinates[num]);
 
         // // Publish motor positions
-        // for (size_t i = 0; i < mp[num].size(); i++)
-        // {
-        //     auto message = dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple();
-        //     message.id_1 = motor_1; // motor ID for first motor
-        //     message.position_1 = mp[num][i].first;
+        for (size_t i = 0; i < trajec.size(); i++)
+        {
+            auto message = dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple();
+            message.id_1 = motor_1; // motor ID for first motor
+            message.position_1 = static_cast<int>(trajec[i].theta1);
 
-        //     message.id_2 = motor_10; // motor ID for second motor
-        //     message.position_2 = mp[num][i].second;
+            message.id_2 = motor_10; // motor ID for second motor
+            message.position_2 = static_cast<int>(trajec[i].theta2);
 
-            // Publish the message
+            //Publish the message
             RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id_1, message.position_1);
             RCLCPP_INFO(this->get_logger(), "Publishing to motor ID %d: position=%d", message.id_2, message.position_2);
-            publisher_->publish(message);
+            //publisher_->publish(message);
 
             sleep(1);
         }
