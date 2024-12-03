@@ -1,16 +1,16 @@
-#include "rclcpp/rclcpp.hpp"
-#include "drawer/srv/draw.hpp"
 #include "drawer/msg/num.hpp"
+#include "drawer/srv/draw.hpp"
 #include "dynamixel_sdk_custom_interfaces/msg/set_position_multiple.hpp"
-#include <map>
-#include <vector>
-#include <memory>
-#include <unistd.h>
-#include <mutex>
+#include "rclcpp/rclcpp.hpp"
 #include <chrono>
-#include <utility>
 #include <cmath>
 #include <eigen3/Eigen/Dense>
+#include <map>
+#include <memory>
+#include <mutex>
+#include <unistd.h>
+#include <utility>
+#include <vector>
 
 // For each number, we have an array of motor values [motor1, motor2]
 
@@ -33,19 +33,21 @@ struct JointValue{
 struct Number {
     std::map<int, std::vector<Coordinate>> coordinates; // This is in our coordinate frame (in centimeters)
     Number() {
-        double offset_x = 0;  // Horizontal offset to avoid overlap along x-axis
-        double offset_y = 1;  // Vertical offset to avoid singularity
+        double scale = 1; 
+        double zero = 0 * scale;
+        double one = 1 * scale;
+        double two = 2 * scale;
 
-        coordinates[0] = {{0 + offset_x, 0 + offset_y}, {5 + offset_x, 0 + offset_y}, {5 + offset_x, 5 + offset_y}, {5 + offset_x, 10 + offset_y}, {0 + offset_x, 10 + offset_y}, {0 + offset_x, 5 + offset_y}, {0 + offset_x, 0 + offset_y}};
-        coordinates[1] = {{0 + offset_x, 0 + offset_y}, {0 + offset_x, 5 + offset_y}, {0 + offset_x, 10 + offset_y}, {0 + offset_x, 5 + offset_y},  {0 + offset_x, 0 + offset_y}};
-        coordinates[2] = {{0 + offset_x, 0 + offset_y}, {5 + offset_x, 0 + offset_y}, {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {0 + offset_x, 10 + offset_y}, {5 + offset_x, 10 + offset_y}, {0 + offset_x, 10 + offset_y}, {0 + offset_x, 5 + offset_y},  {5 + offset_x, 5 + offset_y},  {5 + offset_x, 0 + offset_y},  {0 + offset_x, 0 + offset_y}};
-        coordinates[3] = {{0 + offset_x, 0 + offset_y}, {5 + offset_x, 0 + offset_y}, {0 + offset_x, 0 + offset_y},  {0 + offset_x, 5 + offset_y},  {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {0 + offset_x, 10 + offset_y}, {5 + offset_x, 10 + offset_y}, {0 + offset_x, 10 + offset_y}, {0 + offset_x, 5 + offset_y},  {0 + offset_x, 0 + offset_y}};
-        coordinates[4] = {{0 + offset_x, 0 + offset_y}, {0 + offset_x, 5 + offset_y}, {0 + offset_x, 10 + offset_y}, {0 + offset_x, 5 + offset_y},  {5 + offset_x, 5 + offset_y},  {5 + offset_x, 10 + offset_y}, {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {0 + offset_x, 0 + offset_y}};
-        coordinates[5] = {{0 + offset_x, 0 + offset_y}, {5 + offset_x, 0 + offset_y}, {0 + offset_x, 0 + offset_y},  {0 + offset_x, 5 + offset_y},  {5 + offset_x, 5 + offset_y},  {5 + offset_x, 10 + offset_y}, {0 + offset_x, 10 + offset_y}, {5 + offset_x, 10 + offset_y}, {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {0 + offset_x, 0 + offset_y}};
-        coordinates[6] = {{0 + offset_x, 0 + offset_y}, {0 + offset_x, 5 + offset_y}, {0 + offset_x, 0 + offset_y},  {5 + offset_x, 0 + offset_y},  {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {5 + offset_x, 5 + offset_y},  {5 + offset_x, 10 + offset_y}, {0 + offset_x, 10 + offset_y}, {5 + offset_x, 10 + offset_y}, {5 + offset_x, 5 + offset_y}, {5 + offset_x, 0 + offset_y}, {0 + offset_x, 0 + offset_y}};
-        coordinates[7] = {{0 + offset_x, 0 + offset_y}, {0 + offset_x, 5 + offset_y}, {0 + offset_x, 10 + offset_y}, {5 + offset_x, 10 + offset_y}, {0 + offset_x, 10 + offset_y}, {0 + offset_x, 5 + offset_y},  {0 + offset_x, 0 + offset_y}};
-        coordinates[8] = {{0 + offset_x, 0 + offset_y}, {5 + offset_x, 0 + offset_y}, {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {0 + offset_x, 10 + offset_y}, {5 + offset_x, 10 + offset_y}, {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {0 + offset_x, 0 + offset_y}};
-        coordinates[9] = {{0 + offset_x, 0 + offset_y}, {0 + offset_x, 5 + offset_y}, {0 + offset_x, 10 + offset_y}, {5 + offset_x, 10 + offset_y}, {5 + offset_x, 5 + offset_y},  {0 + offset_x, 5 + offset_y},  {0 + offset_x, 0 + offset_y}};
+        coordinates[0] = {{zero, -one}, {two, -one}, {two, one},   {zero, one},  {-two, one},  {-two, -one}, {zero, -one}};
+        coordinates[1] = {{zero, -one}, {two, -one}, {zero, -one}, {-two, -one}, {zero, -one}};
+        coordinates[2] = {{zero, -one}, {two, -one}, {two, one},   {two, -one},  {zero, -one}, {zero, one},  {-two, one}, {-two, -one},  {-two, one},  {zero, one},   {zero, -one}};
+        coordinates[3] = {{zero, -one}, {two, -one}, {two, one},   {two, -one},  {zero, -one}, {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {-two, -one},  {zero, -one}};
+        coordinates[4] = {{zero, -one}, {zero, one}, {two, one},   {zero, one},  {zero, -one}, {two, -one},  {zero, -one}, {-two, -one}, {zero, -one}};
+        coordinates[5] = {{zero, -one}, {zero, one}, {two, one},   {two, -one},  {two, one},   {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {-two, -one},  {zero, -one}};
+        coordinates[6] = {{zero, -one}, {zero, one}, {two, one},   {two, -one},  {two, one},   {zero, one},  {-two, one},  {two, -one},  {zero, -one}};
+        coordinates[7] = {{zero, -one}, {two, -one}, {two, one},   {two, -one},  {zero, -one}, {-two, -one}, {zero, -one}};
+        coordinates[8] = {{zero, -one}, {two, -one}, {two, one},   {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {zero, one},  {zero, -one}};
+        coordinates[9] = {{zero, -one}, {two, -one}, {two, one},   {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {-two, -one}, {zero, -one}};
     };
 } Numbers;
 
@@ -56,7 +58,7 @@ bool printed = false;
 
 // Constants
 const double L = 5.0; // Length of the first link
-const double d = 5.0; // Distance between motors
+const double d = 3.5; // Distance between motors
 const double Pi = 3.141592653589793;
 
 float rad2deg(float rad) {
@@ -67,118 +69,22 @@ float deg2rad(float deg) {
     return deg * Pi / 180;
 }
 
-// Function to calculate the system of equations
-Eigen::Vector2d equations(const Eigen::Vector2d& vars, const Coordinate& P) {
-    double theta = vars(0);  // Angle of Motor 1
-    double phi = vars(1);    // Angle of Motor 2
-
-    // Elbow positions
-    Coordinate E_1{-d / 2.0 + static_cast<double>(L) * cos(theta), static_cast<double>(L) * sin(theta)};
-    Coordinate E_2{d / 2.0 + static_cast<double>(L) * cos(phi), static_cast<double>(L) * sin(phi)};
-
-    Eigen::Vector2d eqs;
-    eqs(0) = pow(P.x - E_1.x, 2) + pow(P.y - E_1.y, 2) - pow(static_cast<double>(L), 2);  // Motor 1 equation
-    eqs(1) = pow(P.x - E_2.x, 2) + pow(P.y - E_2.y, 2) - pow(static_cast<double>(L), 2);  // Motor 2 equation
-
-    return eqs;
-}
-
-// Function to calculate the Jacobian matrix
-Eigen::Matrix2d jacobian(const Eigen::Vector2d& vars, const Coordinate& P) {
-    double theta = vars(0);
-    double phi = vars(1);
-
-    // Elbow positions
-    Coordinate E_1{-d / 2.0 + static_cast<double>(L) * cos(theta), static_cast<double>(L) * sin(theta)};
-    Coordinate E_2{d / 2.0 + static_cast<double>(L) * cos(phi), static_cast<double>(L) * sin(phi)};
-
-    Eigen::Matrix2d J;
-
-    // Partial derivatives for the first equation (Motor 1)
-    J(0, 0) = -2.0 * (P.x - E_1.x) * static_cast<double>(L) * sin(theta) - 2.0 * (P.y - E_1.y) * static_cast<double>(L) * cos(theta);  // d(eq1)/d(theta)
-    J(0, 1) = 0.0;  // No dependence of eq1 on phi
-
-    // Partial derivatives for the second equation (Motor 2)
-    J(1, 0) = 0.0;  // No dependence of eq2 on theta
-    J(1, 1) = -2.0 * (P.x - E_2.x) * static_cast<double>(L) * sin(phi) - 2.0 * (P.y - E_2.y) * static_cast<double>(L) * cos(phi);  // d(eq2)/d(phi)
-    
-    if (!printed) {
-        std::cout << "P: " << P.x << " " << P.y << std::endl;
-        printed = true;
-    }
-    std::cout << "E1: " << E_1.x + d/2 << " " << E_1.y << std::endl;
-    std::cout << "E2: " << E_2.x - d/2 << " " << E_2.y << std::endl;
-    std::cout << "Theta: " << rad2deg(theta) << std::endl;
-    std::cout << "Phi: " << rad2deg(phi) << std::endl;
-    std::cout << "J: " << J(0, 0) << " " << J(1, 1) << std::endl;
-
-    return J;
-}
-
-// Newton-Raphson Solver
-Eigen::Vector2d solveInverseKinematics(const Coordinate& P, const JointValue& initial_guess) {
-    // Initial guess for the motor angles
-    Eigen::Vector2d vars = Eigen::Vector2d(initial_guess.theta, initial_guess.phi);
-
-    std::cout << "Initial guess: " << rad2deg(vars[0]) << " " << rad2deg(vars[1]) << std::endl;
-
-    // Iterative solver parameters
-    const int max_iterations = 10000;
-    const double tolerance = 5e-2;  // Increased tolerance for easier convergence
-    const double learning_rate = 1e-3; //1e-3; // Learning rate for damping
-
-    // Check if the point is reachable
-    double distance = sqrt(P.x * P.x + P.y * P.y);
-    if (distance > 2 * L) {
-        throw std::runtime_error("Target point is out of reach.");
-    }
-
-    std::cout << "\n\ntolerance: " << tolerance << std::endl;
-    for (int i = 0; i < max_iterations; ++i) {
-        Eigen::Vector2d f = equations(vars, P);
-        Eigen::Matrix2d J = jacobian(vars, P);
-
-        // Damping for numerical stability
-        Eigen::Vector2d delta = J.colPivHouseholderQr().solve(-f);
-        // Check for convergence
-        std::cout << "vars: " << rad2deg(vars[0]) << " " << rad2deg(vars[1]) << std::endl;
-        std::cout << "delta: " << delta << std::endl;
-        std::cout << "delta norm: " << delta.norm() << std::endl;
-        std::cout << "iterations: " << i << "\n\n" << std::endl;
-        if (delta.norm() < tolerance) {
-            std::cout << "Converged after " << i + 1 << " iterations." << std::endl;
-            return vars;
-        }
-        delta *= learning_rate;
-        vars += delta;
-    }
-
-    throw std::runtime_error("Newton-Raphson did not converge.");
-}
-
 std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coordinate& to, const int& steps = 10) {
     std::vector<JointValue> trajectory(steps);
 
-    JointValue initial_guess{3*Pi/4,
-                             Pi / 4};  // Initial guess for the first point
-
     for (int i = 0; i < steps; i++) {
         double a = i / static_cast<double>(steps - 1); // Interpolate linearly
-        Coordinate interpolated_point{
+        Coordinate i_point{
             from.x + a * (to.x - from.x),
             from.y + a * (to.y - from.y)};
 
-        try {
-            Eigen::Vector2d angles = solveInverseKinematics(interpolated_point, initial_guess);
-            initial_guess = JointValue{angles(0), angles(1)};  // Update the initial guess
-            trajectory[i] = initial_guess;
-            break;
-        } catch (const std::runtime_error& e) {
-            std::cerr << "IK failed at point (" << interpolated_point.x << ", " << interpolated_point.y << "): " << e.what() << std::endl;
-            // Handle failure (e.g., skip the point, use a fallback solution, or halt execution)
-            trajectory[i] = initial_guess;  // Retain the last valid configuration
-            break;
-        }
+            double dOffset = d/2;
+            double frameOffsetY = 8;
+
+
+            double theta = std::atan2(i_point.y, i_point.x + dOffset) + acos((pow(i_point.x + dOffset,2) + pow(i_point.y, 2)) / (2*L*sqrt(pow(i_point.x + dOffset,2) + pow(i_point.y, 2) )));
+            double phi   = std::atan2(i_point.y, i_point.x - dOffset) - acos((pow(i_point.x - dOffset,2) + pow(i_point.y, 2)) / (2*L*sqrt(pow(i_point.x - dOffset,2) + pow(i_point.y, 2) )));
+            trajectory[i] = JointValue(theta, phi);
     }
 
     return trajectory;
@@ -187,7 +93,7 @@ std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coo
 std::vector<JointValue> draw_number(const std::vector<Coordinate>& number, const int& steps = 10) {
     std::vector<JointValue> trajectory;
     
-    for (int i {1}; i < 2; i++) {
+    for (int i {1}; i < number.size(); i++) {
         std::vector<JointValue> single_trajectory = tcp_to_joint_transform(number.at(i - 1), number.at(i), steps);
         for(int j {0}; j < single_trajectory.size(); j++){
             trajectory.emplace_back(single_trajectory[j]);
@@ -244,14 +150,15 @@ private:
 
         // Publish motor positions
         for (size_t i = 0; i < trajectory.size(); i++) {
-            dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple message;
-            message.id_1 = motor_1;  // Motor ID for motor 1
-            message.position_1 = static_cast<int>(trajectory[i].theta * 180 / Pi); // Convert to degrees
+            std::cout << rad2deg(trajectory[i].theta) << " " <<  rad2deg(trajectory[i].phi) << std::endl;
+            //dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple message;
+            // message.id_1 = motor_1;  // Motor ID for motor 1
+            // message.position_1 = static_cast<int>(trajectory[i].theta * 180 / Pi); // Convert to degrees
 
-            message.id_2 = motor_10;  // Motor ID for motor 2
-            message.position_2 = static_cast<int>(trajectory[i].phi * 180 / Pi); // Convert to degrees
+            // message.id_2 = motor_10;  // Motor ID for motor 2
+            // message.position_2 = static_cast<int>(trajectory[i].phi * 180 / Pi); // Convert to degrees
 
-            publisher_->publish(message);
+            // publisher_->publish(message);
 
             // Simulate delay for hardware actuation
             rclcpp::sleep_for(std::chrono::milliseconds(1000));
