@@ -33,7 +33,7 @@ struct JointValue{
 struct Number {
     std::map<int, std::vector<Coordinate>> coordinates; // This is in our coordinate frame (in centimeters)
     Number() {
-        double offset_x = 1;  // Horizontal offset to avoid overlap along x-axis
+        double offset_x = 0;  // Horizontal offset to avoid overlap along x-axis
         double offset_y = 1;  // Vertical offset to avoid singularity
 
         coordinates[0] = {{0 + offset_x, 0 + offset_y}, {5 + offset_x, 0 + offset_y}, {5 + offset_x, 5 + offset_y}, {5 + offset_x, 10 + offset_y}, {0 + offset_x, 10 + offset_y}, {0 + offset_x, 5 + offset_y}, {0 + offset_x, 0 + offset_y}};
@@ -52,11 +52,20 @@ struct Number {
 const int motor_1 = 1;
 const int motor_10 = 10;
 std::mutex num_mutex_;
+bool printed = false;
 
 // Constants
-const double L = 3.0; // Length of the first link
-const double d = 3.0; // Distance between motors
+const double L = 5.0; // Length of the first link
+const double d = 5.0; // Distance between motors
 const double Pi = 3.141592653589793;
+
+float rad2deg(float rad) {
+    return rad * 180 / Pi;
+}
+
+float deg2rad(float deg) {
+    return deg * Pi / 180;
+}
 
 // Function to calculate the system of equations
 Eigen::Vector2d equations(const Eigen::Vector2d& vars, const Coordinate& P) {
@@ -86,12 +95,22 @@ Eigen::Matrix2d jacobian(const Eigen::Vector2d& vars, const Coordinate& P) {
     Eigen::Matrix2d J;
 
     // Partial derivatives for the first equation (Motor 1)
-    J(0, 0) = -2.0 * (P.x - E_1.x) * static_cast<double>(L) * sin(theta) + 2.0 * (P.y - E_1.y) * static_cast<double>(L) * cos(theta);  // d(eq1)/d(theta)
+    J(0, 0) = -2.0 * (P.x - E_1.x) * static_cast<double>(L) * sin(theta) - 2.0 * (P.y - E_1.y) * static_cast<double>(L) * cos(theta);  // d(eq1)/d(theta)
     J(0, 1) = 0.0;  // No dependence of eq1 on phi
 
     // Partial derivatives for the second equation (Motor 2)
     J(1, 0) = 0.0;  // No dependence of eq2 on theta
-    J(1, 1) = -2.0 * (P.x - E_2.x) * static_cast<double>(L) * sin(phi) + 2.0 * (P.y - E_2.y) * static_cast<double>(L) * cos(phi);  // d(eq2)/d(phi)
+    J(1, 1) = -2.0 * (P.x - E_2.x) * static_cast<double>(L) * sin(phi) - 2.0 * (P.y - E_2.y) * static_cast<double>(L) * cos(phi);  // d(eq2)/d(phi)
+    
+    if (!printed) {
+        std::cout << "P: " << P.x << " " << P.y << std::endl;
+        printed = true;
+    }
+    std::cout << "E1: " << E_1.x + d/2 << " " << E_1.y << std::endl;
+    std::cout << "E2: " << E_2.x - d/2 << " " << E_2.y << std::endl;
+    std::cout << "Theta: " << rad2deg(theta) << std::endl;
+    std::cout << "Phi: " << rad2deg(phi) << std::endl;
+    std::cout << "J: " << J(0, 0) << " " << J(1, 1) << std::endl;
 
     return J;
 }
@@ -101,10 +120,12 @@ Eigen::Vector2d solveInverseKinematics(const Coordinate& P, const JointValue& in
     // Initial guess for the motor angles
     Eigen::Vector2d vars = Eigen::Vector2d(initial_guess.theta, initial_guess.phi);
 
+    std::cout << "Initial guess: " << rad2deg(vars[0]) << " " << rad2deg(vars[1]) << std::endl;
+
     // Iterative solver parameters
-    const int max_iterations = 100;
-    const double tolerance = 1e-2;  // Increased tolerance for easier convergence
-    const double damping_factor = 0.1;  // Small damping factor for stability
+    const int max_iterations = 10000;
+    const double tolerance = 5e-2;  // Increased tolerance for easier convergence
+    const double learning_rate = 1e-3; //1e-3; // Learning rate for damping
 
     // Check if the point is reachable
     double distance = sqrt(P.x * P.x + P.y * P.y);
@@ -112,25 +133,24 @@ Eigen::Vector2d solveInverseKinematics(const Coordinate& P, const JointValue& in
         throw std::runtime_error("Target point is out of reach.");
     }
 
-    std::cout << "tolerance: " << tolerance << std::endl;
+    std::cout << "\n\ntolerance: " << tolerance << std::endl;
     for (int i = 0; i < max_iterations; ++i) {
         Eigen::Vector2d f = equations(vars, P);
         Eigen::Matrix2d J = jacobian(vars, P);
 
         // Damping for numerical stability
         Eigen::Vector2d delta = J.colPivHouseholderQr().solve(-f);
-        delta *= (1.0 + damping_factor);
-
-        vars += delta;
-
         // Check for convergence
-        std::cout << "vars: " << vars[0] << " " << vars[1] << std::endl;
+        std::cout << "vars: " << rad2deg(vars[0]) << " " << rad2deg(vars[1]) << std::endl;
+        std::cout << "delta: " << delta << std::endl;
         std::cout << "delta norm: " << delta.norm() << std::endl;
-        std::cout << "iterations: " << i << std::endl;
+        std::cout << "iterations: " << i << "\n\n" << std::endl;
         if (delta.norm() < tolerance) {
             std::cout << "Converged after " << i + 1 << " iterations." << std::endl;
             return vars;
         }
+        delta *= learning_rate;
+        vars += delta;
     }
 
     throw std::runtime_error("Newton-Raphson did not converge.");
@@ -139,7 +159,8 @@ Eigen::Vector2d solveInverseKinematics(const Coordinate& P, const JointValue& in
 std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coordinate& to, const int& steps = 10) {
     std::vector<JointValue> trajectory(steps);
 
-    JointValue initial_guess{Pi / 4, Pi / 4};  // Initial guess for the first point
+    JointValue initial_guess{3*Pi/4,
+                             Pi / 4};  // Initial guess for the first point
 
     for (int i = 0; i < steps; i++) {
         double a = i / static_cast<double>(steps - 1); // Interpolate linearly
@@ -151,10 +172,12 @@ std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coo
             Eigen::Vector2d angles = solveInverseKinematics(interpolated_point, initial_guess);
             initial_guess = JointValue{angles(0), angles(1)};  // Update the initial guess
             trajectory[i] = initial_guess;
+            break;
         } catch (const std::runtime_error& e) {
             std::cerr << "IK failed at point (" << interpolated_point.x << ", " << interpolated_point.y << "): " << e.what() << std::endl;
             // Handle failure (e.g., skip the point, use a fallback solution, or halt execution)
             trajectory[i] = initial_guess;  // Retain the last valid configuration
+            break;
         }
     }
 
@@ -164,7 +187,7 @@ std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coo
 std::vector<JointValue> draw_number(const std::vector<Coordinate>& number, const int& steps = 10) {
     std::vector<JointValue> trajectory;
     
-    for (int i {1}; i < number.size(); i++) {
+    for (int i {1}; i < 2; i++) {
         std::vector<JointValue> single_trajectory = tcp_to_joint_transform(number.at(i - 1), number.at(i), steps);
         for(int j {0}; j < single_trajectory.size(); j++){
             trajectory.emplace_back(single_trajectory[j]);
