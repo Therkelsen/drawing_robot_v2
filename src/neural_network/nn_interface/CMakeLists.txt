@@ -42,6 +42,7 @@ endif()
 # Install your node executable
 install(TARGETS
   nn_analyzer
+  nn_analyzer_cpu
   DESTINATION lib/${PROJECT_NAME}
 )
 
