@@ -38,7 +38,7 @@ private:
     rclcpp::Publisher<drawer::msg::Num>::SharedPtr number_publisher_;
     int data_size_bytes;
     XNn_inference nn;
-    int times_to_log = 30;
+    int times_to_log = 300;
     int times_logged = 0;
 
     void onImageMsg(const sensor_msgs::msg::Image::SharedPtr msg) {
@@ -66,7 +66,7 @@ private:
             XNn_inference_Start(&nn);
 
             while(!XNn_inference_IsDone(&nn)){
-          	    usleep(100);
+          	    // usleep(100);
             }
             
             int out_r_value = (int)XNn_inference_Get_out_r(&nn);
@@ -75,10 +75,10 @@ private:
             rclcpp::Time stop = this->get_clock()->now();
             auto delta_t = (stop-start).nanoseconds();
 
-            if(out_r_value == 0 && times_logged < times_to_log) {
+            if(times_logged < times_to_log) {
                 times_logged++;
                 // Log to CSV file
-                std::ofstream csv_file("0_u96_cpu.csv", std::ios::app); // Open file in append mode
+                std::ofstream csv_file("alite.csv", std::ios::app); // Open file in append mode
                 if (csv_file.is_open()) {
                     csv_file << delta_t << "\n"; // Write the delta_t in nanoseconds
                     csv_file.close(); // Close the file
