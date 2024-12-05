@@ -13,11 +13,15 @@ find_package(OpenCV REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(drawer REQUIRED)  # Dependency on drawer for Number.srv
 
-include_directories(${OpenCV_INCLUDE_DIRS})
+include_directories(${OpenCV_INCLUDE_DIRS}
+                    include)
 
 # Create an executable for your node
 add_executable(nn_analyzer src/nn_analyzer.cpp)
 ament_target_dependencies(nn_analyzer rclcpp OpenCV cv_bridge sensor_msgs drawer)
+
+add_executable(nn_analyzer_cpu src/nn_analyzer_cpu.cpp)
+ament_target_dependencies(nn_analyzer_cpu rclcpp OpenCV cv_bridge sensor_msgs drawer)
 
 target_link_libraries(nn_analyzer ${OpenCV_LIBS} ${cv_bridge_LIBRARIES})
 target_sources(nn_analyzer PRIVATE 
@@ -26,7 +30,9 @@ target_sources(nn_analyzer PRIVATE
 
 target_include_directories(nn_analyzer PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/drivers/nn_inference_v1_0/src
+  ${CMAKE_CURRENT_SOURCE_DIR}/include  
 )
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

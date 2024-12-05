@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/.apc/.src</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/.apc/.tb</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/.tcls</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/matmul.cpp</name>
 			<type>1</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul.cpp</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul.cpp</location>
 		</link>
 		<link>
 			<name>source/matmul.hpp</name>
 			<type>1</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul.hpp</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul.hpp</location>
 		</link>
 		<link>
 			<name>testbench/matmul_tb.cpp</name>
 			<type>1</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul_tb.cpp</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/matmul_tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/solution1.directive</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/directives.tcl</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/script.tcl</location>
+			<location>/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS/neural_network_hls/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
