@@ -1,5 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include <cv_bridge/cv_bridge.h>
+#include <fstream>
 #include <map>
 #include <memory>
 #include <opencv2/highgui.hpp>
@@ -37,6 +38,8 @@ private:
     rclcpp::Publisher<drawer::msg::Num>::SharedPtr number_publisher_;
     int data_size_bytes;
     XNn_inference nn;
+    int times_to_log = 30;
+    int times_logged = 0;
 
     void onImageMsg(const sensor_msgs::msg::Image::SharedPtr msg) {
 			RCLCPP_INFO(this->get_logger(), "Received image!");
@@ -71,6 +74,9 @@ private:
             //                   0.0, 0.0, 0.0, 0.0, 0.0, 0.003921569, 0.011764706, 0.023529412, 0.011764706, 0.0};
             
             // Resetting input array
+
+            // Start timer
+            rclcpp::Time start = this->get_clock()->now();
             XNn_inference_Write_input_img_Bytes(&nn, 0, (char*)arr, data_size_bytes);
             
             for(unsigned int i = 0; i < 10; i++){
@@ -88,6 +94,24 @@ private:
             }
             
             int out_r_value = (int)XNn_inference_Get_out_r(&nn);
+
+            // Stop timer
+            rclcpp::Time stop = this->get_clock()->now();
+            auto delta_t = (stop-start).nanoseconds();
+
+            if(out_r_value == 6 && times_logged < times_to_log) {
+                times_logged++;
+                // Log to CSV file
+                std::ofstream csv_file("6_alite.csv", std::ios::app); // Open file in append mode
+                if (csv_file.is_open()) {
+                    csv_file << delta_t << "\n"; // Write the delta_t in nanoseconds
+                    csv_file.close(); // Close the file
+                    RCLCPP_INFO(this->get_logger(), "Logged %d times", times_logged);
+                } else {
+                    RCLCPP_ERROR(this->get_logger(), "Unable to open the CSV file for logging!");
+                }
+            }
+
 
 			RCLCPP_INFO(this->get_logger(), "The image resulted in number: %d", out_r_value);
             // callDrawService(out_r_value);
