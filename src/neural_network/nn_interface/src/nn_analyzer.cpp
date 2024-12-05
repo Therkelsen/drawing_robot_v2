@@ -99,10 +99,10 @@ private:
             rclcpp::Time stop = this->get_clock()->now();
             auto delta_t = (stop-start).nanoseconds();
 
-            if(out_r_value == 6 && times_logged < times_to_log) {
+            if(out_r_value == 9 && times_logged < times_to_log) {
                 times_logged++;
                 // Log to CSV file
-                std::ofstream csv_file("6_alite.csv", std::ios::app); // Open file in append mode
+                std::ofstream csv_file("9_alite.csv", std::ios::app); // Open file in append mode
                 if (csv_file.is_open()) {
                     csv_file << delta_t << "\n"; // Write the delta_t in nanoseconds
                     csv_file.close(); // Close the file
