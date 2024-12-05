@@ -104,6 +104,8 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr camera_subscription_;
     rclcpp::Publisher<drawer::msg::Num>::SharedPtr number_publisher_;
     int data_size_bytes;
+    int times_to_log = 30;
+    int times_logged = 0;
 
     void onImageMsg(const sensor_msgs::msg::Image::SharedPtr msg) {
 			RCLCPP_INFO(this->get_logger(), "Received image!");
@@ -124,12 +126,32 @@ private:
             float temp_output3[1][n_layer3] = {0};
             int prediction = -1;
 
+            rclcpp::Time start = this->get_clock()->now();
+
             l1_mm(arr, weights::layer1_weights, temp_output);
             l1_relu(temp_output, temp_output);
             l2_mm(temp_output, weights::layer2_weights, temp_output2);
             l2_relu(temp_output2, temp_output2);
             l3_mm(temp_output2, weights::layer3_weights, temp_output3);
             l3_softmax(temp_output3, prediction);
+
+            // Stop timer
+            rclcpp::Time stop = this->get_clock()->now();
+            auto delta_t = (stop-start).nanoseconds();
+
+            if(prediction == 1 && times_logged < times_to_log) {
+                times_logged++;
+                // Log to CSV file
+                std::ofstream csv_file("1_cpu.csv", std::ios::app); // Open file in append mode
+                if (csv_file.is_open()) {
+                    csv_file << delta_t << "\n"; // Write the delta_t in nanoseconds
+                    csv_file.close(); // Close the file
+                    RCLCPP_INFO(this->get_logger(), "Logged %d times", times_logged);
+                } else {
+                    RCLCPP_ERROR(this->get_logger(), "Unable to open the CSV file for logging!");
+                }
+            }
+
 
             publishData(prediction);
 		}
