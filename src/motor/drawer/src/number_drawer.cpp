@@ -44,7 +44,7 @@ struct Number {
         coordinates[3] = {{zero, -one}, {two, -one}, {two, one},   {two, -one},  {zero, -one}, {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {-two, -one},  {zero, -one}};
         coordinates[4] = {{zero, -one}, {zero, one}, {two, one},   {zero, one},  {zero, -one}, {two, -one},  {zero, -one}, {-two, -one}, {zero, -one}};
         coordinates[5] = {{zero, -one}, {zero, one}, {two, one},   {two, -one},  {two, one},   {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {-two, -one},  {zero, -one}};
-        coordinates[6] = {{zero, -one}, {zero, one}, {two, one},   {two, -one},  {two, one},   {zero, one},  {-two, one},  {two, -one},  {zero, -one}};
+        coordinates[6] = {{zero, -one}, {zero, one}, {two, one},   {two, -one},  {two, one},   {zero, one},  {-two, one},  {-two, -one},  {zero, -one}};
         coordinates[7] = {{zero, -one}, {two, -one}, {two, one},   {two, -one},  {zero, -one}, {-two, -one}, {zero, -one}};
         coordinates[8] = {{zero, -one}, {two, -one}, {two, one},   {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {zero, one},  {zero, -one}};
         coordinates[9] = {{zero, -one}, {two, -one}, {two, one},   {zero, one},  {zero, -one}, {-two, -one}, {-two, one},  {-two, -one}, {zero, -one}};
@@ -61,6 +61,8 @@ const double L = 5.0; // Length of the first link
 const double d = 3.5; // Distance between motors
 const double Pi = 3.141592653589793;
 
+const double motor_zero_offset = 17; // degrees
+
 float rad2deg(float rad) {
     return rad * 180 / Pi;
 }
@@ -69,22 +71,58 @@ float deg2rad(float deg) {
     return deg * Pi / 180;
 }
 
+int deg2motorstep(float deg) {
+    return static_cast<int>(deg) * 1024/360;
+}
+
+int rad2motorstep(float rad) {
+    return deg2motorstep(rad2deg(rad));
+}
+
 std::vector<JointValue> tcp_to_joint_transform(const Coordinate& from, const Coordinate& to, const int& steps = 10) {
     std::vector<JointValue> trajectory(steps);
 
-    for (int i = 0; i < steps; i++) {
-        double a = i / static_cast<double>(steps - 1); // Interpolate linearly
+    double step_size = 1.0 / steps;
+
+    for (int i = 1; i < steps+1; i++) {
+        // if(steps > 1)
+        // double a = i / static_cast<double>(steps - 1); // Interpolate linearly
+
+        double a = step_size * i; 
+
         Coordinate i_point{
             from.x + a * (to.x - from.x),
             from.y + a * (to.y - from.y)};
 
-            double dOffset = d/2;
-            double frameOffsetY = 8;
+        double dOffset = d/2;
+        double frameOffsetY = 7;
 
+        // std::cout << (to.x - from.x) << " " << a * (to.x - from.x) << " " << from.x << std::endl;
+        // std::cout << (to.y - from.y) << " " << a * (to.y - from.y) << " " << from.y << std::endl;
+        // std::cout << dOffset << " " << frameOffsetY << std::endl;
+        // std::cout << i_point.x << " " << i_point.y << std::endl;
+        // std::cout << "Step " << i << 
+        //     std::atan2(i_point.y + frameOffsetY, i_point.x + dOffset) << 
+        //     acos((pow(i_point.x + dOffset,2) + pow(i_point.y + frameOffsetY, 2)) / (2*L*sqrt(pow(i_point.x + dOffset,2) + pow(i_point.y + frameOffsetY, 2) ))) <<
+        //     pow(i_point.x + dOffset,2) + pow(i_point.y + frameOffsetY, 2) << 
+        //     (2*L*sqrt(pow(i_point.x + dOffset,2) + pow(i_point.y + frameOffsetY, 2) )) << 
+        //     std::endl;
 
-            double theta = std::atan2(i_point.y, i_point.x + dOffset) + acos((pow(i_point.x + dOffset,2) + pow(i_point.y, 2)) / (2*L*sqrt(pow(i_point.x + dOffset,2) + pow(i_point.y, 2) )));
-            double phi   = std::atan2(i_point.y, i_point.x - dOffset) - acos((pow(i_point.x - dOffset,2) + pow(i_point.y, 2)) / (2*L*sqrt(pow(i_point.x - dOffset,2) + pow(i_point.y, 2) )));
-            trajectory[i] = JointValue(theta, phi);
+        double motP = std::atan2(i_point.y + frameOffsetY, i_point.x + dOffset) + acos((pow(i_point.x + dOffset,2) + pow(i_point.y + frameOffsetY, 2)) / (2*L*sqrt(pow(i_point.x + dOffset,2) + pow(i_point.y + frameOffsetY, 2) )));
+        double motM   = std::atan2(i_point.y + frameOffsetY, i_point.x - dOffset) - acos((pow(i_point.x - dOffset,2) + pow(i_point.y + frameOffsetY, 2)) / (2*L*sqrt(pow(i_point.x - dOffset,2) + pow(i_point.y + frameOffsetY, 2) )));
+        
+        double theta = 0;
+        double phi = 0;
+
+        if(motP >= motM){
+            theta = motM;
+            phi = motP;
+        }else{
+            theta = motP;
+            phi = motM;
+        }
+
+        trajectory[i-1] = JointValue(theta, phi);
     }
 
     return trajectory;
@@ -95,8 +133,10 @@ std::vector<JointValue> draw_number(const std::vector<Coordinate>& number, const
     
     for (int i {1}; i < number.size(); i++) {
         std::vector<JointValue> single_trajectory = tcp_to_joint_transform(number.at(i - 1), number.at(i), steps);
+        //std::cout << "Path " << i << std::endl;
         for(int j {0}; j < single_trajectory.size(); j++){
             trajectory.emplace_back(single_trajectory[j]);
+            //std::cout << "single_trajectory " << single_trajectory[j].theta << " " << single_trajectory[j].phi << std::endl;
         }
     }
     
@@ -129,6 +169,9 @@ public:
 private:
     void onNumber(const drawer::msg::Num::SharedPtr msg) {
         std::lock_guard<std::mutex> lock(num_mutex_);
+        if(msg->num != num_) {
+            RCLCPP_INFO(this->get_logger(), "Read new number: %d", msg->num);
+        }
         num_ = msg->num;
     }
 
@@ -146,18 +189,19 @@ private:
         }
 
         // Generate the trajectory
-        // std::vector<JointValue> trajectory = draw_number(Numbers.coordinates[num]);
-        std::vector<JointValue> trajectory = {JointValue(0, 0), JointValue(deg2rad(20), deg2rad(20))};
+        int steps = 1;
+        std::vector<JointValue> trajectory = draw_number(Numbers.coordinates[num], steps);
+        // std::vector<JointValue> trajectory = {JointValue(deg2rad(90), deg2rad(90))};
 
         // Publish motor positions
         for (size_t i = 0; i < trajectory.size(); i++) {
-            std::cout << rad2deg(trajectory[i].theta) << " " <<  rad2deg(trajectory[i].phi) << std::endl;
-            //dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple message;
+            //std::cout << rad2deg(trajectory[i].theta) << " " <<  rad2deg(trajectory[i].phi) << std::endl;
+            dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple message;
             message.id_1 = motor_1;  // Motor ID for motor 1
-            message.position_1 = static_cast<int>(trajectory[i].theta); // Convert to degrees
+            message.position_1 = static_cast<int>(rad2motorstep(trajectory[i].theta - deg2rad(motor_zero_offset))); // Convert to degrees
 
             message.id_2 = motor_10;  // Motor ID for motor 2
-            message.position_2 = static_cast<int>(trajectory[i].phi); // Convert to degrees
+            message.position_2 = static_cast<int>(rad2motorstep(trajectory[i].phi - deg2rad(motor_zero_offset))); // Convert to degrees
 
             publisher_->publish(message);
 
