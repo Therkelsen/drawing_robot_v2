@@ -146,19 +146,20 @@ private:
         }
 
         // Generate the trajectory
-        std::vector<JointValue> trajectory = draw_number(Numbers.coordinates[num]);
+        // std::vector<JointValue> trajectory = draw_number(Numbers.coordinates[num]);
+        std::vector<JointValue> trajectory = {JointValue(0, 0), JointValue(deg2rad(20), deg2rad(20))};
 
         // Publish motor positions
         for (size_t i = 0; i < trajectory.size(); i++) {
             std::cout << rad2deg(trajectory[i].theta) << " " <<  rad2deg(trajectory[i].phi) << std::endl;
             //dynamixel_sdk_custom_interfaces::msg::SetPositionMultiple message;
-            // message.id_1 = motor_1;  // Motor ID for motor 1
-            // message.position_1 = static_cast<int>(trajectory[i].theta * 180 / Pi); // Convert to degrees
+            message.id_1 = motor_1;  // Motor ID for motor 1
+            message.position_1 = static_cast<int>(trajectory[i].theta); // Convert to degrees
 
-            // message.id_2 = motor_10;  // Motor ID for motor 2
-            // message.position_2 = static_cast<int>(trajectory[i].phi * 180 / Pi); // Convert to degrees
+            message.id_2 = motor_10;  // Motor ID for motor 2
+            message.position_2 = static_cast<int>(trajectory[i].phi); // Convert to degrees
 
-            // publisher_->publish(message);
+            publisher_->publish(message);
 
             // Simulate delay for hardware actuation
             rclcpp::sleep_for(std::chrono::milliseconds(1000));
