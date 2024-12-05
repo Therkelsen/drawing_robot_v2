@@ -104,7 +104,7 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr camera_subscription_;
     rclcpp::Publisher<drawer::msg::Num>::SharedPtr number_publisher_;
     int data_size_bytes;
-    int times_to_log = 30;
+    int times_to_log = 300;
     int times_logged = 0;
 
     void onImageMsg(const sensor_msgs::msg::Image::SharedPtr msg) {
@@ -139,10 +139,10 @@ private:
             rclcpp::Time stop = this->get_clock()->now();
             auto delta_t = (stop-start).nanoseconds();
 
-            if(prediction == 9 && times_logged < times_to_log) {
+            if(times_logged < times_to_log) {
                 times_logged++;
                 // Log to CSV file
-                std::ofstream csv_file("9_u96_cpu.csv", std::ios::app); // Open file in append mode
+                std::ofstream csv_file("laptop_cpu.csv", std::ios::app); // Open file in append mode
                 if (csv_file.is_open()) {
                     csv_file << delta_t << "\n"; // Write the delta_t in nanoseconds
                     csv_file.close(); // Close the file
