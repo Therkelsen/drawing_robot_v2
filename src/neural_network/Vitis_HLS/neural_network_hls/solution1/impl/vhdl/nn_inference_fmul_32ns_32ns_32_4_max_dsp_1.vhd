@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity nn_inference_fmul_32ns_32ns_32_4_max_dsp_1 is
     generic (
-        ID         : integer := 9;
+        ID         : integer := 33;
         NUM_STAGE  : integer := 4;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

@@ -61,9 +61,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
                                     								
                                 </option>
                                 								
@@ -99,9 +99,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
                                     								
                                 </option>
                                 								
@@ -183,7 +183,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
+                                <listOptionValue builtIn="false" value="/home/therkelsen/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
                                 							
                             </option>
                             							
@@ -267,9 +267,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
                                     								
                                 </option>
                                 								
@@ -295,9 +295,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
                                     								
                                 </option>
                                 								
@@ -369,7 +369,7 @@
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/home/peterparker/ros/src/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
+                                <listOptionValue builtIn="false" value="/home/therkelsen/drawing_robot_v2/src/neural_network/Vitis_HLS"/>
                                 							
                             </option>
                             							

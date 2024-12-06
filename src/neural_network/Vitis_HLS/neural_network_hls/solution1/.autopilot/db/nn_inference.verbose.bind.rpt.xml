@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'nn_inference'" level="0">
-<item name = "Date">Tue Nov 26 10:05:27 2024
+<item name = "Date">Fri Dec  6 12:36:22 2024
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)</item>
 <item name = "Project">neural_network_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.195 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 12.561 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,23 +24,26 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1198, 1198, 11.980 us, 11.980 us, 1199, 1199, none</column>
+<column name="">13239, 13239, 0.166 ms, 0.166 ms, 13240, 13240, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_l1_mm_fu_339">l1_mm, 817, 817, 8.170 us, 8.170 us, 817, 817, none</column>
-<column name="grp_l2_mm_fu_346">l2_mm, 171, 171, 1.710 us, 1.710 us, 171, 171, none</column>
-<column name="grp_l3_mm_fu_352">l3_mm, 84, 84, 0.840 us, 0.840 us, 84, 84, none</column>
-<column name="grp_l1_relu_fu_357">l1_relu, 31, 31, 0.310 us, 0.310 us, 31, 31, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">32, 32, 1, 1, 1, 32, yes</column>
 <column name="- Loop 2">16, 16, 1, 1, 1, 16, yes</column>
+<column name="- Loop 3">10, 10, 1, 1, 1, 10, yes</column>
+<column name="- col_prod">12806, 12806, 11, 4, 1, 3200, yes</column>
+<column name="- loop1">33, 33, 3, 1, 1, 32, yes</column>
+<column name="- col">179, 179, 165, 1, 1, 16, yes</column>
+<column name="- loop1">17, 17, 3, 1, 1, 16, yes</column>
+<column name="- col">93, 93, 85, 1, 1, 10, yes</column>
+<column name="- loop1">11, 11, 3, 1, 1, 10, yes</column>
 </table>
 </item>
 </section>

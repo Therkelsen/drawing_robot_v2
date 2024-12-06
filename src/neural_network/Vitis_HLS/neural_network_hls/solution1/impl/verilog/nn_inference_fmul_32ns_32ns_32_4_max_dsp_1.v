@@ -7,7 +7,7 @@
 
 module nn_inference_fmul_32ns_32ns_32_4_max_dsp_1
 #(parameter
-    ID         = 9,
+    ID         = 33,
     NUM_STAGE  = 4,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

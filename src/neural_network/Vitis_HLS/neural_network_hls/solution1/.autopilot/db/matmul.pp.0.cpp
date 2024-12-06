@@ -5754,12 +5754,12 @@ namespace weights{
 
 void l1_mm(float input[100], const float weights[100][32], float output[1][32]) {
     col: for (int j = 0; j < 32; ++j) {
-#pragma HLS UNROLL
- float sum = 0;
+
+      float sum = 0;
 
       prod: for (int k = 0; k < 100; ++k){
-#pragma HLS UNROLL
- sum += input[k] * weights[k][j];
+
+        sum += input[k] * weights[k][j];
       }
       output[0][j] = sum;
     }
@@ -5773,12 +5773,12 @@ void l1_mm(float input[100], const float weights[100][32], float output[1][32]) 
 void l2_mm(float input[1][32], const float weights[32][16], float output[1][16]) {
 
     col: for (int j = 0; j < 16; ++j) {
-#pragma HLS UNROLL
- float sum = 0;
+
+      float sum = 0;
 
       prod: for (int k = 0; k < 32; ++k){
-#pragma HLS UNROLL
- sum += input[0][k] * weights[k][j];
+
+        sum += input[0][k] * weights[k][j];
       }
       output[0][j] = sum;
     }
@@ -5793,12 +5793,12 @@ void l2_mm(float input[1][32], const float weights[32][16], float output[1][16])
 void l3_mm(float input[1][16], const float weights[16][10], float output[1][10]) {
 
     col: for (int j = 0; j < 10; ++j) {
-#pragma HLS UNROLL
- float sum = 0;
+
+      float sum = 0;
 
       prod: for (int k = 0; k < 16; ++k){
-#pragma HLS UNROLL
- sum += input[0][k] * weights[k][j];
+
+        sum += input[0][k] * weights[k][j];
       }
       output[0][j] = sum;
     }
@@ -5811,8 +5811,8 @@ void l3_mm(float input[1][16], const float weights[16][10], float output[1][10])
 
 void l1_relu(float input[1][32], float output[1][32]){
  loop1: for (int i = 0; i < 32; i++){
-#pragma HLS UNROLL
- if (input[0][i] < 0.0)
+
+  if (input[0][i] < 0.0)
    output[0][i] = 0.0;
   else
    output[0][i] = input[0][i];
@@ -5826,8 +5826,8 @@ void l1_relu(float input[1][32], float output[1][32]){
 
 void l2_relu(float input[1][16], float output[1][16]){
  loop1: for (int i = 0; i < 16; i++){
-#pragma HLS UNROLL
- if (input[0][i] < 0.0)
+
+  if (input[0][i] < 0.0)
    output[0][i] = 0.0;
   else
    output[0][i] = input[0][i];
@@ -5843,8 +5843,8 @@ void l3_softmax(float input[1][10], int &pred){
  int max_idx = -1;
  float max_val = -999.9;
  loop1: for (int i = 0; i < 10; i++){
-#pragma HLS UNROLL
- if (input[0][i] > max_val){
+
+  if (input[0][i] > max_val){
    max_idx = i;
    max_val = input[0][i];
   }

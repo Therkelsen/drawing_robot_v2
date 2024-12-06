@@ -21,8 +21,6 @@ entity nn_inference_temp_output_0_ram is
           q0        : out std_logic_vector(DWIDTH-1 downto 0);
           addr1     : in std_logic_vector(AWIDTH-1 downto 0); 
           ce1       : in std_logic; 
-          d1        : in std_logic_vector(DWIDTH-1 downto 0); 
-          we1       : in std_logic; 
           q1        : out std_logic_vector(DWIDTH-1 downto 0);
           clk        : in std_logic 
     ); 
@@ -81,9 +79,6 @@ begin
     if (clk'event and clk = '1') then
         if (ce1 = '1') then 
             q1 <= ram(CONV_INTEGER(addr1_tmp));
-            if (we1 = '1') then 
-                ram(CONV_INTEGER(addr1_tmp)) := d1; 
-            end if;
         end if;
     end if;
 end process;
@@ -109,8 +104,6 @@ entity nn_inference_temp_output_0 is
         q0 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
         address1 : IN STD_LOGIC_VECTOR(AddressWidth - 1 DOWNTO 0);
         ce1 : IN STD_LOGIC;
-        we1 : IN STD_LOGIC;
-        d1 : IN STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
         q1 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
@@ -125,8 +118,6 @@ architecture arch of nn_inference_temp_output_0 is
             q0 : OUT STD_LOGIC_VECTOR;
             addr1 : IN STD_LOGIC_VECTOR;
             ce1 : IN STD_LOGIC;
-            we1 : IN STD_LOGIC;
-            d1 : IN STD_LOGIC_VECTOR;
             q1 : OUT STD_LOGIC_VECTOR);
     end component;
 
@@ -143,8 +134,6 @@ begin
         q0 => q0,
         addr1 => address1,
         ce1 => ce1,
-        we1 => we1,
-        d1 => d1,
         q1 => q1);
 
 end architecture;

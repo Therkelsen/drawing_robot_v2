@@ -9,7 +9,7 @@
         <config_export format="ip_catalog" output="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/nn_inference.zip" rtl="vhdl"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf boardInfo="Ultra96v2 Evaluation Platform (xczu3eg-sbva484-1-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
+        <UIAutosynConf boardInfo="Ultra96v2 Evaluation Platform (xczu3eg-sbva484-1-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/zynquplus/zynquplus</Platform>
             <Platform>xilinx/zynquplus/zynquplus_fpv7</Platform>
             <customLibs/>
@@ -41,7 +41,7 @@
         </UIAutoSimConf>
     </UIConfigurations>
     <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="/home/peterparker/uni/embeddedsystems/drawing_robot_v2/src/neural_network/Vitis_HLS/nn_inference.zip" rtl="verilog" rtlButton="true" rtlCombo="vhdl">
-        <Format formatName="ip_catalog" description="" vendor="" library="" ipname="nn_inference" version="" display_name="" taxonomy=""/>
+        <Format formatName="ip_catalog"/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
