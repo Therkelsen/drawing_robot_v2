@@ -91,7 +91,7 @@ hBar3.CData = [0, 0.4470, 0.7410;   % Red for FPGA
               0.8500, 0.3250, 0.0980;   % Green for ARM Processor
               0.9290, 0.6940, 0.1250];  % Blue for Laptop CPU
 set(gca, 'XTickLabel', platforms, 'FontSize', 12);
-ylabel({'Efficiency (microseconds / Watt)', 'Lower is better'}, 'FontSize', 12);
+ylabel({'Efficiency (microseconds / Watt)', 'Higher is better'}, 'FontSize', 12);
 title('Efficiency Comparison', 'FontSize', 14);
 for i = 1:length(efficiency)
     text(i, efficiency(i), sprintf('%.2f', efficiency(i)), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'bottom');
