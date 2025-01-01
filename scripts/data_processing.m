@@ -1,6 +1,6 @@
 clc; clear; close all;
 
-%% Time spent
+%Time spent
 % Read data files for FPGA, ARM Processor, and Laptop CPU
 data = readtable('fpga.csv');
 X = rmoutliers(data.Var1);
@@ -42,13 +42,13 @@ platforms = {'FPGA', 'ARM Processor', 'Laptop CPU'};
 timeMedians = [timeMedianFPGA, timeMedianCpu, timeMedianLapCpu];
 
 % Power consumption (Watts)
-fpgaPower = 2.334;
-cpuPower = 12*4;
-lapCpuPower = 157;
+fpgaPower = 0.481;
+cpuPower = 1.853;
+lapCpuPower = 45;
 power = [fpgaPower, cpuPower, lapCpuPower];
 
 % Power efficiency
-efficiency = [timeMedianFPGA/fpgaPower, timeMedianCpu/cpuPower, timeMedianLapCpu/lapCpuPower];
+efficiency = [timeMedianFPGA*fpgaPower, timeMedianCpu*cpuPower, timeMedianLapCpu*lapCpuPower];
 
 % Create the figure
 figure;
@@ -61,7 +61,7 @@ hBar1.CData = [0, 0.4470, 0.7410;   % Red for FPGA
               0.8500, 0.3250, 0.0980;   % Green for ARM Processor
               0.9290, 0.6940, 0.1250];  % Blue for Laptop CPU
 set(gca, 'XTickLabel', platforms, 'FontSize', 12);
-ylabel({'Median Time (microseconds)', 'Lower is better'}, 'FontSize', 12);
+ylabel({'Median Time (μs)', 'Lower is better'}, 'FontSize', 12);
 title('Median Time Comparison', 'FontSize', 14);
 for i = 1:length(timeMedians)
     text(i, timeMedians(i), sprintf('%.2f', timeMedians(i)), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'bottom');
@@ -76,7 +76,8 @@ hBar2.CData = [0, 0.4470, 0.7410;   % Red for FPGA
               0.8500, 0.3250, 0.0980;   % Green for ARM Processor
               0.9290, 0.6940, 0.1250];  % Blue for Laptop CPU
 set(gca, 'XTickLabel', platforms, 'FontSize', 12);
-ylabel({'Power (Watts)', 'Lower is better'}, 'FontSize', 12);
+ylim([0 46])
+ylabel({'Power (W)', 'Lower is better'}, 'FontSize', 12);
 title('Power Comparison', 'FontSize', 14);
 for i = 1:length(power)
     text(i, power(i), sprintf('%.2f', power(i)), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'bottom');
@@ -91,7 +92,8 @@ hBar3.CData = [0, 0.4470, 0.7410;   % Red for FPGA
               0.8500, 0.3250, 0.0980;   % Green for ARM Processor
               0.9290, 0.6940, 0.1250];  % Blue for Laptop CPU
 set(gca, 'XTickLabel', platforms, 'FontSize', 12);
-ylabel({'Efficiency (microseconds / Watt)', 'Higher is better'}, 'FontSize', 12);
+ylabel({'Efficiency (W x μs = μJ)', 'Lower is better'}, 'FontSize', 12);
+ylim([0 1360])
 title('Efficiency Comparison', 'FontSize', 14);
 for i = 1:length(efficiency)
     text(i, efficiency(i), sprintf('%.2f', efficiency(i)), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'bottom');
